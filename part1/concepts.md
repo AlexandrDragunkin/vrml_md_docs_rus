@@ -10,7 +10,7 @@
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.1 Introduction and table  of contents
+## ![](../pix/cube.gif)4.1 Introduction and table  of contents
 
 ### 4.1.1 Обзор
 
@@ -215,7 +215,7 @@ A `fixed-space` шрифт используется для URL-адресов и
 
 #### ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.2 Обзор
+## ![](../pix/cube.gif)4.2 Обзор
 
 ### 4.2.1 Структура файла VRML
 
@@ -233,7 +233,7 @@ A `fixed-space` шрифт используется для URL-адресов и
 Заголовок представляет собой одну строку текста UTF-8, идентифицирующую файл как файл VRML и определяющую тип кодировки файла. Он также может содержать дополнительную смысловую информацию. Должен быть ровно один пробел, отделяющий " **`#VRML`**" от " **`V2.0`**", " **`V2.0`**" от "< `encoding type` >" и "< `encoding type` >" от " `[необязательный комментарий]`".
 
 
-< `encoding type` \> — это либо «**`utf8`**», либо любые другие разрешенные значения, определенные в других частях ISO/IEC 14772. Идентификатор «**`utf8`**» указывает на кодировку открытого текста, которая позволяет отображать международные символы в VRML с использованием кодировки UTF-8, определенной в ISO 10646-1 (также известной как Unicode); см. [2.\[UTF8\]](references.html#[UTF8]). Использование UTF-8 подробно описано в спецификации узла [Text](nodesRef.html#Text). Заголовок файла VRML в кодировке UTF-8:
+< `encoding type` \> — это либо «**`utf8`**», либо любые другие разрешенные значения, определенные в других частях ISO/IEC 14772. Идентификатор «**`utf8`**» указывает на кодировку открытого текста, которая позволяет отображать международные символы в VRML с использованием кодировки UTF-8, определенной в ISO 10646-1 (также известной как Unicode); см. [2.\[UTF8\]](references.html#[UTF8]). Использование UTF-8 подробно описано в спецификации узла [Text](nodesRef.md#Text). Заголовок файла VRML в кодировке UTF-8:
 
 ```
 #VRML V2.0 utf8 [optional comment] <line terminator>
@@ -285,7 +285,7 @@ VRML концептуально поддерживает концепцию пр
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.3 Синтаксис файла UTF-8
+## ![](../pix/cube.gif)4.3 Синтаксис файла UTF-8
 
 ### 4.3.1 Clear text encoding
 
@@ -340,7 +340,7 @@ VRML концептуально поддерживает концепцию пр
 After the required header, a VRML file may contain any combination of
 the following:
 
-1. Any number of PROTO or EXTERNPROTO statements (see " [4.8 Prototype semantics](#4.8)")
+1. Any number of PROTO or EXTERNPROTO statements (see "[4.8 Prototype semantics](#48-prototype-semantics)")
 
 2. Any number of root children node statements (see " [4.4.1 Root nodes](#4.4.1)" for a description of
     root nodes and " [4.6.5 Grouping and children nodes](#4.6.5)"
@@ -361,7 +361,7 @@ using the keyword DEF followed by the name of the node. The node's body
 is enclosed in matching curly braces (" **`{` `}`**").
 Whitespace shall separate the DEF, name of the node, and node type, but
 is not required before or after the curly braces that enclose the
-node's body. See " [A.3 Nodes](grammar.html#Nodes)"
+node's body. See " [A.3 Nodes](grammar.md#Nodes)"
 for details on node grammar rules.
 
 ```
@@ -396,7 +396,7 @@ The following illustrates the syntax for a multiple-valued field:
 
 ```
 
-See " [A.4 Fields](grammar.html#Fields)" for
+See " [A.4 Fields](grammar.md#Fields)" for
 details on field statement grammar rules.
 
 Each node type defines the names and types of the fields that each node
@@ -418,7 +418,7 @@ definition:
 
 ```
 
-See " [A.2 General](grammar.html#General)" for
+See " [A.2 General](grammar.md#General)" for
 details on prototype statement grammar rules.
 
 A prototype interface declaration consists of eventIn, eventOut, field,
@@ -464,7 +464,7 @@ A prototype definition consists of at least one node statement and any
 number of ROUTE statements, PROTO statements, and EXTERNPROTO
 statements in any order.
 
-See " [4.8 Prototype semantics](#4.8)" for a
+See "[4.8 Prototype semantics](#48-prototype-semantics)" for a
 description of prototype semantics.
 
 ### 4.3.6 IS statement syntax
@@ -481,9 +481,8 @@ declaration:
 
 ```
 
-See " [A.3 Nodes](grammar.html#Nodes)" for details
-on prototype node body grammar rules. See " [4.8 \
-Prototype semantics](#4.8)" for a description of IS statement
+See " [A.3 Nodes](grammar.md#Nodes)" for details
+on prototype node body grammar rules. See "[4.8 Prototype semantics](#48-prototype-semantics)" for a description of IS statement
 semantics.
 
 ### 4.3.7 EXTERNPROTO statement syntax
@@ -498,7 +497,7 @@ in square brackets:
 
 ```
 
-See " [A.2 General](grammar.html#General)" for
+See " [A.2 General](grammar.md#General)" for
 details on external prototype statement grammar rules.
 
 An EXTERNPROTO interface declaration is the same as a PROTO interface
@@ -515,7 +514,7 @@ A USE statement consists of the USE keyword followed by a node name:
 
 ```
 
-See " [A.2 General](grammar.html#General)" for
+See " [A.2 General](grammar.md#General)" for
 details on USE statement grammar rules.
 
 ### 4.3.9 ROUTE statement syntax
@@ -530,12 +529,12 @@ not required before or after the period characters:
 
 ```
 
-See " [A.2 General](grammar.html#General)" for
+See " [A.2 General](grammar.md#General)" for
 details on ROUTE statement grammar rules.
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.4 Scene graph structure
+## ![](../pix/cube.gif)4.4 Scene graph structure
 
 ### 4.4.1 Root nodes
 
@@ -607,13 +606,13 @@ VRML uses a Cartesian, right-handed, three-dimensional coordinate
 system. By default, the viewer is positioned along the positive Z-axis
 so as to look along the -Z direction with +Y-axis up. A modelling
 transformation (see " [6.6 \
-Transform](nodesRef.html#Transform)" and " [6.52 \
-Billboard](nodesRef.html#Billboard)") or viewing transformation (see " [6.53 Viewpoint](nodesRef.html#Viewpoint)") can be used
+Transform](nodesRef.md#Transform)" and " [6.52 \
+Billboard](nodesRef.md#Billboard)") or viewing transformation (see " [6.53 Viewpoint](nodesRef.md#Viewpoint)") can be used
 to alter this default projection.
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.5 VRML and the World Wide  Web
+## ![](../pix/cube.gif)4.5 VRML and the World Wide  Web
 
 ### 4.5.1 File extension and MIME types
 
@@ -744,7 +743,7 @@ specifies a URL file as the first choice and a URN as the second choice.
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.6 Node semantics
+## ![](../pix/cube.gif)4.6 Node semantics
 
 ### 4.6.1 Introduction
 
@@ -799,55 +798,55 @@ prototype definition.
 
 #### 4.6.3.1 Introduction
 
-The [Shape](nodesRef.html#Shape) node associates a geometry
+The [Shape](nodesRef.md#Shape) node associates a geometry
 node with nodes that define that geometry's appearance. Shape nodes
 must be part of the transformation hierarchy to have any visible
 result, and the transformation hierarchy must contain Shape nodes for
 any geometry to be visible (the only nodes that render visible results
-are Shape nodes and the [Background](nodesRef.html#Background)
+are Shape nodes and the [Background](nodesRef.md#Background)
 node). A Shape node contains exactly one geometry node in its _geometry_
 field. This following node types are valid _geometry_ nodes:
 
-- [Box](nodesRef.html#Box)
-- [Cone](nodesRef.html#Cone)
-- [Cylinder](nodesRef.html#Cylinder)
-- [ElevationGrid](nodesRef.html#ElevationGrid)
-- [Extrusion](nodesRef.html#Extrusion)
-- [IndexedFaceSet](nodesRef.html#IndexedFaceSet)
-- [IndexedLineSet](nodesRef.html#IndexedLineSet)
-- [PointSet](nodesRef.html#PointSet)
-- [Sphere](nodesRef.html#Sphere)
-- [Text](nodesRef.html#Text)
+- [Box](nodesRef.md#Box)
+- [Cone](nodesRef.md#Cone)
+- [Cylinder](nodesRef.md#Cylinder)
+- [ElevationGrid](nodesRef.md#ElevationGrid)
+- [Extrusion](nodesRef.md#Extrusion)
+- [IndexedFaceSet](nodesRef.md#IndexedFaceSet)
+- [IndexedLineSet](nodesRef.md#IndexedLineSet)
+- [PointSet](nodesRef.md#PointSet)
+- [Sphere](nodesRef.md#Sphere)
+- [Text](nodesRef.md#Text)
 - [Geometry nodes created from PROTOs or EXTERNPROTOs](#4.8)
 
 #### 4.6.3.2 Geometric property nodes
 
-Several geometry nodes contain [Coordinate](nodesRef.html#Coordinate), [Color](nodesRef.html#Color), [Normal](nodesRef.html#Normal),
-and [TextureCoordinate](nodesRef.html#TextureCoordinate) as
+Several geometry nodes contain [Coordinate](nodesRef.md#Coordinate), [Color](nodesRef.md#Color), [Normal](nodesRef.md#Normal),
+and [TextureCoordinate](nodesRef.md#TextureCoordinate) as
 geometric property nodes. The geometric property nodes are defined as
 individual nodes so that instancing and sharing is possible between
 different geometry nodes.
 
 #### 4.6.3.3 Appearance nodes
 
-Shape nodes may specify an [Appearance](nodesRef.html#Appearance)
+Shape nodes may specify an [Appearance](nodesRef.md#Appearance)
 node that describes the appearance properties (material and texture)
 to be applied to the Shape's geometry. The following node type may be
 specified in the material field of the Appearance node:
 
-- [M](nodesRef.html#material) [aterial](nodesRef.html#Material)
+- [M](nodesRef.md#material) [aterial](nodesRef.md#Material)
 
 The following nodes may be specified by the _texture_ field of the
 Appearance node:
 
-- [ImageTexture](nodesRef.html#ImageTexture)
-- [PixelTexture](nodesRef.html#PixelTexture)
-- [MovieTexture](nodesRef.html#MovieTexture)
+- [ImageTexture](nodesRef.md#ImageTexture)
+- [PixelTexture](nodesRef.md#PixelTexture)
+- [MovieTexture](nodesRef.md#MovieTexture)
 
 The following node may be specified in the _textureTranform_ field
 of the Appearance node:
 
-- [TextureTransform](nodesRef.html#TextureTransform)
+- [TextureTransform](nodesRef.md#TextureTransform)
 
 The interaction between such appearance nodes and the Color node is
 described in " [4.14 Lighting Model](#4.14)".
@@ -942,7 +941,7 @@ bounding box is defined in the local coordinate system of the group).
 ### 4.6.5 Grouping and children nodes
 
 Grouping nodes have a _children_ field that contains a list of
-nodes (exceptions to this rule are [Inline](nodesRef.html#Inline), [LOD](nodesRef.html#LOD), and [Switch](nodesRef.html#Switch)).
+nodes (exceptions to this rule are [Inline](nodesRef.md#Inline), [LOD](nodesRef.md#LOD), and [Switch](nodesRef.md#Switch)).
 Each grouping node defines a coordinate space for its children. This
 coordinate space is relative to the coordinate space of the node of
 which the group node is a child. Such a node is called a _parent_
@@ -951,76 +950,76 @@ hierarchy.
 
 The following node types are grouping nodes:
 
-- [Anchor](nodesRef.html#Anchor)
-- [Billboard](nodesRef.html#Billboard)
-- [Collision](nodesRef.html#Collision)
-- [Group](nodesRef.html#Group)
-- [Inline](nodesRef.html#Inline)
-- [LOD](nodesRef.html#LOD)
-- [Switch](nodesRef.html#Switch)
-- [Transform](nodesRef.html#Transform)
+- [Anchor](nodesRef.md#Anchor)
+- [Billboard](nodesRef.md#Billboard)
+- [Collision](nodesRef.md#Collision)
+- [Group](nodesRef.md#Group)
+- [Inline](nodesRef.md#Inline)
+- [LOD](nodesRef.md#LOD)
+- [Switch](nodesRef.md#Switch)
+- [Transform](nodesRef.md#Transform)
 - [PROTO'd grouping nodes](#4.8)
 
 The following node types are children nodes:
 
-- [Anchor](nodesRef.html#Anchor)
-- [Background](nodesRef.html#Background)
-- [Billboard](nodesRef.html#Billboard)
-- [Collision](nodesRef.html#Collision)
-- [ColorInterpolator](nodesRef.html#ColorInterpolator)
-- [CoordinateInterpolator](nodesRef.html#CoordinateInterpolator)
-- [CylinderSensor](nodesRef.html#CylinderSensor)
-- [DirectionalLight](nodesRef.html#DirectionalLight)
-- [Fog](nodesRef.html#Fog)
-- [Group](nodesRef.html#Group)
-- [Inline](nodesRef.html#Inline)
+- [Anchor](nodesRef.md#Anchor)
+- [Background](nodesRef.md#Background)
+- [Billboard](nodesRef.md#Billboard)
+- [Collision](nodesRef.md#Collision)
+- [ColorInterpolator](nodesRef.md#ColorInterpolator)
+- [CoordinateInterpolator](nodesRef.md#CoordinateInterpolator)
+- [CylinderSensor](nodesRef.md#CylinderSensor)
+- [DirectionalLight](nodesRef.md#DirectionalLight)
+- [Fog](nodesRef.md#Fog)
+- [Group](nodesRef.md#Group)
+- [Inline](nodesRef.md#Inline)
 
-[LOD](nodesRef.html#LOD)
-[NavigationInfo](nodesRef.html#NavigationInfo)
-[NormalInterpolator](nodesRef.html#NormalInterpolator)
-[OrientationInterpolator](nodesRef.html#OrientationInterpolator)
-[PlaneSensor](nodesRef.html#PlaneSensor)
-[PointLight](nodesRef.html#PointLight)
-[PositionInterpolator](nodesRef.html#PositionInterpolator)
-[ProximitySensor](nodesRef.html#ProximitySensor)
-[ScalarInterpolator](nodesRef.html#ScalarInterpolator)
-[Script](nodesRef.html#Script)
-[Shape](nodesRef.html#Shape)
-[Sound](nodesRef.html#Sound)
-[SpotLight](nodesRef.html#SpotLight)
-[SphereSensor](nodesRef.html#SphereSensor)
-[Switch](nodesRef.html#Switch)
-[TimeSensor](nodesRef.html#TimeSensor)
-[TouchSensor](nodesRef.html#TouchSensor)
-[Transform](nodesRef.html#Transform)
-[Viewpoint](nodesRef.html#Viewpoint)
-[VisibilitySensor](nodesRef.html#VisibilitySensor)
-[WorldInfo](nodesRef.html#WorldInfo)
+[LOD](nodesRef.md#LOD)
+[NavigationInfo](nodesRef.md#NavigationInfo)
+[NormalInterpolator](nodesRef.md#NormalInterpolator)
+[OrientationInterpolator](nodesRef.md#OrientationInterpolator)
+[PlaneSensor](nodesRef.md#PlaneSensor)
+[PointLight](nodesRef.md#PointLight)
+[PositionInterpolator](nodesRef.md#PositionInterpolator)
+[ProximitySensor](nodesRef.md#ProximitySensor)
+[ScalarInterpolator](nodesRef.md#ScalarInterpolator)
+[Script](nodesRef.md#Script)
+[Shape](nodesRef.md#Shape)
+[Sound](nodesRef.md#Sound)
+[SpotLight](nodesRef.md#SpotLight)
+[SphereSensor](nodesRef.md#SphereSensor)
+[Switch](nodesRef.md#Switch)
+[TimeSensor](nodesRef.md#TimeSensor)
+[TouchSensor](nodesRef.md#TouchSensor)
+[Transform](nodesRef.md#Transform)
+[Viewpoint](nodesRef.md#Viewpoint)
+[VisibilitySensor](nodesRef.md#VisibilitySensor)
+[WorldInfo](nodesRef.md#WorldInfo)
 [PROTO'd children nodes](#4.8)
 
 The following node types are not valid as children nodes:
 
-- [Appearance](nodesRef.html#Appearance)
-- [AudioClip](nodesRef.html#AudioClip)
-- [Box](nodesRef.html#Box)
-- [Color](nodesRef.html#Color)
-- [Cone](nodesRef.html#Cone)
-- [Coordinate](nodesRef.html#Coordinate)
-- [Cylinder](nodesRef.html#Cylinder)
+- [Appearance](nodesRef.md#Appearance)
+- [AudioClip](nodesRef.md#AudioClip)
+- [Box](nodesRef.md#Box)
+- [Color](nodesRef.md#Color)
+- [Cone](nodesRef.md#Cone)
+- [Coordinate](nodesRef.md#Coordinate)
+- [Cylinder](nodesRef.md#Cylinder)
 
-[ElevationGrid](nodesRef.html#ElevationGrid)
-[Extrusion](nodesRef.html#Extrusion)
-[ImageTexture](nodesRef.html#ImageTexture)
-[IndexedFaceSet](nodesRef.html#IndexedFaceSet)
-[IndexedLineSet](nodesRef.html#IndexedLineSet)
-[Material](nodesRef.html#Material)
-[MovieTexture](nodesRef.html#MovieTexture)
-[Normal](nodesRef.html#Normal)
-[PointSet](nodesRef.html#Normal)
-[Sphere](nodesRef.html#Sphere)
-[Text](nodesRef.html#Text)
-[TextureCoordinate](nodesRef.html#TextureCoordinate)
-[TextureTransform](nodesRef.html#TextureTransform)
+[ElevationGrid](nodesRef.md#ElevationGrid)
+[Extrusion](nodesRef.md#Extrusion)
+[ImageTexture](nodesRef.md#ImageTexture)
+[IndexedFaceSet](nodesRef.md#IndexedFaceSet)
+[IndexedLineSet](nodesRef.md#IndexedLineSet)
+[Material](nodesRef.md#Material)
+[MovieTexture](nodesRef.md#MovieTexture)
+[Normal](nodesRef.md#Normal)
+[PointSet](nodesRef.md#Normal)
+[Sphere](nodesRef.md#Sphere)
+[Text](nodesRef.md#Text)
+[TextureCoordinate](nodesRef.md#TextureCoordinate)
+[TextureTransform](nodesRef.md#TextureTransform)
 
 All grouping nodes also have _addChildren_ and _removeChildren_
 eventIn definitions. The _addChildren_ event appends nodes to the
@@ -1038,7 +1037,7 @@ field contains the nodes Q, L, S, A and Z and it receives a _removeChildren_
 eventIn containing nodes A, L, and Z, the result is Q, S.
 
 The Inline, Switch and LOD nodes are special group nodes that do not
-have all of the semantics of the regular grouping nodes (see " [6.25 Inline](nodesRef.html#Inline)", " [6.26 LOD](nodesRef.html#LOD)", and " [6.46 Switch](nodesRef.html#Switch)" for specifics).
+have all of the semantics of the regular grouping nodes (see " [6.25 Inline](nodesRef.md#Inline)", " [6.26 LOD](nodesRef.md#LOD)", and " [6.46 Switch](nodesRef.md#Switch)" for specifics).
 
 Note that a variety of node types reference other node types through
 fields. Some of these are parent-child relationships, while others are
@@ -1062,9 +1061,9 @@ gross approximation to how ambient reflection actually occurs in nature.
 
 The following node types are light source nodes:
 
-- [DirectionalLight](nodesRef.html#DirectionalLight)
-- [PointLight](nodesRef.html#PointLight)
-- [SpotLight](nodesRef.html#SpotLight)
+- [DirectionalLight](nodesRef.md#DirectionalLight)
+- [PointLight](nodesRef.md#PointLight)
+- [SpotLight](nodesRef.md#SpotLight)
 
 All light source nodes contain an _intensity_, a _color_, and
 an _ambientIntensity_ field. The _intensity_ field specifies
@@ -1090,15 +1089,15 @@ parent grouping nodes.
 
 There following nodes types are sensor nodes:
 
-- [Anchor](nodesRef.html#Anchor)
-- [Collision](nodesRef.html#Collision)
-- [CylinderSensor](nodesRef.html#CylinderSensor)
-- [PlaneSensor](nodesRef.html#PlaneSensor)
-- [ProximitySensor](nodesRef.html#ProximitySensor)
-- [SphereSensor](nodesRef.html#SphereSensor)
-- [TimeSensor](nodesRef.html#TimeSensor)
-- [TouchSensor](nodesRef.html#TouchSensor)
-- [VisibilitySensor](nodesRef.html#VisibilitySensor)
+- [Anchor](nodesRef.md#Anchor)
+- [Collision](nodesRef.md#Collision)
+- [CylinderSensor](nodesRef.md#CylinderSensor)
+- [PlaneSensor](nodesRef.md#PlaneSensor)
+- [ProximitySensor](nodesRef.md#ProximitySensor)
+- [SphereSensor](nodesRef.md#SphereSensor)
+- [TimeSensor](nodesRef.md#TimeSensor)
+- [TouchSensor](nodesRef.md#TouchSensor)
+- [VisibilitySensor](nodesRef.md#VisibilitySensor)
 
 Sensors are children nodes in the hierarchy and therefore may be
 parented by grouping nodes as described in " [4.6.5 Grouping and children \
@@ -1120,12 +1119,12 @@ _sensors_ and _pointing-device sensors_.
 
 #### 4.6.7.2 Environmental sensors
 
-The [ProximitySensor](nodesRef.html#ProximitySensor) detects
+The [ProximitySensor](nodesRef.md#ProximitySensor) detects
 when the user navigates into a specified region in the world. The
-ProximitySensor itself is not visible. The [TimeSensor](nodesRef.html#TimeSensor) is a clock that has no
+ProximitySensor itself is not visible. The [TimeSensor](nodesRef.md#TimeSensor) is a clock that has no
 geometry or location associated with it; it is used to start and stop
-time-based nodes such as interpolators. The [VisibilitySensor](nodesRef.html#VisibilitySensor) detects
-when a specific part of the world becomes visible to the user. The [Collision](nodesRef.html#Collision) grouping node detects
+time-based nodes such as interpolators. The [VisibilitySensor](nodesRef.md#VisibilitySensor) detects
+when a specific part of the world becomes visible to the user. The [Collision](nodesRef.md#Collision) grouping node detects
 when the user collides with objects in the virtual world.
 Pointing-device sensors detect user pointing events such as the user
 clicking on a piece of geometry (i.e., TouchSensor). Proximity,
@@ -1136,11 +1135,11 @@ independently of whether others exist or overlap.
 
 The following node types are pointing-device sensors:
 
-- [Anchor](nodesRef.html#Anchor)
-- [CylinderSensor](nodesRef.html#CylinderSensor)
-- [PlaneSensor](nodesRef.html#PlaneSensor)
-- [SphereSensor](nodesRef.html#SphereSensor)
-- [TouchSensor](nodesRef.html#TouchSensor)
+- [Anchor](nodesRef.md#Anchor)
+- [CylinderSensor](nodesRef.md#CylinderSensor)
+- [PlaneSensor](nodesRef.md#PlaneSensor)
+- [SphereSensor](nodesRef.md#SphereSensor)
+- [TouchSensor](nodesRef.md#TouchSensor)
 
 A pointing-device sensor is activated when the user locates the
 pointing device over geometry that is influenced by that specific
@@ -1177,7 +1176,7 @@ dragging does not result in the sensor activating immediately). Note
 that some pointing devices may be constantly activated and thus do not
 require a user to activate.
 
-The [Anchor](nodesRef.html#Anchor) node is considered to be
+The [Anchor](nodesRef.md#Anchor) node is considered to be
 a pointing-device sensor when trying to determine which sensor (or
 Anchor node) to activate. For example, in the following file a click on _Shape3_
 is handled by _SensorD_, a click on _Shape2_ is handled by _SensorC_
@@ -1211,7 +1210,7 @@ and _SensorB_:
 #### 4.6.7.4 Drag sensors
 
 _Drag sensors_ are a subset of pointing-device sensors. There are
-three types of drag sensors: [CylinderSensor](nodesRef.html#CylinderSensor), [PlaneSensor](nodesRef.html#PlaneSensor), and [SphereSensor](nodesRef.html#SphereSensor). Drag sensors have
+three types of drag sensors: [CylinderSensor](nodesRef.md#CylinderSensor), [PlaneSensor](nodesRef.md#PlaneSensor), and [SphereSensor](nodesRef.md#SphereSensor). Drag sensors have
 two eventOuts in comon, _trackPoint\_changed_ and _<value>\_changed_.
 These eventOuts send events for each movement of the activated pointing
 device according to their "virtual geometry" (e.g., cylinder
@@ -1304,12 +1303,12 @@ should be one of the associated limit values.
 The following node types are interpolator nodes, each based on the type
 of value that is interpolated:
 
-- [ColorInterpolator](nodesRef.html#ColorInterpolator)
-- [CoordinateInterpolator](nodesRef.html#CoordinateInterpolator)
-- [NormalInterpolator](nodesRef.html#NormalInterpolator)
-- [OrientationInterpolator](nodesRef.html#OrientationInterpolator)
-- [PositionInterpolator](nodesRef.html#PositionInterpolator)
-- [ScalarInterpolator](nodesRef.html#ScalarInterpolator)
+- [ColorInterpolator](nodesRef.md#ColorInterpolator)
+- [CoordinateInterpolator](nodesRef.md#CoordinateInterpolator)
+- [NormalInterpolator](nodesRef.md#NormalInterpolator)
+- [OrientationInterpolator](nodesRef.md#OrientationInterpolator)
+- [PositionInterpolator](nodesRef.md#PositionInterpolator)
+- [ScalarInterpolator](nodesRef.md#ScalarInterpolator)
 
 All interpolator nodes share a common set of fields and semantics:
 
@@ -1361,7 +1360,7 @@ as specified (receives and sends events).
 
 ### 4.6.9 Time-dependent nodes
 
-[AudioClip](nodesRef.html#AudioClip), [MovieTexture](nodesRef.html#MovieTexture), and [TimeSensor](nodesRef.html#TimeSensor) are _time-dependent_
+[AudioClip](nodesRef.md#AudioClip), [MovieTexture](nodesRef.md#MovieTexture), and [TimeSensor](nodesRef.md#TimeSensor) are _time-dependent_
 nodes that activate and deactivate themselves at specified times. Each
 of these nodes contains the exposedFields: _startTime_, _stopTime_,
 and _loop,_ and the eventOut: _isActive_. The exposedField
@@ -1433,7 +1432,7 @@ with caution since it incurs continuous overhead on the simulation.
 
 ### 4.6.10 Bindable children nodes
 
-The [Background](nodesRef.html#Background), [Fog](nodesRef.html#Fog), [NavigationInfo](nodesRef.html#NavigationInfo), and [Viewpoint](nodesRef.html#Viewpoint) nodes have the unique
+The [Background](nodesRef.md#Background), [Fog](nodesRef.md#Fog), [NavigationInfo](nodesRef.md#NavigationInfo), and [Viewpoint](nodesRef.md#Viewpoint) nodes have the unique
 behaviour that only one of each type can be bound (i.e., affecting
 the user's experience) at any instant in time. The browser shall
 maintain an independent, separate stack for each type of binding node.
@@ -1467,7 +1466,7 @@ NavigationInfo, or Viewpoint):
 
 4. During read, the first encountered _<binding node>_ is
     bound by pushing it to the top of the _<binding node>_
-    stack. Nodes contained within [Inlines](nodesRef.html#Inline),
+    stack. Nodes contained within [Inlines](nodesRef.md#Inline),
     within the strings passed to the Browser.createVrmlFromString() method,
     or within files passed to the Browser.createVrmlFromURL() method (see
     " [4.12.10 Browser script interface](#4.12.10)")are
@@ -1510,7 +1509,7 @@ NavigationInfo, or Viewpoint):
 
 #### 4.6.11.1 Texture map formats
 
-Four nodes specify texture maps: [Background](nodesRef.html#Background), [ImageTexture](nodesRef.html#ImageTexture), [MovieTexture](nodesRef.html#MovieTexture), and [PixelTexture](nodesRef.html#PixelTexture). In all cases,
+Four nodes specify texture maps: [Background](nodesRef.md#Background), [ImageTexture](nodesRef.md#ImageTexture), [MovieTexture](nodesRef.md#MovieTexture), and [PixelTexture](nodesRef.md#PixelTexture). In all cases,
 texture maps are defined by 2D images that contain an array of colour
 values describing the texture. The texture map values are interpreted
 differently depending on the number of components in the texture map
@@ -1534,8 +1533,8 @@ texture types are applied.
 
 #### 4.6.11.2 Texture map image formats
 
-Texture nodes that require support for the PNG (see [2.\[PNG\]](references.html#[PNG])) image format (" [6.5 Background](nodesRef.html#Background)" and
-" [6.22 ImageTexture](nodesRef.html#ImageTexture)")
+Texture nodes that require support for the PNG (see [2.\[PNG\]](references.html#[PNG])) image format (" [6.5 Background](nodesRef.md#Background)" and
+" [6.22 ImageTexture](nodesRef.md#ImageTexture)")
 shall interpret the PNG pixel formats in the following way:
 
 1. greyscale pixels without alpha or simple transparency are treated as
@@ -1569,8 +1568,8 @@ values)
     chunk, it is treated as a full RGB plus alpha texture
 
 
-Texture nodes that require support for JPEG files (see [2.\[JPEG\]](references.html#[JPEG]), " [6.5 Background](nodesRef.html#Background)", and
-" [6.22 ImageTexture](nodesRef.html#ImageTexture)")
+Texture nodes that require support for JPEG files (see [2.\[JPEG\]](references.html#[JPEG]), " [6.5 Background](nodesRef.md#Background)", and
+" [6.22 ImageTexture](nodesRef.md#ImageTexture)")
 shall interpret JPEG files as follows:
 
 9. greyscale files (number of components equals 1) treated as intensity
@@ -1582,17 +1581,17 @@ shall interpret JPEG files as follows:
     JPEG files be treated as full RGB textures.
 
 
-Texture nodes that support MPEG files (see [2.\[MPEG\]](references.html#[MPEG]) and " [6.28 MovieTexture](nodesRef.html#MovieTexture)")
+Texture nodes that support MPEG files (see [2.\[MPEG\]](references.html#[MPEG]) and " [6.28 MovieTexture](nodesRef.md#MovieTexture)")
 shall treat MPEG files as full RGB textures.
 
-Texture nodes that recommend support for GIF files (see [E.\[GIF\]](bibliography.html#[GIF]), " [6.5 Background](nodesRef.html#Background)", and
-" [6.22 ImageTexture](nodesRef.html#ImageTexture)")
+Texture nodes that recommend support for GIF files (see [E.\[GIF\]](bibliography.html#[GIF]), " [6.5 Background](nodesRef.md#Background)", and
+" [6.22 ImageTexture](nodesRef.md#ImageTexture)")
 shall follow the applicable semantics described above for the PNG
 format.
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.7 Field, eventIn, and  eventOut semantics
+## ![](../pix/cube.gif)4.7 Field, eventIn, and  eventOut semantics
 
 Fields are placed inside node statements in a VRML file, and define the
 persistent state of the virtual world. Results are undefined if
@@ -1637,7 +1636,9 @@ the built-in nodes are as follows:
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.8 Prototype semantics
+<a id="48-prototype-semantics"></a>
+
+## ![](../pix/cube.gif)4.8 Prototype semantics
 
 The PROTO statement defines a new node type in terms of already defined
 (built-in or prototyped) node types. Once defined, prototyped node
@@ -1782,7 +1783,7 @@ illegal).
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.9 External prototype  semantics
+## ![](../pix/cube.gif)4.9 External prototype  semantics
 
 The EXTERNPROTO statement defines a new node type. It is equivalent to
 the PROTO statement, with two exceptions. First, the implementation of
@@ -1900,7 +1901,7 @@ specifies the actual definitions of the Torus node:
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.10 Event processing
+## ![](../pix/cube.gif)4.10 Event processing
 
 ### 4.10.1 Introduction
 
@@ -1986,7 +1987,7 @@ the eventIns.
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.11 Time
+## ![](../pix/cube.gif)4.11 Time
 
 ### 4.11.1 Introduction
 
@@ -2031,7 +2032,7 @@ rendering of the world or one time-step in a simulation.
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.12 Scripting
+## ![](../pix/cube.gif)4.12 Scripting
 
 ### 4.12.1 Introduction
 
@@ -2041,7 +2042,7 @@ The proposition "if the vault is currently closed AND the correct
 combination is entered, open the vault" illustrates the type of
 problem which may need addressing. These kinds of decisions are
 expressed as Script nodes (see " [6.40 \
-Script](nodesRef.html#Script)") that receive events from other nodes, process them,
+Script](nodesRef.md#Script)") that receive events from other nodes, process them,
 and send events to other nodes. A Script node can also keep track of
 information between subsequent executions (i.e., retaining
 internal state over time).
@@ -2283,9 +2284,9 @@ methods return empty strings.
 #### 4.12.10.2 SFFloat getCurrentSpeed( )
 
 The **getCurrentSpeed()** method returns the average navigation
-speed for the currently bound [NavigationInfo](nodesRef.html#NavigationInfo)
+speed for the currently bound [NavigationInfo](nodesRef.md#NavigationInfo)
 node in meters per second, in the coordinate system of the currently
-bound [Viewpoint](nodesRef.html#Viewpoint) node. If speed of
+bound [Viewpoint](nodesRef.md#Viewpoint) node. If speed of
 motion is not meaningful in the current navigation type, or if the
 speed cannot be determined for some other reason, 0.0 is returned.
 
@@ -2315,7 +2316,7 @@ set to TRUE.
 The **loadURL()** method loads the first recognized URL from the
 specified _url_ field with the passed parameters. The _parameter_
 and _url_ arguments are treated identically to the Anchor node's _parameter_
-and _url_ fields (see " [6.2 Anchor](nodesRef.html#Anchor)").
+and _url_ fields (see " [6.2 Anchor](nodesRef.md#Anchor)").
 This method returns immediately. However, if the URL is loaded into
 this browser window (e.g., there is no TARGET parameter to
 redirect it to another frame), the current world will be terminated and
@@ -2364,7 +2365,7 @@ have _directOutput_ set to TRUE.
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.13 Navigation
+## ![](../pix/cube.gif)4.13 Navigation
 
 ### 4.13.1 Introduction
 
@@ -2373,10 +2374,10 @@ which the world is currently being viewed. Navigation is the action
 taken by the user to change the position and/or orientation of this
 viewpoint thereby changing the user's view. This allows the user to
 move through a world or examine an object. The NavigationInfo node (see
-" [6.29 NavigationInfo](nodesRef.html#NavigationInfo)")
+" [6.29 NavigationInfo](nodesRef.md#NavigationInfo)")
 specifies the characteristics of the desired navigation behaviour, but
 the exact user interface is browser-dependent. The Viewpoint node (see
-" [6.53 Viewpoint](nodesRef.html#Viewpoint)")
+" [6.53 Viewpoint](nodesRef.md#Viewpoint)")
 specifies key locations and orientations in the world that the user may
 be moved to via scripts or browser-specific user interfaces.
 
@@ -2395,7 +2396,7 @@ the user wishes to view from many angles and distances.
 The NavigationInfo node has a _type_ field that specifies the
 browser the navigation paradigm for this world. The actual user
 interface provided to accomplish this navigation is browser-dependent.
-See " [6.29 NavigationInfo](nodesRef.html#NavigationInfo)"
+See " [6.29 NavigationInfo](nodesRef.md#NavigationInfo)"
 for details.
 
 ### 4.13.3 Viewing model
@@ -2405,23 +2406,23 @@ world, based on input from the user (using the browser-provided
 navigation paradigm) and the motion of the currently bound Viewpoint
 node (and its coordinate system). The VRML author may place any number
 of viewpoints in the world at important places from which the user
-might wish to view the world. Each viewpoint is described by a [Viewpoint](nodesRef.html#Viewpoint) node. Viewpoints exist in
+might wish to view the world. Each viewpoint is described by a [Viewpoint](nodesRef.md#Viewpoint) node. Viewpoints exist in
 their parent's coordinate system, and both the viewpoint and the
 coordinate system may be changed to affect the view of the world
 presented by the browser. Only one viewpoint may be bound at a time. A
 detailed description of how the Viewpoint node operates may be found in
 " [4.6.10 Bindable children nodes](#4.6.10)"
-and " [6.53 Viewpoint](nodesRef.html#Viewpoint)."
+and " [6.53 Viewpoint](nodesRef.md#Viewpoint)."
 
 User navigation is independent of the location and orientation of the
 currently bound Viewpoint node; navigation is performed relative to the
 Viewpoint's location and does not affect the values of a Viewpoint
 node. The location of the viewer may be determined with a
-ProximitySensor node (see " [6.38 ProximitySensor](nodesRef.html#ProximitySensor)").
+ProximitySensor node (see " [6.38 ProximitySensor](nodesRef.md#ProximitySensor)").
 
 ### 4.13.4 Collision detection and terrain following
 
-A VRML file may contain Collision nodes (see " [6.8 Collision](nodesRef.html#Collision)") and
+A VRML file may contain Collision nodes (see " [6.8 Collision](nodesRef.md#Collision)") and
 NavigationInfo nodes that may influence the browser's navigation
 paradigm. The browser is responsible for detecting collisions between
 the viewer and the objects in the virtual world, and is also
@@ -2435,7 +2436,7 @@ NavigationInfo types of WALK, FLY, and NONE shall strictly support
 collision detection. However, the NavigationInfo types ANY and EXAMINE
 may temporarily disable collision detection during navigation, but
 shall not disable collision detection during the normal execution of
-the world. See " [6.29 NavigationInfo](nodesRef.html#NavigationInfo)"
+the world. See " [6.29 NavigationInfo](nodesRef.md#NavigationInfo)"
 for details on the various navigation types.
 
 NavigationInfo nodes may be used to specify certain parameters often
@@ -2449,7 +2450,7 @@ automatically step up onto it instead of colliding with it.
 
 ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.14 Lighting model
+## ![](../pix/cube.gif)4.14 Lighting model
 
 ### 4.14.1 Introduction
 
@@ -2470,8 +2471,8 @@ A Shape node is unlit if either of the following is true:
 
 
 Note the special cases of geometry nodes that do not support lighting
-(see " [6.24 IndexedLineSet](nodesRef.html#IndexedLineSet)"
-and " [6.36 PointSet](nodesRef.html#PointSet)"
+(see " [6.24 IndexedLineSet](nodesRef.md#IndexedLineSet)"
+and " [6.36 PointSet](nodesRef.md#PointSet)"
 for details).
 
 If the shape is unlit, the colour (Irgb)
