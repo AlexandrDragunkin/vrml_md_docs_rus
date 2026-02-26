@@ -1,4 +1,4 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -8,81 +8,42 @@
 
 #### 4 April 1997
 
-### ![](../../pix/vrmlbar.gif)
+### ![](../pix/vrmlbar.gif)
 
 ## 1.0 Scope
 
-The VRML specification defines a file format that integrates 3D
-graphics and multimedia. Conceptually, each VRML file is a 3D
-time-based space that contains graphic and aural objects that can be
-dynamically modified through a variety of mechanisms. VRML defines a
-primary set of objects and mechanisms that encourage composition,
-encapsulation, and extension.
+Спецификация VRML определяет формат файла, объединяющий трехмерную графику и мультимедиа. Концептуально каждый файл VRML представляет собой трехмерное пространство, основанное на времени, содержащее графические и звуковые объекты, которые можно динамически изменять с помощью различных механизмов. VRML определяет основной набор объектов и механизмов, которые поддерживают композицию, инкапсуляцию и расширение.
 
-The semantics of VRML describe an abstract functional behaviour of
-time-based, interactive 3D, multimedia worlds. VRML does not define
-physical devices or any other implementation-dependent concepts (e.g.,
-screen resolution and input devices). VRML is intended for a wide
-variety of devices and applications, and provides wide latitude in
-interpretation and implementation of the functionality. For example,
-VRML does not assume the existence of a mouse or 2D display device.
+Семантика VRML описывает абстрактное функциональное поведение интерактивных трехмерных мультимедийных миров, основанных на времени. VRML не определяет физические устройства или какие-либо другие концепции, зависящие от реализации (например, разрешение экрана и устройства ввода). VRML предназначен для широкого спектра устройств и приложений и обеспечивает широкие возможности интерпретации и реализации функций. Например, VRML не предполагает наличие мыши или устройства двухмерного отображения.
 
-Each VRML file:
+Каждый файл VRML:
 
-1. implicitly establishes a world coordinate space for all objects defined
-    in the file, as well as all objects recursively included by the file;
+1. неявно устанавливает глобальное координатное пространство (WCS) для всех объектов, определенных в файле, а также для всех объектов, рекурсивно включенных в файл;
 
-2. explicitly defines and composes a set of 3D and multimedia objects;
+2. явно определяет и составляет набор 3D и мультимедийных объектов;
 
-3. can specify hyperlinks to other files and applications;
+3. можно указывать гиперссылки на другие файлы и приложения;
 
-4. can define object behaviours.
+4. может определять поведение объекта.
 
+Важной характеристикой файлов VRML является способность объединять файлы посредством включения и связывать файлы вместе посредством гиперссылок. Например, рассмотрим файл _earth.wrl_, который определяет мир, содержащий сферу, представляющую землю. Этот файл также может содержать ссылки на множество других файлов VRML, представляющих города на Земле (например, файл _paris.wrl_). Включающий файл _earth.wrl_ определяет систему координат, в которой находятся все города. Каждый файл города определяет мировую систему координат, в которой находится город, но она становится локальной системой координат, когда содержится в файле земли.
 
-An important characteristic of VRML files is the ability to compose
-files together through inclusion and to relate files together through
-hyperlinking. For example, consider the file _earth.wrl_ which
-specifies a world that contains a sphere representing the earth. This
-file may also contain references to a variety of other VRML files
-representing cities on the earth (e.g., file _paris.wrl)_. The
-enclosing file, _earth.wrl_, defines the coordinate system that
-all the cities reside in. Each city file defines the world coordinate
-system that the city resides in but that becomes a local coordinate
-system when contained by the earth file.
+Иерархическое включение файлов позволяет создавать сколь угодно большие динамические миры. Таким образом, VRML гарантирует, что каждый файл полностью описан объектами и файлами, содержащимися в нем, и что эффекты каждого файла строго ограничены файлом и пространственными пределами объектов, определенных в файле. В противном случае накопление файлов в более крупные миры приведет к немасштабируемым результатам (поскольку каждый добавленный мир оказывает глобальное воздействие на все остальные миры). Например, источники света обладают потенциалом глобального эффекта, поскольку энергия света теоретически не рассеивается до нуля. А если файл земли содержит 100 файлов городов, каждый из которых содержит по 100 источников света, каждый из которых влияет на все объекты в мире, расчеты освещения быстро станут неразрешимыми. Поэтому, чтобы предотвратить глобальные эффекты, объекты источников света ограничиваются либо максимальным радиусом, либо местоположением в файле.
+Еще одной важной характеристикой VRML является то, что он предназначен для использования в распределенной среде, такой как Всемирная паутина. В язык встроены различные объекты и механизмы, поддерживающие несколько распределенных файлов, в том числе:
 
-Hierarchical file inclusion enables the creation of arbitrarily large,
-dynamic worlds. Therefore, VRML ensures that each file is completely
-described by the objects and files contained within it and that the
-effects of each file are strictly scoped by the file and the spatial
-limits of the objects defined in the file. Otherwise, the accumulation
-of files into larger worlds would produce unscalable results (as each
-added world produces global effects on all other worlds). For example,
-light sources have the potential of global effect since light energy
-theoretically does not dissipate to zero. And, if the earth file
-contains 100 city files each containing 100 lights each affecting all
-objects in the world, the lighting calculations would quickly become
-intractable. Therefore, in order to prevent global effects, light
-source objects are scoped by either a maximum radius or by location
-within the file.
+5. встраивание других файлов VRML
 
-Another essential characteristic of VRML is that it is intended to be
-used in a distributed environment such as the World Wide Web. There are
-various objects and mechanisms built into the language that support
-multiple distributed files, including:
+6. гиперссылки на другие файлы
 
-5. in-lining of other VRML files
+7. использование установленных стандартов Интернета для других форматов файлов
 
-6. hyperlinking to other files
-
-7. using established Internet standards for other file formats
-
-8. defining a compact syntax.
+8. определение компактного синтаксиса.
 
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/scope.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/scope.html
 
 ```
 

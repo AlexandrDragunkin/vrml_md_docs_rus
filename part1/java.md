@@ -1,4 +1,4 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -10,7 +10,7 @@
 
 #### 4 April 1997
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## B.1 Introduction
 
@@ -116,7 +116,7 @@ packages](#B.9.2)
 [B.9.2.3 vrml.node Package](#B.9.2.3) [B.10 \
 Example of exception class](#B.10)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)B.2  Language
 
@@ -127,7 +127,7 @@ Microsystems, Inc.](http://www.sun.com/) See [2.\[JAVA\]](references.html#[JAVA]
 for a full description of the Java programming language. This annex
 describes the Java bindings of VRML to the Script node.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)B.3  Supported protocol in the script node's  _url_ field
 
@@ -160,7 +160,7 @@ The MIME type for Java bytecode is defined as follows:
 
 ```
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)B.4  EventIn handling
 
@@ -365,7 +365,7 @@ The prototype of the initialize() method is **`public void**
 Its default behavior is no operation. See [Example2.java](#Example2.class)
 in B.5.1 for an example of a user-specified initialize() method.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) B.5  Accessing fields and events
 
@@ -568,7 +568,7 @@ scene, not by Java scripts. Exceptions are possible as specified in
 paragraph " [B.5.1 Accessing fields, eventIns and \
 eventOuts of the Script](#B.5.1)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)B.6  Exposed classes and methods for nodes and fields
 
@@ -1194,7 +1194,7 @@ java.\*. All parts of Java are required to work as "normal"
 for Java. So all methods specified in this annex are required to be
 thread-safe. The security model is browser specific.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)B.7  Exceptions
 
@@ -1269,7 +1269,7 @@ Java methods may throw the following exceptions:
 If exceptions are not caught by authors, a browser's behavior is
 unspecified (see " [B.10 Example of exception class](#B.10)").
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)B.8  Examples
 
@@ -1416,7 +1416,7 @@ Example6.java:
 
 ```
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)B.9 Class  definitions
 
@@ -2357,7 +2357,7 @@ public abstract class Script extends BaseNode
 
 ```
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)B.10  Example of exception class
 
@@ -2446,10 +2446,10 @@ public class InvalidVRMLSyntaxException extends Exception
 
 ```
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/java.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/java.html
 
 ```
 

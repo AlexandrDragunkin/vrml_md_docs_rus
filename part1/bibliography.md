@@ -1,4 +1,4 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -10,7 +10,7 @@
 
 #### 4 April 1997
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 This annex contains the informative references in the VRML
 specification. These are references to unofficial standards or
@@ -82,10 +82,10 @@ Foley, van Dam, Feiner and Hughes, Computer Graphics
 
 [`ftp://ftp.cwi.nl/pub/audio/RIFF-format`](ftp://ftp.cwi.nl/pub/audio/RIFF-format)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/bibliography.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/bibliography.html
 
 ```
 

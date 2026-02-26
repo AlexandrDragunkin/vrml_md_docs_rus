@@ -1,4 +1,4 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -8,7 +8,7 @@
 
 #### 4 April 1997
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) 7.1 Introduction
 
@@ -90,7 +90,7 @@ application functional content within a VRML file.
 The scope of this clause is limited to rules for the open interchange
 of VRML content.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) 7.2 Conformance
 
@@ -156,7 +156,7 @@ A VRML browser conforms to the base profile if:
     requirements for browsers" and as enumerated in Table 7-1.
 
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) 7.3 Minimum  support requirements
 
@@ -298,10 +298,10 @@ scaled by leftPanFactor and rightPanFactor to determine the final left
 and right output signals. The use of more sophisticated localization
 techniques is encouraged, but not required (see [E.\[SNDB\]](bibliography.html#[SNDB])).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/conformance.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/conformance.html
 
 ```
 

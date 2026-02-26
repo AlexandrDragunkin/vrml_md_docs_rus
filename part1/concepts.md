@@ -1,4 +1,4 @@
-![](../../pix/vrml97.gif)
+![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -8,447 +8,302 @@
 
 #### 4 April 1997
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.1 Introduction and table  of contents
 
-### 4.1.1 Overview
+### 4.1.1 Обзор
 
-This clause describes key concepts of the definition and use of the
-VRML standard. This includes how nodes are combined into scene graphs,
-how nodes receive and generate events, how to create node types using
-prototypes, how to add node types to VRML and export them for use by
-others, how to incorporate scripts into a VRML file, and various
-general topics on nodes.
+В этом разделе описываются ключевые понятия определения и использования стандарта VRML. Сюда входит то, как узлы(Nodes) объединяются в графы сцены, как узлы получают и генерируют события, как создавать типы узлов с использованием прототипов, как добавлять типы узлов в VRML и экспортировать их для использования другими, как включать сценарии в файл VRML и различные общие темы об узлах.
 
-### 4.1.2 Table of contents
+### 4.1.2 Оглавление
 
-See Table 4.1 for the table of contents for this clause.
+См. таблицу 4.1 для содержания этого раздела.
 
-#### Table 4.1: Table of contents, Concepts
+#### Таблица 4.1: Содержание, понятия
 
-[**4.1 Introduction and table of contents**](#4.1)
+[**4.1 Введение и содержание**](#4.1)
 
-[4.1.1 Overview](#4.1.1)
+[4.1.1 Обзор](#4.1.1)
 
-[4.1.2 Table of contents](#4.1.2)
+[4.1.2 Содержание](#4.1.2)
 
-[4.1.3 Conventions used in \
-this document](#4.1.3)
+[4.1.3 Условные обозначения, используемые в этом документе](#4.1.3)
 
-[**4.2 Overview**](#4.2)
+[**4.2 Обзор**](#4.2)
 
-[4.2.1 The structure of a VRML \
-file](#4.2.1)
+[4.2.1 Структура VRML файла](#4.2.1)
 
-[4.2.2 Header](#4.2.2)
+[4.2.2 Заголовок](#4.2.2)
 
-[4.2.3 Scene graph](#4.2.3)
+[4.2.3 График сцены](#4.2.3)
 
-[4.2.4 Prototypes](#4.2.4)
+[4.2.4 Прототипы](#4.2.4)
 
-[4.2.5 Event routing](#4.2.5)
+[4.2.5 Маршрутизация событий](#4.2.5)
 
-[4.2.6 Generating VRML files](#4.2.6)
+[4.2.6 Генерация файлов VRML](#4.2.6)
 
-[4.2.7 Presentation and \
-interaction](#4.2.7)
+[4.2.7 Представление и взаимодействие](#4.2.7)
 
-[4.2.8 Profiles](#4.2.8)
+[4.2.8 Профили](#4.2.8)
 
-[**4.3 UTF-8 file syntax**](#4.3)
+[**4.3 Синтаксис файла UTF-8**](#4.3)
+[4.3.1 Открытое кодирование текста](#4.3.1)
 
-[4.3.1 Clear text encoding](#4.3.1)
+[4.3.2 Заявления](#4.3.2)
 
-[4.3.2 Statements](#4.3.2)
+[4.3.3 Синтаксис оператора узла](#4.3.3)
 
-[4.3.3 Node statement syntax](#4.3.3)
+[4.3.4 Синтаксис оператора поля](#4.3.4)
 
-[4.3.4 Field statement syntax](#4.3.4)
+[4.3.5 Синтаксис оператора PROTO](#4.3.5)
 
-[4.3.5 PROTO statement syntax](#4.3.5)
+[4.3.6 Синтаксис оператора IS](#4.3.6)
 
-[4.3.6 IS statement syntax](#4.3.6)
+[4.3.7 Оператор EXTERNPROTO \
+синтаксис](#4.3.7)
 
-[4.3.7 EXTERNPROTO statement \
-syntax](#4.3.7)
+[4.3.8 Синтаксис оператора USE](#4.3.8)
 
-[4.3.8 USE statement syntax](#4.3.8)
+[4.3.9 Синтаксис оператора ROUTE](#4.3.9)
 
-[4.3.9 ROUTE statement syntax](#4.3.9)
+[**4.4 Структура графа сцены**](#4.4)
 
-[**4.4 Scene graph structure**](#4.4)
+[4.4.1 Корневые узлы](#4.4.1)
 
-[4.4.1 Root nodes](#4.4.1)
+[4.4.2 Иерархия графа сцены](#4.4.2)
 
-[4.4.2 Scene graph hierarchy](#4.4.2)
+[4.4.3 Потомок и предок\
+узлы](#4.4.3)
+[4.4.4 Иерархия преобразований](#4.4.4)
 
-[4.4.3 Descendant and ancestor \
-nodes](#4.4.3)
+[4.4.5 Стандартные единицы измерения и система координат](#4.4.5)
 
-[4.4.4 Transformation hierarchy](#4.4.4)
+[**4.5 VRML и Всемирная паутина**](#4.5)
 
-[4.4.5 Standard units and \
-coordinate system](#4.4.5)
+[4.5.1 Расширение файла и MIME\
+тип](#4.5.1)
 
-[**4.5 VRML and the World Wide Web**](#4.5)
+[4.5.2 URL-адреса](#4.5.2)
 
-[4.5.1 File extension and MIME \
-type](#4.5.1)
+[4.5.3 Относительные URL-адреса](#4.5.3)
 
-[4.5.2 URLs](#4.5.2)
+[4.5.4 Протокол данных](#4.5.4)
 
-[4.5.3 Relative URLs](#4.5.3)
+[4.5.5 Язык сценариев протоколы](#4.5.5)
 
-[4.5.4 Data protocol](#4.5.4)
+[4.5.6 URN](#4.5.6)
 
-[4.5.5 Scripting language \
-protocols](#4.5.5)
+[**4.6 Семантика узла**](#4.6)
 
-[4.5.6 URNs](#4.5.6)
+[4.6.1 Введение](#4.6.1)
 
-[**4.6 Node semantics**](#4.6)
+[4.6.2 Семантика DEF/USE](#4.6.2)
 
-[4.6.1 Introduction](#4.6.1)
+[4.6.3 Формы и геометрия](#4.6.3)
+[4.6.4 Ограничительные рамки](#4.6.4)
 
-[4.6.2 DEF/USE semantics](#4.6.2)
+[4.6.5 Группировка и дети узлы](#4.6.5)
 
-[4.6.3 Shapes and geometry](#4.6.3)
+[4.6.6 Источники света](#4.6.6)
 
-[4.6.4 Bounding boxes](#4.6.4)
+[4.6.7 Узлы датчиков](#4.6.7)
 
-[4.6.5 Grouping and children \
- nodes](#4.6.5)
+[4.6.8 Интерполяторы](#4.6.8)
 
-[4.6.6 Light sources](#4.6.6)
+[4.6.9 Узлы, зависящие от времени](#4.6.9)
 
-[4.6.7 Sensor nodes](#4.6.7)
+[4.6.10 Привязываемые дочерние элементы \
+ узлы](#4.6.10)
 
-[4.6.8 Interpolators](#4.6.8)
+[4.6.11 Карты текстур](#4.6.11)
 
-[4.6.9 Time-dependent nodes](#4.6.9)
+[**4.7 Семантика поля, eventIn и eventOut**](#4.7)
 
-[4.6.10 Bindable children \
- nodes](#4.6.10)
+[**4.8 Семантика прототипа**](#4.8)
 
-[4.6.11 Texture maps](#4.6.11)
+[4.8.1 ПРОТО-интерфейс семантика объявления](#4.8.1)
 
-[**4.7 Field, eventIn, and eventOut semantics**](#4.7)
+[4.8.2 Определение PROTO семантика](#4.8.2)
 
-[**4.8 Prototype semantics**](#4.8)
+[4.8.3 Правила области действия прототипа](#4.8.3)
 
-[4.8.1 PROTO interface \
-declaration semantics](#4.8.1)
+[**4.9 Семантика внешнего прототипа**](#4.9)
 
-[4.8.2 PROTO definition \
-semantics](#4.8.2)
+[4.9.1 Интерфейс EXTERNPROTO семантика](#4.9.1)
 
-[4.8.3 Prototype scoping rules](#4.8.3)
+[4.9.2 URL-адрес EXTERNPROTO семантика](#4.9.2)
 
-[**4.9 External prototype semantics**](#4.9)
+[4.9.3 Расширения браузера](#4.9.3)
 
-[4.9.1 EXTERNPROTO interface \
-semantics](#4.9.1)
+[**4.10 Обработка событий**](#4.10)
 
-[4.9.2 EXTERNPROTO URL \
-semantics](#4.9.2)
+[4.10.1 Введение](#4.10.1)
 
-[4.9.3 Browser extensions](#4.9.3)
+[4.10.2 Семантика маршрута](#4.10.2)
 
-[**4.10 Event processing**](#4.10)
+[4.10.3 Модель выполнения](#4.10.3)
 
-[4.10.1 Introduction](#4.10.1)
+[4.10.4 Циклы](#4.10.4)
 
-[4.10.2 Route semantics](#4.10.2)
+[4.10.5 Входное и выходное разветвление](#4.10.5)
 
-[4.10.3 Execution model](#4.10.3)
+[**4.11 Время**](#4.11)
 
-[4.10.4 Loops](#4.10.4)
+[4.11.1 Введение](#4.11.1)
 
-[4.10.5 Fan-in and fan-out](#4.10.5)
+[4.11.2 Начало времени](#4.11.2)
 
-[**4.11 Time**](#4.11)
+[4.11.3 Дискретный и постоянные изменения](#4.11.3)
 
-[4.11.1 Introduction](#4.11.1)
+[**4.12 Создание сценариев**](#4.12)
 
-[4.11.2 Time origin](#4.11.2)
+[4.12.1 Введение](#4.12.1)
 
-[4.11.3 Discrete and \
-continuous changes](#4.11.3)
+[4.12.2 Выполнение скрипта](#4.12.2)
 
-[**4.12 Scripting**](#4.12)
-
-[4.12.1 Introduction](#4.12.1)
-
-[4.12.2 Script execution](#4.12.2)
-
-[4.12.3 _Initialize()_\
-and s _hutdown()_](#4.12.3)
+[4.12.3 __Initialize()_ и  _hutdown()_](#4.12.3)
 
 [4.12.4 _eventsProcessed()_](#4.12.4)
 
-[4.12.5 Scripts with direct \
-outputs](#4.12.5)
+[4.12.5 Скрипты с прямым выходом](#4.12.5)
 
-[4.12.6 Asynchronous scripts](#4.12.6)
+[4.12.6 Асинхронные скрипты](#4.12.6)
 
-[4.12.7 Script languages](#4.12.7)
+[4.12.7 Языки сценариев](#4.12.7)
 
-[4.12.8 EventIn handling](#4.12.8)
+[4.12.8 Обработка EventIn](#4.12.8)
 
-[4.12.9 Accessing fields and \
-events](#4.12.9)
+[4.12.9 Доступ к полям и событиям](#4.12.9)
 
-[4.12.10 Browser script \
-interface](#4.12.10)
+[4.12.10 Скрипт браузера интерфейс](#4.12.10)
 
-[**4.13 Navigation**](#4.13)
+[**4.13 Навигация**](#4.13)
 
-[4.13.1 Introduction](#4.13.1)
+[4.13.1 Введение](#4.13.1)
 
-[4.13.2 Navigation paradigms](#4.13.2)
+[4.13.2 Парадигмы навигации](#4.13.2)
 
-[4.13.3 Viewing model](#4.13.3)
+[4.13.3 Просмотр модели](#4.13.3)
 
-[4.13.4 Collision detection \
-and terrain following](#4.13.4)
+[4.13.4 Обнаружение столкновений и рельеф местности](#4.13.4)
 
- [**4.14 Lighting model**](#4.14)
+ [**4.14 Модель освещения**](#4.14)
 
-[4.14.1 Introduction](#4.14.1)
+[4.14.1 Введение](#4.14.1)
 
-[4.14.2 Lighting 'off'](#4.14.2)
+[4.14.2 Освещение выключено](#4.14.2)
 
-[4.14.3 Lighting 'on'](#4.14.3)
+[4.14.3 Включение освещения](#4.14.3)
 
-[4.14.4 Lighting equations](#4.14.4)
+[4.14.4 Уравнения освещения](#4.14.4)
 
-[4.14.5 References](#4.14.5)
+[4.14.5 Ссылки](#4.14.5)
 
-### 4.1.3 Conventions used in this document
+### 4.1.3 Условные обозначения, используемые в этом документе
 
-The following conventions are used throughout this standard:
+В настоящем стандарте используются следующие соглашения:
 
-_Italics_ are used for event and field names, and are also used
-when new terms are introduced and equation variables are referenced.
+_Курсив_ используется для названий событий и полей, а также при введении новых терминов и ссылок на переменные уравнения.
 
-A `fixed-space` font is used for URL addresses and source
-code examples. VRML file examples appear in `bold,` **`fixed-space`** font.
+A `fixed-space` шрифт используется для URL-адресов и примеров исходного кода. VRML file examples appear in `bold,` **`fixed-space`**font.
 
-Node type names are appropriately capitalized (e.g., "The
-Billboard node is a grouping node..."). However, the concept of
-the node is often referred to in lower case in order to refer to the
-semantics of the node, not the node itself (e.g., "To rotate
-the billboard...", "A special case of billboarding
-is...").
+Имена типов узлов пишутся с заглавной буквы (например, «Node Billboard — это узел группировки...»). Однако понятие узла часто упоминается в нижнем регистре, чтобы указать на семантику узла, а не на сам узел (например, "Чтобы повернуть billboard...", "Особым случаем billboard является...").
 
-Throughout this document references are denoted using the
-"x.\[ABCD\]" notation, where "x" denotes which clause
-or annex the reference is described in and "\[ABCD\]" is an
-abbreviation of the reference title. For example, 2.\[ABCD\] refers to a
-reference described in Clause 2 and E.\[ABCD\] refers to a reference
-described in Annex E.
+В этом документе ссылки обозначаются с использованием обозначения «x.\[ABCD\]», где «x» обозначает, в каком пункте или приложении описана ссылка, а «\[ABCD\]» — это сокращение названия ссылки. Например, 2.\[ABCD\] относится к ссылке, описанной в разделе 2, а E.\[ABCD\] относится к ссылке, описанной в Приложении E.
 
-#### ![](../../pix/vrmlbar.gif)
+#### ![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.2 Overview
+## ![](../../pix/cube.gif)4.2 Обзор
 
-### 4.2.1 The structure of a VRML file
+### 4.2.1 Структура файла VRML
 
-A _VRML file_ consists of the following major functional
-components: the header, the scene graph, the prototypes, and event
-routing. The contents of this file are processed for presentation and
-interaction by a mechanism known as a browser.
+Файл _VRML_ состоит из следующих основных функциональных компонентов: header-заголовка, scene graph-графа сцены, prototypes-прототипов и event routing-маршрутизации событий. Содержимое этого файла обрабатывается для представления и взаимодействия с помощью механизма, известного как browser-браузер.
 
-### 4.2.2 Header
+### 4.2.2 Заголовок
 
-For easy identification of VRML files, every VRML file shall begin with:
+Для облегчения идентификации файлов VRML каждый файл VRML должен начинаться с:
 
 ```
 #VRML V2.0 <encoding type> [optional comment] <line terminator>
 
 ```
 
-The header is a single line of UTF-8 text identifying the file as a
-VRML file and identifying the encoding type of the file. It may also
-contain additional semantic information. There shall be exactly one
-space separating " **`#VRML`**" from " **`V2.0`**",
-" **`V2.0`**" from "< `encoding type` >",
-and "< `encoding type` >" from " `[optional
-comment]`".
+Заголовок представляет собой одну строку текста UTF-8, идентифицирующую файл как файл VRML и определяющую тип кодировки файла. Он также может содержать дополнительную смысловую информацию. Должен быть ровно один пробел, отделяющий " **`#VRML`**" от " **`V2.0`**", " **`V2.0`**" от "< `encoding type` >" и "< `encoding type` >" от " `[необязательный комментарий]`".
 
-The < `encoding type` \> is either " **`utf8`**"
-or any other authorized values defined in other parts of ISO/IEC 14772.
-The identifier " **`utf8`**" indicates a clear text encoding that
-allows for international characters to be displayed in VRML using the
-UTF-8 encoding defined in ISO 10646-1 (otherwise known as Unicode); see [2.\[UTF8\]](references.html#[UTF8]). The usage of UTF-8 is
-detailed under the specification of the [Text](nodesRef.html#Text)
-node. The header for a UTF-8 encoded VRML file is
+
+< `encoding type` \> — это либо «**`utf8`**», либо любые другие разрешенные значения, определенные в других частях ISO/IEC 14772. Идентификатор «**`utf8`**» указывает на кодировку открытого текста, которая позволяет отображать международные символы в VRML с использованием кодировки UTF-8, определенной в ISO 10646-1 (также известной как Unicode); см. [2.\[UTF8\]](references.html#[UTF8]). Использование UTF-8 подробно описано в спецификации узла [Text](nodesRef.html#Text). Заголовок файла VRML в кодировке UTF-8:
 
 ```
 #VRML V2.0 utf8 [optional comment] <line terminator>
 
 ```
 
-Any characters after the `<encoding type>` on the first
-line may be ignored by a browser. The header line ends at the
-occurrence of a `<line terminator>`. A `<line
-terminator>` is a linefeed character (0x0A) or a carriage
-return character (0x0D) .
+Любые символы после `<encoding type>` в первой строке могут быть проигнорированы браузером. Строка заголовка заканчивается при появлении `<line terminator>`. `<line terminator>` — это символ перевода строки (0x0A) или символ возврата каретки (0x0D).
 
 ### 4.2.3 Scene graph
 
-The scene graph contains nodes which describe objects and their
-properties. It contains hierarchically grouped geometry to provide an
-audio-visual representation of objects, as well as nodes that
-participate in the event generation and routing mechanism.
+Граф сцены содержит узлы, описывающие объекты и их свойства. Он содержит иерархически сгруппированную геометрию для обеспечения аудиовизуального представления объектов, а также узлы, которые участвуют в механизме генерации и маршрутизации событий.
 
 ### 4.2.4 Prototypes
 
-Prototypes allow the set of VRML node types to be extended by the user.
-Prototype definitions can be included in the file in which they are
-used or defined externally. Prototypes may be defined in terms of other
-VRML nodes or may be defined using a browser-specific extension
-mechanism. While VRML has a standard format for identifying such
-extensions, their implementation is browser-dependent.
+Прототипы позволяют пользователю расширять набор типов узлов VRML. Определения прототипов могут быть включены в файл, в котором они используются, или определены извне. Прототипы могут быть определены в терминах других узлов VRML или могут быть определены с использованием механизма расширения, специфичного для браузера. Хотя VRML имеет стандартный формат для идентификации таких расширений, их реализация зависит от браузера.
 
 ### 4.2.5 Event routing
 
-Some VRML nodes generate events in response to environmental changes or
-user interaction. Event routing gives authors a mechanism, separate
-from the scene graph hierarchy, through which these events can be
-propagated to effect changes in other nodes. Once generated, events are
-sent to their routed destinations in time order and processed by the
-receiving node. This processing can change the state of the node,
-generate additional events, or change the structure of the scene graph.
+Некоторые узлы VRML генерируют события в ответ на изменения окружающей среды или взаимодействие с пользователем. Маршрутизация событий дает авторам механизм, отдельный от иерархии графа сцены, посредством которого эти события могут распространяться для воздействия на изменения в других узлах. После генерации события отправляются в назначенные пункты назначения в порядке времени и обрабатываются принимающим узлом. Эта обработка может изменить состояние узла, сгенерировать дополнительные события или изменить структуру графа сцены.
 
-Script nodes allow arbitrary, author-defined event processing. An event
-received by a Script node causes the execution of a script function
-which has the ability to send events through the normal event-routing
-mechanism, or bypass this mechanism and send events directly to any
-node to which the Script node has a reference. Scripts can also
-dynamically add or delete routes and thereby change the event-routing
-topology.
+Узлы сценариев допускают произвольную обработку событий, определяемую автором. Событие, полученное узлом Script, вызывает выполнение функции сценария, которая имеет возможность отправлять события через обычный механизм маршрутизации событий или обходить этот механизм и отправлять события непосредственно на любой узел, на который узел Script имеет ссылку. Скрипты также могут динамически добавлять или удалять маршруты и тем самым изменять топологию маршрутизации событий.
 
-The ideal event model processes all events instantaneously in the order
-that they are generated. A timestamp, the time at which an event is
-delivered to a node, serves two purposes. First, it is a conceptual
-device used to describe the chronological flow of the event mechanism.
-It ensures that deterministic results can be achieved by real-world
-implementations which must address processing delays and asynchronous
-interaction with external devices. Second, timestamps are also made
-available to Script nodes to allow events to be processed based on the
-order of user actions or the elapsed time between events.
+Идеальная модель событий мгновенно обрабатывает все события в том порядке, в котором они генерируются. Временная метка, время доставки события на узел, служит двум целям. Во-первых, это концептуальный прием, используемый для описания хронологического потока механизма событий. Это гарантирует, что детерминированные результаты могут быть достигнуты с помощью реальных реализаций, которые должны учитывать задержки обработки и асинхронное взаимодействие с внешними устройствами. Во-вторых, метки времени также доступны узлам сценариев, что позволяет обрабатывать события на основе порядка действий пользователя или прошедшего времени между событиями.
 
-### 4.2.6 Generating VRML files
+### 4.2.6 Создание файлов VRML
 
-A _generator_ is a human or computerized creator of VRML files. It
-is the responsibility of the generator to ensure the correctness of the
-VRML file and the availability of supporting assets (e.g., images,
-audio clips, other VRML files) referred to therein.
+_generator_ является человеком или компьютерным создателем файлов VRML. Генератор несет ответственность за обеспечение правильности файла VRML и доступности вспомогательных ресурсов (например, изображений, аудиоклипов, других файлов VRML), упомянутых в нем.
 
-### 4.2.7 Presentation and interaction
+### 4.2.7 Презентация и взаимодействие
 
-The interpretation, execution, and presentation of VRML files will
-typically be undertaken by a mechanism known as a _browser_, which
-displays the shapes and sounds in the scene graph. This presentation is
-known as a _virtual world_ and is navigated in the browser by a
-human or mechanical entity, known as a _user_. The world is
-displayed as if experienced from a particular location; that position
-and orientation in the world is known as the _viewer_. The browser
-may define navigation paradigms (such as walking or flying) that
-enables the user to move the viewer through the virtual world.
+The interpretation, execution, and presentation of VRML files will typically be undertaken by a mechanism known as a _browser_, which displays the shapes and sounds in the scene graph. This presentation is known as a _virtual world_ and is navigated in the browser by a human or mechanical entity, known as a _user_. The world is displayed as if experienced from a particular location; that position and orientation in the world is known as the _viewer_. The browser may define navigation paradigms (such as walking or flying) that enables the user to move the viewer through the virtual world.
 
-In addition to navigation, the browser may provide a mechanism allowing
-the user to interact with the world through sensor nodes in the scene
-graph hierarchy. Sensors respond to user interaction with geometric
-objects in the world, the movement of the user through the world, or
-the passage of time.
 
-The visual presentation of geometric objects in a VRML world follows a
-conceptual model designed to resemble the physical characteristics of
-light. The VRML lighting model describes how appearance properties and
-lights in the world are combined to produce displayed colours.
+Интерпретация, выполнение и представление файлов VRML обычно выполняются с помощью механизма, известного как _browser_, который отображает формы и звуки в графе сцены. Эта презентация известна как _virtual world_, и навигация по ней в браузере осуществляется человеком или механическим объектом, известным как _user_. Мир отображается так, как будто он происходит из определенного места; эта позиция и ориентация в мире известны как _viewer_. Браузер может определять парадигмы навигации (например, walking-ходьба или flying-полет), которые позволяют user-пользователю перемещать viewer-зрителя по виртуальному миру.
 
-Figure 4.1 illustrates a conceptual model of a VRML browser. This
-diagram is for illustration purposes only and is not intended for
-literal implementation. The browser is portrayed as a presentation
-application that accepts user input in the forms of file selection
-(explicit and implicit) and user interface gestures (e.g., manipulation
-and navigation using an input device). The three main components of the
-browser are: Parser, Scene Graph, and Audio/Visual Presentation. The
-Parser component reads the VRML file and creates a Scene Graph. The
-Scene Graph component consists of a Transform Hierarchy (the nodes) and
-a ROUTE Graph (the connections between nodes). The Scene Graph also
-includes an Execution Engine that processes events, reads and edits the
-ROUTE Graph, and makes changes to the Transform Hierarchy (nodes). User
-input generally affects sensors and navigation, and thus is wired to
-the ROUTE Graph component (sensors) and the Audio/Visual Presentation
-component (navigation). The Audio/Visual Presentation component
-performs the graphics and audio rendering of the Transform Hierarchy
-that feeds back to the user.
+Помимо навигации, браузер может предоставлять механизм, позволяющий пользователю взаимодействовать с миром через узлы датчиков в иерархии графа сцены. Датчики реагируют на взаимодействие пользователя с геометрическими объектами в мире, движение пользователя по миру или течение времени.
+
+Визуальное представление геометрических объектов в мире VRML следует концептуальной модели, напоминающей физические характеристики света. Модель освещения VRML описывает, как свойства внешнего вида и источники света в мире объединяются для создания отображаемых цветов.
+
+Рисунок 4.1 иллюстрирует концептуальную модель браузера VRML. Эта диаграмма предназначена только для иллюстрации и не предназначена для буквальной реализации. Браузер изображается как презентационное приложение, которое принимает вводимые пользователем данные в форме выбора файла (явного и неявного) и жестов пользовательского интерфейса (например, манипулирования и навигации с помощью устройства ввода). Тремя основными компонентами браузера являются: Parser, Scene Graph, и Audio/Visual Presentation. Компонент Parser считывает файл VRML и создает граф сцены. Компонент «Граф сцены» состоит из Transform Hierarchy (узлы) и ROUTE Graph (связи между узлами). Граф сцены также включает в себя механизм выполнения, который обрабатывает события, считывает и редактирует ROUTE Graph, а также вносит изменения в иерархию преобразования (узлы). Пользовательский ввод обычно влияет на датчики и навигацию и, таким образом, подключается к компоненту ROUTE Graph (датчики) и компоненту аудио/визуальной презентации (навигация). Компонент аудио/визуальной презентации выполняет графическую и звуковую визуализацию иерархии преобразования, которая возвращается пользователю.
 
 ![](../Images/Concepts.1.gif)
 
-#### Figure 4.1: Conceptual model of a VRML browser
+#### Рисунок 4.1: Концептуальная модель браузера VRML
 
-### 4.2.8 Profiles
+### 4.2.8 Профили
 
-VRML conceptually supports the concepts of profiles. A profile is a
-named collection of functionality which must be supported in order for
-an implementation to be conformant to that profile. Only one profile is
-defined in this standard. The functionality and minimum support
-requirements described in ISO/IEC 14772-1 form the _Base_ profile
-for VRML. Additional profiles may be defined in other parts of ISO/IEC
-14772\. Such profiles shall incorporate the entirety of the Base profile.
+VRML концептуально поддерживает концепцию профилей. Профиль — это именованный набор функций, который должен поддерживаться, чтобы реализация соответствовала этому профилю. В этом стандарте определен только один профиль. Функциональность и минимальные требования к поддержке, описанные в ISO/IEC 14772-1, образуют базовый профиль для VRML. Дополнительные профили могут быть определены в других частях ISO/IEC 14772\. Такие профили должны включать в себя весь Базовый профиль.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
-## ![](../../pix/cube.gif)4.3 UTF-8 file syntax
+## ![](../../pix/cube.gif)4.3 Синтаксис файла UTF-8
 
 ### 4.3.1 Clear text encoding
 
-This section describes the syntax of UTF-8-encoded, human-readable VRML
-files. A more formal description of the syntax may be found in [Annex A, "Grammar Reference](grammar.html)." The
-semantics of VRML are presented in this part of ISO/IEC 14772 in terms
-of the UTF-8 encoding. Other encodings may be defined in other parts of
-ISO/IEC 14772. Such encodings shall describe how to map the UTF-8
-descriptions to and from the corresponding encoding elements.
+В этом разделе описывается синтаксис удобочитаемых файлов VRML в кодировке UTF-8. Более формальное описание синтаксиса можно найти в [Приложении A, «Справочник по грамматике](grammar.md)». Семантика VRML представлена ​​в этой части ISO/IEC 14772 в терминах кодировки UTF-8. Другие кодировки могут быть определены в других частях ISO/IEC 14772. Такие кодировки должны описывать, как отображать описания UTF-8 в соответствующие элементы кодирования и обратно.
 
-For the UTF-8 encoding, the # character begins a comment. Only the
-first comment (the file header) has semantic meaning. Otherwise, all
-characters following a # until the next line terminator are ignored.
-The only exception is within double-quoted SFString and MFString fields
-where the # character is defined to be part of the string.
+В кодировке UTF-8 символ # начинает комментарий. Только первый комментарий (заголовок файла) имеет смысловое значение. В противном случае все символы после # до следующего признака конца строки игнорируются. Единственным исключением являются поля SFString и MFString, заключенные в двойные кавычки, где символ # определен как часть строки.
 
-Commas, spaces, tabs, linefeeds, and carriage-returns are separator
-characters wherever they appear outside of string fields. One or more
-separator characters separate the syntactical entities in VRML files,
-where necessary. The separator characters collectively are termed _whitespace_.
+Запятые, пробелы, табуляции, переводы строк и возврат каретки являются символами-разделителями везде, где они появляются за пределами строковых полей. При необходимости один или несколько символов-разделителей разделяют синтаксические объекты в файлах VRML. Символы-разделители вместе называются _пробелами_.
 
-Comments and separators need not be preserved. In particular, a VRML
-document server may strip comments and extra separators from a VRML
-file before transmitting it. [WorldInfo](nodesRef.html#WorldInfo)
-nodes should be used for persistent information such as copyrights or
-author information.
+Комментарии и разделители сохранять не обязательно. В частности, сервер документов VRML может удалять комментарии и дополнительные разделители из файла VRML перед его передачей. Узлы [WorldInfo](nodesRef.md#WorldInfo) следует использовать для постоянной информации, такой как авторские права или информация об авторе.
 
-Note: In the following paragraph, the form "0xhh" expresses a
-byte as a hexadecimal number representing the bit configuration for
-that byte.
+:::{tip}
+Примечание. В следующем абзаце форма «0xhh» обозначает байт как шестнадцатеричное число, представляющее битовую конфигурацию этого байта.
 
-Field, event, PROTO, EXTERNPROTO, and node names shall not contain
-control characters (0x0-0x1f, 0x7f), space (0x20), double or single
-quotes (0x22: ", 0x27: '), sharp (0x23: #), comma
-(0x2c: ,), period (0x2e: .), square brackets (0x5b, 0x5d:
-\[\]), backslash (0x5c: \\) or curly braces (0x7b, 0x7d: {}).
-Further, their first character must not be a digit (0x30-0x39), plus
-(0x2b: +), or minus (0x2d: -) character. Otherwise, names may
-contain any ISO 10646 character encoded using UTF-8. VRML is
-case-sensitive; "Sphere" is different from "sphere"
-and "BEGIN" is different from "begin."
+Имена полей, событий, PROTO, EXTERNPROTO и узлов не должны содержать управляющие символы (0x0–0x1f, 0x7f), пробел (0x20), двойные или одинарные кавычки (0x22: ", 0x27: '), диез (0x23: #), запятую (0x2c: ,), точку (0x2e: .), квадратные скобки (0x5b, 0x5d: \[\]), обратная косая черта (0x5c: \\) или фигурные скобки (0x7b, 0x7d: {}). Кроме того, их первый символ не должен быть цифрой (0x30–0x39), символом плюс (0x2b: +) или минусом (0x2d: -). В противном случае имена могут содержать любой символ ISO 10646, закодированный с использованием VRML, с учетом регистра;"Sphere" отличаются от "sphere" и "BEGIN" отличаются от "begin".
 
-The following reserved keywords shall not be used for field, event,
-PROTO, EXTERNPROTO, or node names:
+Следующие зарезервированные ключевые слова не должны использоваться для имен полей, событий, PROTO, EXTERNPROTO или имён узлов:
+
 
 - DEF
 
@@ -478,6 +333,7 @@ PROTO, EXTERNPROTO, or node names:
 
 - field
 
+:::
 
 ### 4.3.2 Statements
 
@@ -677,7 +533,7 @@ not required before or after the period characters:
 See " [A.2 General](grammar.html#General)" for
 details on ROUTE statement grammar rules.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.4 Scene graph structure
 
@@ -755,7 +611,7 @@ Transform](nodesRef.html#Transform)" and " [6.52 \
 Billboard](nodesRef.html#Billboard)") or viewing transformation (see " [6.53 Viewpoint](nodesRef.html#Viewpoint)") can be used
 to alter this default projection.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.5 VRML and the World Wide  Web
 
@@ -886,7 +742,7 @@ included in the _url_ field of another node. For example:
 
 specifies a URL file as the first choice and a URN as the second choice.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.6 Node semantics
 
@@ -1734,7 +1590,7 @@ Texture nodes that recommend support for GIF files (see [E.\[GIF\]](bibliography
 shall follow the applicable semantics described above for the PNG
 format.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.7 Field, eventIn, and  eventOut semantics
 
@@ -1779,7 +1635,7 @@ the built-in nodes are as follows:
     for better readability.
 
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.8 Prototype semantics
 
@@ -1924,7 +1780,7 @@ of the prototype definition. A prototype may not be instantiated inside
 its own implementation _(_ i.e., recursive prototypes are
 illegal).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.9 External prototype  semantics
 
@@ -2042,7 +1898,7 @@ specifies the actual definitions of the Torus node:
 
 ```
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.10 Event processing
 
@@ -2128,7 +1984,7 @@ _Fan-out_ occurs when one eventOut routes to two or more eventIns.
 This results in sending any event generated by the eventOut to all of
 the eventIns.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.11 Time
 
@@ -2173,7 +2029,7 @@ affecting a visible (or otherwise perceptible) portion of the world
 will generate events once per _frame_, where a frame is a single
 rendering of the world or one time-step in a simulation.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.12 Scripting
 
@@ -2506,7 +2362,7 @@ These methods respectively add and delete a route between the given
 event names for the given nodes. Scripts that may call this method must
 have _directOutput_ set to TRUE.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.13 Navigation
 
@@ -2591,7 +2447,7 @@ avatar a certain distance above the ground. They may additionally be
 used to determine how short an object must be for the viewer to
 automatically step up onto it instead of colliding with it.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)4.14 Lighting model
 
@@ -2856,10 +2712,10 @@ and:
 The VRML lighting equations are based on the simple illumination
 equations given in [E.\[FOLE\]](bibliography.html#[FOLE]) and [E.\[OPEN\]](bibliography.html#[OPEN]).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/concepts.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/concepts.html
 
 ```
 

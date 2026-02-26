@@ -1,4 +1,4 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -10,7 +10,7 @@
 
 #### 4 April 1997
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) A.1 Table of contents and introduction
 
@@ -77,7 +77,7 @@ specified in this clause:
    symbol ("\|").
 
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) A.2 General
 
@@ -136,7 +136,7 @@ _vrmlScene_::=
 
  ;
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) A.3 Nodes
 
@@ -188,7 +188,7 @@ _node_::=
  Any number of ISO-10646 characters except: 0x0-0x20, 0x22, 0x23, 0x27,
  0x2c, 0x2e, 0x5b, 0x5c, 0x5d, 0x7b, 0x7d, 0x7f ;
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) A.4 Fields
 
@@ -325,10 +325,10 @@ _fieldType_::=
  _sfvec3fValue_ \|
  _sfvec3fValue_ _sfvec3fValues_ ;
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/grammar.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/grammar.html
 
 ```
 

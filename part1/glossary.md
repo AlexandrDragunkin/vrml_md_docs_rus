@@ -1,4 +1,4 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -8,7 +8,7 @@
 
 #### 4 April 1997
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ### 3.1 activate
 
@@ -19,7 +19,7 @@ interactions, the passage of [_time_](#Time), or other
 events. Only active sensors affect the [_user's_](#User)
 experience. A Script [_node_](#Node) is activated when
 it receives an event. A pointing device such as a [_mouse_](#Mouse)
-is activated when one of its buttons is depressed by a user. See " [4.12.2 Script Execution](concepts.html#4.12.2)"
+is activated when one of its buttons is depressed by a user. See " [4.12.2 Script Execution](concepts.md#4.12.2)"
 for details.
 
 ### 3.2 ancestor
@@ -41,7 +41,7 @@ See [_generator_](#Generator).
 The abstract representation of the [_user_](#User) in a
 VRML [_world_](#World). The physical dimensions of the
 avatar are used for collision detection and terrain following. See
-" [6.29 NavigationInfo](nodesRef.html#NavigationInfo)"
+" [6.29 NavigationInfo](nodesRef.md#NavigationInfo)"
 for details.
 
 ### 3.6 bearing
@@ -56,7 +56,7 @@ of material and texture properties (e.g., transparency).
 
 A [_node_](#Node) which may have many [_instances_](#Instance) in a [_scene_\
 _graph_](#SceneGraph), but only one instance may be active at any instant of [_time_](#Time). A node of type Background, Fog,
-NavigationInfo, or Viewpoint. See " [4.6.10 Bindable children nodes](concepts.html#4.6.10)"
+NavigationInfo, or Viewpoint. See " [4.6.10 Bindable children nodes](concepts.md#4.6.10)"
 for details.
 
 ### 3.8 browser
@@ -70,7 +70,7 @@ files by means of a user interface.
 
 [_Nodes_](#Node) defined using the prototyping
 mechanism which are understood only by certain [_browsers_](#Browser).
-See " [4.9.3 Browser Extensions](concepts.html#4.9.3)"
+See " [4.9.3 Browser Extensions](concepts.md#4.9.3)"
 for details.
 
 ### 3.10 built-in node
@@ -82,15 +82,15 @@ this standard.
 
 A function defined in a [_scripting_\
 _language_](#ScriptingLanguage) to which [_events_](#Event) are
-passed. See " [4.12.8 EventIn handling](concepts.html#4.12.8)"
+passed. See " [4.12.8 EventIn handling](concepts.md#4.12.8)"
 for details.
 
 ### 3.12 candidate
 
 One of potentially several choices. The [_user_](#User)
 or the [_browser_](#Browser) will select none or one
-of the choices when all candidates are identified. See " [4.6.10 Bindable children nodes](concepts.html#4.6.10)"
-and " [6.2 Anchor](nodesRef.html#Anchor)" for
+of the choices when all candidates are identified. See " [4.6.10 Bindable children nodes](concepts.md#4.6.10)"
+and " [6.2 Anchor](nodesRef.md#Anchor)" for
 details.
 
 ### 3.13 child
@@ -101,7 +101,7 @@ A direct [_descendent_](#Descendent).
 
 [_Node_](#Node) which may be parented by a [_grouping node_](#GroupingNode) and is affected by the
 transformations of all [_ancestors_](#Ancestor). See
-" [4.6.5 Grouping and children nodes](concepts.html#4.6.5)"
+" [4.6.5 Grouping and children nodes](concepts.md#4.6.5)"
 for list of allowable children nodes.
 
 ### 3.15 client system
@@ -113,7 +113,7 @@ functions. Many client systems also function as stand-alone computers.
 ### 3.16 collision proxy
 
 A [_node_](#Node) used as a substitute for all of a
-Collision node's children during collision detection. See " [6.8 Collision](nodesRef.html#Collision)" for
+Collision node's children during collision detection. See " [6.8 Collision](nodesRef.md#Collision)" for
 details.
 
 ### 3.17 colour model
@@ -145,8 +145,8 @@ A [_pointing device sensor_](#PointingDeviceSensor)
 which causes [_events_](#Event) to be generated in
 response to sensor-dependent pointer motions. For example, the
 SphereSensor generates spherical rotation events. A [_node_](#Node)
-of type CylinderSensor, PlaneSensor, or SphereSensor. See " [4.6.7 Sensor nodes](concepts.html#4.6.7)" and
-" [4.6.7.4 Drag sensors](concepts.html#4.6.7.4)"
+of type CylinderSensor, PlaneSensor, or SphereSensor. See " [4.6.7 Sensor nodes](concepts.md#4.6.7)" and
+" [4.6.7.4 Drag sensors](concepts.md#4.6.7.4)"
 for details.
 
 ### 3.22 element
@@ -160,7 +160,7 @@ _file_](#VRMLFile) or a single value of a multi-valued [_field_](#Field).
 Environmental sensor [_nodes_](#Node) generate [_events_](#Event) based on the location of the viewpoint
 in the world or in relation to [_objects_](#Object) in
 the world. The TimeSensor node generates events at regular intervals in [_time_](#Time). A node of type Collision,
-ProximitySensor, TimeSensor, or VisibilitySensor. See " [4.6.7.2 Environmental sensors](concepts.html#4.6.7.2)"
+ProximitySensor, TimeSensor, or VisibilitySensor. See " [4.6.7.2 Environmental sensors](concepts.md#4.6.7.2)"
 for details.
 
 ### 3.24 event
@@ -176,7 +176,7 @@ A sequence of [_events_](#Event) initiated by a script
 or sensor event and propagated from [_node_](#Node) to
 node along one or more [_routes_](#Route). All events
 in an event cascade are considered to have occurred simultaneously. See
-" [4.10.3 Execution model](concepts.html#4.10.3)"
+" [4.10.3 Execution model](concepts.md#4.10.3)"
 for details.
 
 ### 3.26 eventIn
@@ -234,7 +234,7 @@ A generator may be used by a person or operate automatically.
 
 A [_node_](#Node) defining the properties of a specific
 geometry node. A node of type Color, Coordinate, Normal, or
-TextureCoordinate. See " [4.6.3.2 Geometric property nodes](concepts.html#4.6.3.2)"
+TextureCoordinate. See " [4.6.3.2 Geometric property nodes](concepts.md#4.6.3.2)"
 for details.
 
 ### 3.37 geometric sensor node
@@ -243,7 +243,7 @@ A [_node_](#Node) which generates [_events_](#Event)
 based on [_user_](#User) actions, such as a [_mouse_](#Mouse) click or navigating close to a
 particular [_object_](#Object). A node of type
 CylinderSensor, PlaneSensor, ProximitySensor, SphereSensor,
-TouchSensor, VisibilitySensor, or Collision. See " [4.6.7.1 Sensor nodes introduction](concepts.html#4.6.7.1)"
+TouchSensor, VisibilitySensor, or Collision. See " [4.6.7.1 Sensor nodes introduction](concepts.md#4.6.7.1)"
 for details.
 
 ### 3.38 geometry node
@@ -251,7 +251,7 @@ for details.
 A [_node_](#Node) containing mathematical descriptions
 of three-dimensional (3D) points, lines, surfaces, text strings and
 solids. A node of type Box, Cone, Cylinder, ElevationGrid, Extrusion,
-IndexedFaceSet, IndexedLineSet, PointSet, Sphere, or Text. See " [4.6.3 Shapes and geometry](concepts.html#46.3)"
+IndexedFaceSet, IndexedLineSet, PointSet, Sphere, or Text. See " [4.6.3 Shapes and geometry](concepts.md#46.3)"
 for details.
 
 ### 3.39 grab
@@ -267,7 +267,7 @@ The force which causes masses to be attracted to one another. In the
 context of this standard, gravity may be simulated by constraining the
 motion of the viewpoint to the lowest possible path (smallest y
 coordinate in the local coordinate system of the viewpoint) consistent
-with following the surface of encountered objects. See " [6.29 NavigationInfo](nodesRef.html#NavigationInfo)"
+with following the surface of encountered objects. See " [6.29 NavigationInfo](nodesRef.md#NavigationInfo)"
 for details.
 
 ### 3.41 grouping node
@@ -275,21 +275,21 @@ for details.
 A [_node_](#Node) which collects [_children nodes_](#ChildrenNode) and other grouping
 nodes together and causes the group to exhibit specific behaviour which
 is dependent on the [_Node type_](#NodeType). A node of
-type Anchor, Billboard, Collision, Group, or Transform. See " [4.6.5 Grouping and children nodes](concepts.html#4.6.5)"
+type Anchor, Billboard, Collision, Group, or Transform. See " [4.6.5 Grouping and children nodes](concepts.md#4.6.5)"
 for details.
 
 ### 3.42 HSV
 
-Hue, Saturation, and Value colour model. See [E.\[FOLE\]](bibliography.html#[FOLE]).
+Hue, Saturation, and Value colour model. See [E.\[FOLE\]](bibliography.md#[FOLE]).
 
 ### 3.43 HTML
 
-HyperText Markup Language. See [2.\[HTML\]](references.html#[HTML]).
+HyperText Markup Language. See [2.\[HTML\]](references.md#[HTML]).
 
 ### 3.44 hyperlink
 
 A reference to a [_URL_](#URL) which is associated with
-an Anchor node. See " [6.2 Anchor](nodesRef.html#Anchor)"
+an Anchor node. See " [6.2 Anchor](nodesRef.md#Anchor)"
 for details.
 
 ### 3.45 ideal VRML implementation
@@ -309,7 +309,7 @@ Internet Engineering Task Force. The organization which develops [_Internet_](#I
 ### 3.48 image
 
 A two-dimensional (2D) rectangular array of pixel values. Pixel values
-may have from one to four components. See " [5.5 SFImage](fieldsRef.html#SFImage)" for details.
+may have from one to four components. See " [5.5 SFImage](fieldsRef.md#SFImage)" for details.
 
 ### 3.49 in-lining
 
@@ -335,7 +335,7 @@ node may be used.
 A [_node_](#Node) which defines a piece-wise linear
 interpolation of a particular type of value at specified [_times_](#Time). A node of type ColorInterpolator,
 CoordinateInterpolator, NormalInterpolator, OrientationInterpolator,
-PositionInterpolator, or ScalarInterpolator. See " [4.6.8 Interpolators](concepts.html#4.6.8)" for
+PositionInterpolator, or ScalarInterpolator. See " [4.6.8 Interpolators](concepts.md#4.6.8)" for
 details.
 
 ### 3.53 intranet
@@ -349,7 +349,7 @@ International Organization for Standardization. See [`http://www.iso.ch/infoe/in
 
 ### 3.55 JPEG
 
-Joint Photographic Experts Group. See [2.\[JPEG\]](references.html#[JPEG]).
+Joint Photographic Experts Group. See [2.\[JPEG\]](references.md#[JPEG]).
 
 ### 3.56 JTC 1
 
@@ -359,7 +359,7 @@ Joint Technical Committee 1. See [`http://www.iso.ch/meme/JTC1.html`](http://www
 
 The amount of detail or complexity which is displayed at any particular [_time_](#Time) for any particular [_object_](#Object).
 The level of detail for an object is controllable as a function of the
-distance of the object from the viewer. See " [6.26 LOD](nodesRef.html#LOD)" for details.
+distance of the object from the viewer. See " [6.26 LOD](nodesRef.md#LOD)" for details.
 
 ### 3.58 LOD
 
@@ -376,24 +376,24 @@ characters are present either may be first in the sequence.
 ### 3.60 loop
 
 A sequence of [_events_](#Event) that results in an
-event being logically reponsible for generating itself. See " [4.10.4 Loops](concepts.html#4.10.4)" for details.
+event being logically reponsible for generating itself. See " [4.10.4 Loops](concepts.md#4.10.4)" for details.
 
 ### 3.61 message
 
 A string sent between [_nodes_](#Node) upon the
-occurrence of an [_event_](#Event). See " [4.10 Event processing](concepts.html#4.10)"
+occurrence of an [_event_](#Event). See " [4.10 Event processing](concepts.md#4.10)"
 for details.
 
 ### 3.62 MIDI
 
 Musical Instrument Digital Interface. A standard for digital music
-representation. See [2.\[MIDI\]](references.html#[MIDI]).
+representation. See [2.\[MIDI\]](references.md#[MIDI]).
 
 ### 3.63 MIME
 
 Multipurpose Internet Mail Extension. Used to specify filetyping rules
-for [_Internet_](#Internet) applications, including [_browsers_](#Browser). See " [4.5.1 File extension and MIME types](concepts.html#4.5.1)"
-for details. See also [2.\[MIME\]](references.html#[MIME]).
+for [_Internet_](#Internet) applications, including [_browsers_](#Browser). See " [4.5.1 File extension and MIME types](concepts.md#4.5.1)"
+for details. See also [2.\[MIME\]](references.md#[MIME]).
 
 ### 3.64 mouse
 
@@ -430,8 +430,8 @@ Nodes contain [_fields_](#Field) and [_events_](#Event). [_Messages_](#Message) 
 
 A required parameter for each [_node_](#Node) that
 describes, in general, its particular semantics. For example, Box,
-Group, Sound, and SpotLight are node types. See " [4.6 Node semantics](concepts.html#4.6)" and
-" [6. Node Reference](nodesRef.html)" for
+Group, Sound, and SpotLight are node types. See " [4.6 Node semantics](concepts.md#4.6)" and
+" [6. Node Reference](nodesRef.md)" for
 details.
 
 ### 3.71 object
@@ -448,12 +448,12 @@ is defined.
 ### 3.73 panorama
 
 A background texture that is placed behind all geometry in the scene
-and in front of the ground and sky. See " [6.5 Background](nodesRef.html#Background)" for details.
+and in front of the ground and sky. See " [6.5 Background](nodesRef.md#Background)" for details.
 
 ### 3.74 PNG
 
 Portable Network Graphics. A [_file format_](#FileFormat)
-for 2D images. See [2.\[PNG\]](references.html#[PNG]).
+for 2D images. See [2.\[PNG\]](references.md#[PNG]).
 
 ### 3.75 pointer
 
@@ -468,7 +468,7 @@ A hardware device connected to the [_user's_](#User)
 computer by which the user directly controls the location and
 direction of the [_pointer_](#Pointer). Pointing
 devices may be either 2D or 3D and may have one or more control
-buttons. See " [4.6.7.5 Activating and manipulating sensors](concepts.html#4.6.7.5)"
+buttons. See " [4.6.7.5 Activating and manipulating sensors](concepts.md#4.6.7.5)"
 for details.
 
 ### 3.77 pointing device sensor
@@ -476,7 +476,7 @@ for details.
 Pointing device sensor [_nodes_](#Node) generate [_events_](#Event) based on [_user_](#User)
 actions, such as [_pointing device_](#PointingDevice)
 motions or button activations. A node of type Anchor, CylinderSensor,
-PlaneSensor, SphereSensor, or TouchSensor. See " [4.6.7.3 Pointing device sensors](concepts.html#4.6.7.3)"
+PlaneSensor, SphereSensor, or TouchSensor. See " [4.6.7.3 Pointing device sensors](concepts.md#4.6.7.3)"
 for details.
 
 ### 3.78 polyline
@@ -495,7 +495,7 @@ define an implementable subset of a standard.
 
 The definition of a new [_node type_](#NodeType) in
 terms of the [_nodes_](#Node) defined in this standard.
-See " [4.8 Prototype semantics](concepts.html#4.8)"
+See " [4.8 Prototype semantics](concepts.md#4.8)"
 for details.
 
 ### 3.81 prototyping
@@ -512,26 +512,26 @@ this standard.
 
 Red, Green, Blue colour model. This is the colour model used within
 VRML for the specification of colours. Each colour is represented as a
-combination of the three primary colours red, green, and blue. See [E.\[FOLE\]](bibliography.html#[FOLE]).
+combination of the three primary colours red, green, and blue. See [E.\[FOLE\]](bibliography.md#[FOLE]).
 
 ### 3.84 route
 
 The connection between a [_node_](#Node) generating an [_event_](#Event) and a node receiving the event. See
 " [4.3.9 Route statement \
-syntax](concepts.html#4.3.9)" and " [4.10.2 Route \
-semantics](concepts.html#4.10.2)" for details.
+syntax](concepts.md#4.3.9)" and " [4.10.2 Route \
+semantics](concepts.md#4.10.2)" for details.
 
 ### 3.85 RURL
 
-Relative Uniform Resource Locator. See [2.\[RURL\]](references.html#[RURL]).
+Relative Uniform Resource Locator. See [2.\[RURL\]](references.md#[RURL]).
 
 ### 3.86 scene graph
 
 An ordered collection of grouping [_nodes_](#Node) and
 other nodes. [_Grouping nodes_](#GroupingNode), (such
 as LOD, Switch, and Transform nodes) may have [_children_\
-_nodes_](#ChildrenNode). See " [4.2.3 Scene graph](concepts.html#4.2.3)"
-and " [4.4.2 Scene graph structure](concepts.html#4.4.2)"
+_nodes_](#ChildrenNode). See " [4.2.3 Scene graph](concepts.md#4.2.3)"
+and " [4.4.2 Scene graph structure](concepts.md#4.4.2)"
 for details.
 
 ### 3.87 scripting
@@ -552,7 +552,7 @@ A [_node_](#Node) which enables the [_user_](#User)
 to interact with the [_world_](#World) in the scene
 graph hierarchy. Sensor nodes respond to user interaction with
 geometric [_objects_](#Object) in the world, the
-movement of the user through the world, or the passage of [_time_](#Time). See " [4.6.7 Sensor nodes](concepts.html#4.6.7)"
+movement of the user through the world, or the passage of [_time_](#Time). See " [4.6.7 Sensor nodes](concepts.md#4.6.7)"
 for details.
 
 ### 3.90 separator character
@@ -560,7 +560,7 @@ for details.
 A [_UTF-8_](UTF-8) character used to separate
 syntactical entities in a [_VRML file_](#VRMLFile).
 Specifically, commas, spaces, tabs, linefeeds, and carriage-returns are
-separator characters wherever they appear outside of string [_fields_](#Field). See " [4.3.1 Clear text encoding](concepts.html#4.3.1)"
+separator characters wherever they appear outside of string [_fields_](#Field). See " [4.3.1 Clear text encoding](concepts.md#4.3.1)"
 for details.
 
 ### 3.91 simulation tick
@@ -569,7 +569,7 @@ The smallest time unit capable of being identified in a digital
 simulation of analog time. [_Time_](#Time) in the
 context of VRML is conceptually analog but is realized by an
 implementation as a digital simulation of abstract analog time. See
-" [4.11 Time](concepts.html#4.11)" for details.
+" [4.11 Time](concepts.md#4.11)" for details.
 
 ### 3.92 special group node
 
@@ -578,7 +578,7 @@ special behaviour. Examples of such special behaviour include selecting
 one of many [_children nodes_](#ChildrenNode) to be
 rendered based on a dynamically changing parameter value and
 dynamically loading children nodes from an external file. A node of
-type Inline, LOD (level of detail), or Switch. See " [4.6.5 Grouping and children nodes](concepts.html#4.6.5)"
+type Inline, LOD (level of detail), or Switch. See " [4.6.5 Grouping and children nodes](concepts.md#4.6.5)"
 for details.
 
 ### 3.93 texture
@@ -592,8 +592,8 @@ The set of 2D coordinates used by some vertex-based [_geometry nodes_](#Geometry
 IndexedFaceSet and ElevationGrid) and specified in the
 TextureCoordinate node to map textures to the vertices of those nodes.
 Texture coordinates range from 0 to 1 across each axis of the texture
-image. See " [4.6.11 Texture maps](concepts.html#4.6.11)"
-and " [6.48 TextureCoordinate](nodesRef.html#TextureCoordinate)"
+image. See " [4.6.11 Texture maps](concepts.md#4.6.11)"
+and " [6.48 TextureCoordinate](nodesRef.md#TextureCoordinate)"
 for details.
 
 ### 3.95 texture map
@@ -604,12 +604,12 @@ necessary for mapping the texture to geometry.
 ### 3.96 time
 
 A monotonically increasing value generated by a time sensor nodes. Time
-(0.0) starts at 00:00:00 GMT January 1, 1970. See " [4.11 Time](concepts.html#4.11)" for details.
+(0.0) starts at 00:00:00 GMT January 1, 1970. See " [4.11 Time](concepts.md#4.11)" for details.
 
 ### 3.97 timestamp
 
 The part of a [_message_](#Message) which describes the [_time_](#Time) the [_event_](#Event)
-occurred which caused the message to be sent. See " [4.11 Time](concepts.html#4.11)" for details.
+occurred which caused the message to be sent. See " [4.11 Time](concepts.md#4.11)" for details.
 
 ### 3.98 traverse
 
@@ -617,20 +617,20 @@ To process the [_nodes_](#Node) in a [_scene graph_](#SceneGraph) in the correct
 
 ### 3.99 UCS
 
-Universal multiple-octet coded Character Set. See [2.\[UTF8\]](references.html#[UTF8]).
+Universal multiple-octet coded Character Set. See [2.\[UTF8\]](references.md#[UTF8]).
 
 ### 3.100 URL
 
-Uniform Resource Locator. See [2.\[URL\]](references.html#[URL]).
+Uniform Resource Locator. See [2.\[URL\]](references.md#[URL]).
 
 ### 3.101 URN
 
-Universal Resource Name. See [2.\[URN\]](references.html#[URN]).
+Universal Resource Name. See [2.\[URN\]](references.md#[URN]).
 
 ### 3.102 UTF-8
 
 The character set used to encode [_VRML files_](#VRMLFile).
-The 8-bit UCS Transformation Format. See [2.\[UTF8\]](references.html#[UTF8]).
+The 8-bit UCS Transformation Format. See [2.\[UTF8\]](references.md#[UTF8]).
 
 ### 3.103 user
 
@@ -668,7 +668,7 @@ A 3D [_pointing devices_](#PointingDevice).
 
 ### 3.110 white space
 
-One or more consecutive occurrences of a separator character. See " [4.3.1 Clear text encoding](concepts.html#4.3.1)"
+One or more consecutive occurrences of a separator character. See " [4.3.1 Clear text encoding](concepts.md#4.3.1)"
 for details.
 
 ### 3.111 world
@@ -703,10 +703,10 @@ The plane perpendicular to the X-axis which passes through the point X
 The plane perpendicular to the Y-axis which passes through the point Y
 = 0.0.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/glossary.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/glossary.html
 
 ```
 

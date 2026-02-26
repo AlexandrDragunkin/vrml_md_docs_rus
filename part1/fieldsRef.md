@@ -1,4 +1,4 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -8,7 +8,7 @@
 
 #### 4 April 1997
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) 5.1 Introduction
 
@@ -73,7 +73,7 @@ containing the single integer value 1:
 
 ```
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.2  SFBool
 
@@ -89,7 +89,7 @@ is an SFBool field, _fooBool_, defining a FALSE value.
 
 The initial value of an SFBool eventOut is FALSE.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.3 SFColor and MFColor
 
@@ -110,7 +110,7 @@ colours red, green, and blue.
 The initial value of an SFColor eventOut is (0 0 0). The initial value
 of an MFColor eventOut is \[ \].
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.4 SFFloat and MFFloat
 
@@ -131,7 +131,7 @@ values.
 The initial value of an SFFloat eventOut is 0.0. The initial value of
 an MFFloat eventOut is \[ \].
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.5 SFImage
 
@@ -191,7 +191,7 @@ the top left pixel white, and the top right pixel yellow.
 
 The initial value of an SFImage eventOut is (0 0 0).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.6 SFInt32 and MFInt32
 
@@ -210,7 +210,7 @@ is an MFInt32 field containing three values.
 The initial value of an SFInt32 eventOut is 0. The initial value of an
 MFInt32 eventOut is \[ \].
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.7 SFNode and MFNode
 
@@ -232,7 +232,7 @@ indicate that it is empty.
 The initial value of an SFNode eventOut is NULL. The initial value of
 an MFNode eventOut is \[ \].
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.8 SFRotation and MFRotation
 
@@ -265,7 +265,7 @@ The 3x3 matrix represention of a rotation (x y z a) is
 The initial value of an SFRotation eventOut is (0 0 1 0). The initial
 value of an MFRotation eventOut is \[ \].
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.9 SFString and MFString
 
@@ -290,7 +290,7 @@ is an MFString field, _fooString_, with two valid strings.
 The initial value of an SFString eventOut is "" (the empty
 string). The initial value of an MFString eventOut is \[ \].
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.10 SFTime
 
@@ -304,7 +304,7 @@ fields and events represent the number of seconds since Jan 1, 1970,
 The initial value of an SFTime eventOut is -1. The initial value of an
 MFTime eventOut is \[ \].
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.11 SFVec2f and MFVec2f
 
@@ -324,7 +324,7 @@ is an MFVec2f field, _fooVec2f_, with two valid vectors.
 The initial value of an SFVec2f eventOut is (0 0). The initial value of
 an MFVec2f eventOut is \[ \].
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)5.12 SFVec3f and MFVec3f
 
@@ -344,10 +344,10 @@ is an MFVec3f field, _fooVec3f_, with two valid vectors.
 The initial value of an SFVec3f eventOut is (0 0 0). The initial value
 of an MFVec3f eventOut is \[ \].
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/fieldsRef.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/fieldsRef.html
 
 ```
 

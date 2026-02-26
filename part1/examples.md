@@ -1,4 +1,4 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -10,7 +10,7 @@
 
 #### 4 April 1997
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.1 Introduction and  table of contents
 
@@ -56,7 +56,7 @@ This annex provides a variety of VRML examples.
 
 [D.18 Elevator](#D.18)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.2 Simple example
 
@@ -110,7 +110,7 @@ Transform {
 [Click here to view this example in a VRML \
 browser.](exampleD.2.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.3 Instancing (sharing)
 
@@ -148,7 +148,7 @@ Transform {
 browser.](exampleD.3.wrl) (Note that the spheres are unlit because no appearance was
 specified.)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.4 Prototype example
 
@@ -219,7 +219,7 @@ NavigationInfo { type "EXAMINE" }      # Use the Examine viewer
 [Click here to view this example in a VRML \
 browser.](exampleD.4.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.5 Scripting example
 
@@ -285,7 +285,7 @@ TouchSensor or TimeSensor.
 [Click here to view this example in a VRML \
 browser.](exampleD.5.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.6 Geometric properties
 
@@ -326,7 +326,7 @@ Shape {
 [Click here to view this example in a VRML \
 browser.](exampleD.6.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.7 Prototypes and  alternate representations
 
@@ -408,7 +408,7 @@ URL/URN names determine the node's implementation.
 [Click here to view this example in a VRML \
 browser.](exampleD.7.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.8 Anchor
 
@@ -455,7 +455,7 @@ Anchor {
 binds the user's view to the viewpoint with the DEF name _Doorway_
 in the current scene.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.9 Directional light
 
@@ -522,7 +522,7 @@ Group {
 [Click here to view this example in a VRML \
 browser.](exampleD.9.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.10 PointSet
 
@@ -559,7 +559,7 @@ Transform {
 [Click here to view this example in a VRML \
 browser.](exampleD.10.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.11 Level of detail
 
@@ -607,7 +607,7 @@ LOD nodes should be nested with and without ranges.
 [Click here to view this example in a VRML \
 browser.](exampleD.11.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.12 Color interpolator
 
@@ -642,7 +642,7 @@ ROUTE myColor.value_changed TO myMaterial.set_diffuseColor
 [Click here to view this example in a VRML \
 browser.](exampleD.12.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.13 TimeSensor
 
@@ -719,7 +719,7 @@ ROUTE Hour.cycleTime TO Sounder.startTime
 
 ```
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.14 Shuttles and  pendulums
 
@@ -843,7 +843,7 @@ under control of the _startTime_ and _stopTime_ fields. The _rate_
 field controls the speed of the animation. The _children_ field
 holds the children to be animated.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.15 Robot
 
@@ -959,7 +959,7 @@ browser.](exampleD.15.wrl)
 
 Move closer to the robot to start the animation.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.16 Chopper
 
@@ -1029,21 +1029,21 @@ DEF MyScene Group {
 [Click here to view this example in a VRML \
 browser.](exampleD.16.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.17 Guided tour
 
-VRML provides control of the viewer's camera through use of a script.
-This is useful for things such as guided tours, merry-go-round rides,
-and transportation devices such as buses and elevators. These next two
-examples show a couple of ways to use this feature.
+VRML обеспечивает управление камерой зрителя с помощью скрипта.
+Это полезно для таких объектов, как экскурсии с гидом, карусели
+и транспортные средства, такие как автобусы и лифты. В следующих двух
+примерах показано несколько способов использования этой функции.
 
-This example is a simple guided tour through the world. Upon entry, a
-guide orb hovers in front of the viewer. Click on this and a tour
-through the world begins. The orb follows the user around on his tour.
-A ProximitySensor ensures that the tour is started only if the user is
-close to the initial starting point. Note that this is done without
-scripts thanks to the _touchTime_ output of the TouchSensor.
+Этот пример представляет собой простую экскурсию по миру с гидом. При входе
+перед зрителем появляется шар-путеводитель. Нажмите на него, и начнется экскурсия
+по миру. Шар сопровождает пользователя во время его экскурсии.
+Датчик приближения гарантирует, что тур начнется только в том случае, если пользователь находится
+близко к начальной точке отсчета. Обратите внимание, что это делается без
+использования скриптов благодаря _touchTime_, выводимому сенсорным датчиком.
 
 ```
 #VRML V2.0 utf8
@@ -1140,18 +1140,18 @@ ROUTE GuideRI.value_changed TO GuideTransform.set_rotation
 [Click here to view this example in a VRML \
 browser.](exampleD.17.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)D.18 Elevator
 
-This is another example of animating the camera by depicting an
-elevator to ease access to a multi-storey building. For this example, a
-2 storey building is shown and it is assumed that the elevator is
-already at the ground floor. To go up, the user just steps onto the
-elevator platform. A ProximitySensor fires and starts the elevator up
-automatically. Additional features such as call buttons for outside the
-elevator, elevator doors, and floor selector buttons could be added to
-make the elevator easier to use.
+Это еще один пример анимации камеры путем изображения
+лифт для облегчения доступа в многоэтажное здание. Для этого примера
+Показано 2-этажное здание, предполагается, что лифт есть.
+уже на первом этаже. Чтобы подняться, пользователь просто встает на
+лифтовая платформа. Датчик приближения срабатывает и запускает лифт вверх.
+автоматически. Дополнительные функции, такие как кнопки вызова за пределами
+Лифт, двери лифта и кнопки выбора этажа могут быть добавлены к
+сделать лифт более удобным в использовании.
 
 ```
 #VRML V2.0 utf8
@@ -1232,10 +1232,10 @@ ROUTE ElevatorPI.value_changed TO ETransform.set_translation
 [Click here to view this example in a VRML \
 browser.](exampleD.18.wrl)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/examples.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/examples.html
 
 ```
 

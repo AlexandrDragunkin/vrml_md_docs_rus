@@ -1,4 +1,4 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -8,7 +8,7 @@
 
 #### 4 April 1997
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 The following standards contain provisions which, through reference in
 this text, constitute provisions of this International Standard. At the
@@ -148,10 +148,10 @@ ISO/IEC 10646-1:1993 Information technology - Universal
 
 [`ftp://ds.internic.net/rfc/rfc2044.txt`](ftp://ds.internic.net/rfc/rfc2044.txt)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/references.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/references.html
 
 ```
 

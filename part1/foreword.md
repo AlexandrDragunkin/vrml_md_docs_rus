@@ -1,46 +1,26 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
-# Foreword
+# Предисловие
 
 ### ISO/IEC DIS 14772-1
 
 #### 4 April 1997
 
-### ![](../../pix/vrmlbar.gif)
+### ![](../pix/vrmlbar.gif)
 
-## Foreword
+## Предисловие
 
-ISO (the International Organization for Standardization) and IEC (the
-International Electrotechnical Commission) form a specialized system
-for worldwide standardization. National bodies that are members of ISO
-or IEC participate in the development of International Standards
-through technical committees established by the respective organization
-to deal with particular fields of technical activity. ISO and IEC
-technical committees collaborate in fields of mutual interest. Other
-international organizations, governmental and non-governmental, in
-liaison with ISO and IEC, also take part in the work. See [`http://www.iso.ch`](http://www.iso.ch/) for
-information on ISO and [`http://www.iec.ch`](http://www.iec.ch/)  `
-` for information on IEC.
+ISO (International Organization for Standardization) и IEC (International Electrotechnical Commission) образуют специализированную систему всемирной стандартизации. Национальные организации, являющиеся членами ISO или IEC, участвуют в разработке международных стандартов через технические комитеты, созданные соответствующей организацией для работы в конкретных областях технической деятельности. Технические комитеты ISO и IEC сотрудничают в областях, представляющих взаимный интерес. В работе также принимают участие другие международные организации, правительственные и неправительственные, во взаимодействии с ISO и IEC. См. [`http://www.iso.ch`](http://www.iso.ch/) для получения информации об ISO и [`http://www.iec.ch`](http://www.iec.ch/) для получения информации о IEC.
 
-In the field of information technology, ISO and IEC have established a
-joint technical committee, ISO/IEC JTC 1. Draft International Standards
-adopted by the joint technical committee are circulated to national
-bodies for voting. Publication as an International Standard requires
-approval by at least 75% of the national bodies casting a vote. See [`http://www.iso.ch/meme/JTC1.html`](http://www.iso.ch/meme/JTC1.html)
-for information on JTC 1.
+В области информационных технологий ISO и IEC учредили совместный технический комитет ISO/IEC JTC 1. Проекты международных стандартов, принятые совместным техническим комитетом, рассылаются национальным органам для голосования. Публикация в качестве международного стандарта требует одобрения не менее 75% национальных органов, участвующих в голосовании. См. [`http://www.iso.ch/meme/JTC1.html`](http://www.iso.ch/meme/JTC1.html) для получения информации о JTC 1.
 
-International Standard ISO/IEC 14772 was prepared by Joint Technical
-Committee ISO/IEC JTC 1, Information Technology Sub-Committee 24,
-Computer Graphics and Image Processing, in collaboration with The VRML
-Consortium ( [`http://www.vrml.org`](http://www.vrml.org/))
-and the VRML moderated email list ( [`www-vrml@vag.vrml.org`](http://vag.vrml.org/www-vrml/)).
+Международный стандарт ISO/IEC 14772 был подготовлен Объединенным техническим комитетом ISO/IEC JTC 1, Подкомитетом 24 по информационным технологиям, Компьютерная графика и обработка изображений, в сотрудничестве с Консорциумом VRML ([`http://www.vrml.org`](http://www.vrml.org/)) и модерируемым списком адресов электронной почты VRML ( [`www-vrml@vag.vrml.org`](http://vag.vrml.org/www-vrml/)).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/foreword.html
-
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/foreword.html
 ```
 

@@ -1,4 +1,4 @@
-![](../../pix/vrml97.gif)
+![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -8,7 +8,7 @@
 
 #### 4 April 1997
 
-## ![](../../pix/vrmlbar.gif)
+## ![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) 6.1 Introduction
 
@@ -168,7 +168,7 @@ types are ordered as follows:
 4. eventOuts, in alphabetical order.
 
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.2  Anchor
 
@@ -277,7 +277,7 @@ calculated by the browser. A description of _bboxCenter_ and _bboxSize_
 fields may be found in " [4.6.4 \
 Bounding boxes](concepts.html#4.6.4)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.3  Appearance
 
@@ -310,7 +310,7 @@ The _textureTransform_ field, if specified, shall contain a [TextureTransform](#
 field is NULL or unspecified, or if the _textureTransform_ is
 NULL or unspecified, the _textureTransform_ field has no effect.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.4  AudioClip
 
@@ -383,7 +383,7 @@ sound's local time system with sample 0 at time 0):
 
 ```
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.5  Background
 
@@ -533,7 +533,7 @@ The first Background node found during reading of the world is
 automatically bound (receives _set\_bind_ TRUE) and is used as the
 initial background when the world is loaded.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.6  Billboard
 
@@ -610,7 +610,7 @@ calculated by the browser. A description of the _bboxCenter_ and _bboxSize_
 fields is contained in " [4.6.4 \
 Bounding boxes](concepts.html#4.6.4)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.7 Box
 
@@ -649,7 +649,7 @@ affects the texture coordinates of the Box.
 The Box node's geometry requires outside faces only. When viewed from
 the inside the results are undefined.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.8  Collision
 
@@ -748,7 +748,7 @@ user's size.
 
 There is no support for object/object collision in ISO/IEC 14772-1.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.9 Color
 
@@ -773,7 +773,7 @@ Textures take precedence over colours; specifying both a Texture and a
 Color node for geometric shape will result in the Color node being
 ignored. Details on lighting equations are described in " [4.14 Lighting model](concepts.html#4.14)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) 6.10 ColorInterpolator
 
@@ -799,7 +799,7 @@ two consecutive keys with complementary hues.
 Subclause " [4.6.8 Interpolators](concepts.html#4.6.8)"
 contains a detailed discussion of interpolators.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.11 Cone
 
@@ -846,7 +846,7 @@ texture coordinates of the Cone.
 The Cone geometry requires outside faces only. When viewed from the
 inside the results are undefined.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.12  Coordinate
 
@@ -861,7 +861,7 @@ This node defines a set of 3D coordinates to be used in the _coord_
 field of vertex-based geometry nodes including IndexedFaceSet,
 IndexedLineSet, and PointSet.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.13 CoordinateInterpolator
 
@@ -883,7 +883,7 @@ integer multiple defines how many coordinates will be contained in the _value\_c
 Subclause " [4.6.8 Interpolators](concepts.html#4.6.8)"
 contains a more detailed discussion of interpolators.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.14  Cylinder
 
@@ -933,7 +933,7 @@ affects the texture coordinates of the Cylinder node.
 The Cylinder node's geometry requires outside faces only. When viewed
 from the inside the results are undefined.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.15  CylinderSensor
 
@@ -1044,7 +1044,7 @@ Further information about this behaviour may be found in " [4.6.7.3 Pointing-dev
 and " [4.6.7.5 Activating and \
 manipulating sensors](concepts.html#4.6.7.5)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.16 DirectionalLight
 
@@ -1077,7 +1077,7 @@ light.
 DirectionalLight nodes do not attenuate with distance. A precise
 description of VRML's lighting equations is contained in " [4.14 Lighting model](concepts.html#4.14)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.17  ElevationGrid
 
@@ -1247,7 +1247,7 @@ See Figure 6.5 for a depiction of the ElevationGrid node.
 
 #### Figure 6.5: ElevationGrid node
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.18  Extrusion
 
@@ -1489,7 +1489,7 @@ The _ccw_, _solid_, _convex_, and _creaseAngle_
 fields are described in " [4.6.3 \
 Shapes and geometry](concepts.html#4.6.3)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.19 Fog
 
@@ -1536,7 +1536,7 @@ used, resulting in a more natural fog appearance.
 The impact of fog support on lighting calculations is described in
 " [4.14 Lighting model](concepts.html#4.14)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.20  FontStyle
 
@@ -1701,7 +1701,7 @@ language tag). If the _language_ field is set to empty
 See " [2\. Normative References](references.html)"
 for more information on ISO/IEC 10646:1993 [2.\[UTF8\]](references.html#[UTF8]), ISO/IEC 639:1998 [2.\[I639\]](references.html#[I639]), and ISO 3166:1993 [2.\[I3166\]](references.html#[I3166]).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.21 Group
 
@@ -1733,7 +1733,7 @@ calculated by the browser. A description of the _bboxCenter_ and _bboxSize_
 fields is contained in " [4.6.4 \
 Bounding boxes](concepts.html#4.6.4)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.22  ImageTexture
 
@@ -1782,7 +1782,7 @@ If _repeatS_ is FALSE, the texture coordinates are clamped in the
 S direction to lie within the \[0.0, 1.0\] range. The _repeatT_
 field is analogous to the _repeatS_ field.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.23  IndexedFaceSet
 
@@ -1937,7 +1937,7 @@ Subclause " [4.6.3 Shapes and geometry](concepts.html#4.6.3)"
 provides a description of the _ccw_, _solid_, _convex_,
 and _creaseAngle_ fields.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.24  IndexedLineSet
 
@@ -2009,7 +2009,7 @@ the Appearance affecting this IndexedLineSet, the _emissiveColor_
 of the Material shall be used to draw the lines. Details on lighting
 equations as they affect IndexedLineSet nodes are described in " [4.14 Lighting model](concepts.html#4.14)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.25  Inline
 
@@ -2053,7 +2053,7 @@ implies that the bounding box is not specified and if needed must be
 calculated by the browser. A description of the _bboxCenter_ and _bboxSize_
 fields is in " [4.6.4 Bounding boxes](concepts.html#4.6.4)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.26 LOD
 
@@ -2123,7 +2123,7 @@ which LOD node's _level_ is active. For example, if an active
 TimeSensor node is contained within an inactive level of an LOD node,
 the TimeSensor node sends events regardless of the LOD node's state.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.27  Material
 
@@ -2178,7 +2178,7 @@ object to create colour:
     opaque.
 
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.28  MovieTexture
 
@@ -2279,7 +2279,7 @@ MovieTexture nodes can be referenced by an Appearance node's _texture_
 field (as a movie texture) and by a Sound node's _source_ field
 (as an audio source only).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.29  NavigationInfo
 
@@ -2468,7 +2468,7 @@ The first NavigationInfo node found during reading of the world is
 automatically bound (receives a _set\_bind_ TRUE event) and
 supplies the initial navigation parameters.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.30  Normal
 
@@ -2485,7 +2485,7 @@ ElevationGrid). This node contains one multiple-valued field that
 contains the normal vectors. Normals shall be of unit length or results
 are undefined.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.31 NormalInterpolator
 
@@ -2516,7 +2516,7 @@ length. If P and Q are diagonally opposite, results are undefined.
 
 A more detailed discussion of interpolators is provided in " [4.6.8 Interpolators](concepts.html#4.6.8)".
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.32 OrientationInterpolator
 
@@ -2552,7 +2552,7 @@ is equivalent to the rotation between the orientations (0, 1, 0, 2![](../Images/
 
 A more detailed discussion of interpolators is contained in " [4.6.8 Interpolators](concepts.html#4.6.8)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.33  PixelTexture
 
@@ -2595,7 +2595,7 @@ is FALSE, the texture coordinates are clamped in the S direction to
 lie within the 0.0 to 1.0 range. The _repeatT_ field is analogous
 to the _repeatS_ field.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.34  PlaneSensor
 
@@ -2686,7 +2686,7 @@ Further information about this behaviour may be found in " [4.6.7.3 Pointing-dev
 and " [4.6.7.5 Activating and \
 manipulating sensors](concepts.html#4.6.7.5)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.35  PointLight
 
@@ -2727,7 +2727,7 @@ of (0, 0, 0) is identical to (1, 0, 0). Attenuation values must be
 >= 0.0. A detailed description of VRML's lighting equations is
 contained in " [4.14 Lighting model](concepts.html#4.14)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.36  PointSet
 
@@ -2764,7 +2764,7 @@ of the Material node shall be used to draw the points. More details on
 lighting equations can be found in " [4.14 \
 Lighting model](concepts.html#4.14)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.37 PositionInterpolator
 
@@ -2785,7 +2785,7 @@ as in the _key_ field.
 " [4.6.8 Interpolators](concepts.html#4.6.8)"
 contains a more detailed discussion of interpolators.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.38  ProximitySensor
 
@@ -2856,7 +2856,7 @@ ProximitySensor node with a box containing zero volume (i.e., any _size_
 field element of 0.0) cannot generate events. This is equivalent to
 setting the _enabled_ field to FALSE.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.39 ScalarInterpolator
 
@@ -2878,7 +2878,7 @@ as there are keyframes in the _key_ field.
 
 A more detailed discussion of interpolators is available in " [4.6.8 Interpolators](concepts.html#4.6.8)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.40  Script
 
@@ -2977,7 +2977,7 @@ with _whichChoice_ set to "-1" (i.e., ignore its
 children), the Script continues to operate as specified (i.e., it
 receives and sends events).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.41 Shape
 
@@ -3003,7 +3003,7 @@ Appearance and [geometry nodes](concepts.html#GeometryNodes).
 
 If the _geometry_ field is NULL, the object is not drawn.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.42 Sound
 
@@ -3128,7 +3128,7 @@ ellipsoid dimensions and _intensity_ will still affect the
 loudness of the sound. If the sound source is multi-channel (e.g., stereo),
 then the source should retain its channel separation during playback.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.43  Sphere
 
@@ -3158,7 +3158,7 @@ coordinates of the Sphere.
 The Sphere node's geometry requires outside faces only. When viewed
 from the inside the results are undefined.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.44  SphereSensor
 
@@ -3238,7 +3238,7 @@ Further information about this behaviour may be found in " [4.6.7.3 Pointing-dev
 and " [4.6.7.5 Activating and \
 manipulating sensors](concepts.html#4.6.7.5)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.45  SpotLight
 
@@ -3334,7 +3334,7 @@ of (0, 0, 0) is identical to (1, 0, 0). Attenuation values must be
 >= 0.0. A detailed description of VRML's lighting equations is
 contained in " [4.14 Lighting model](concepts.html#4.14)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.46  Switch
 
@@ -3364,7 +3364,7 @@ of the value of _whichChoice_. For example, if an active
 TimeSensor is contained within an inactive choice of an Switch, the
 TimeSensor sends events regardless of the Switch's state.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.47 Text
 
@@ -3488,7 +3488,7 @@ textures interact with lighting.
 
 The Text node does not participate in collision detection.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.48 TextureCoordinate
 
@@ -3533,7 +3533,7 @@ to the 0.0 to 1.0 range as follows:
 Details on repeating textures are specific to texture map node types
 described in [6.22 ImageTexture](#ImageTexture), [6.28 MovieTexture](#MovieTexture), and [6.33 PixelTexture](#PixelTexture).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.49 TextureTransform
 
@@ -3599,7 +3599,7 @@ node transformation order since the texture coordinates, not the
 texture, are being transformed (i.e., the texture coordinate
 system).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.50  TimeSensor
 
@@ -3736,7 +3736,7 @@ it behaves as if the _stopTime_ requested is the current time and
 sends the final events based on the current time (note that _stopTime_ is
 set as specified in the eventIn).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.51  TouchSensor
 
@@ -3823,7 +3823,7 @@ Further information about this behaviour may be found in " [4.6.7.3 Pointing-dev
 and " [4.6.7.5 Activating and \
 manipulating sensors](concepts.html#4.6.7.5)."
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.52  Transform
 
@@ -3932,7 +3932,7 @@ Transform {
 
 ```
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.53  Viewpoint
 
@@ -4145,7 +4145,7 @@ If a Viewpoint node is bound that results in collision with geometry,
 the browser shall perform its self-defined navigation adjustments as if
 the user navigated to this point (see [Collision](#Collision)).
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.54 VisibilitySensor
 
@@ -4200,7 +4200,7 @@ use the union of all the boxes defined by their instances. An
 instanced VisibilitySensor node shall detect visibility changes for all
 instances of the box and send events appropriately.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif)6.55  WorldInfo
 
@@ -4220,10 +4220,10 @@ present this to the user (perhaps in the window border). Any other
 information about the world can be stored in the _info_ field,
 such as author information, copyright, and usage instructions.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/nodesRef.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/nodesRef.html
 
 ```
 

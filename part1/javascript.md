@@ -1,4 +1,4 @@
-# ![](../../pix/vrml97.gif)
+# ![](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -10,7 +10,7 @@
 
 #### 4 April 1997
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## C.1 Introduction and table of contents
 
@@ -121,7 +121,7 @@ VrmlMatrix object](#VrmlMatrix)
 
 [C.7 Examples](#Example)
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) C.2 Language
 
@@ -138,7 +138,7 @@ toString( ) will be called.
 
 JavaScript is currently undergoing standardization through ECMA.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) C.3 Supported  protocol in the Script node's _url_ field
 
@@ -184,7 +184,7 @@ The MIME type for JavaScript source code is defined as follows:
 
 ```
 
-## ![](../../pix/vrmlbar.gif)
+## ![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) C.4 EventIn  Handling
 
@@ -257,7 +257,7 @@ containing the Script node is unloaded or replaced by another world (see " [4.1
 The shutdown( ) function has no parameters. Events generated from shutdown( )
 are given the timestamp of when the Script node was deleted.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) C.5 Accessing fields
 
@@ -320,7 +320,7 @@ during one execution of the function still only sends one event and
 that event is the value of the eventOut at the completion of script
 execution.
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) C.6 JavaScript objects
 
@@ -1101,7 +1101,7 @@ SFVec3f _scale_) Decomposes the VrmlMatrix and returns the components in the
  the passed row vector. SFVec3f multMatrixVec(SFVec3f _vec_) Returns an SFVec3f whose value is the object multiplied by
  the passed column vector. String toString( ) Returns a String containing the values of the VrmlMatrix.
 
-## ![](../../pix/vrmlbar.gif)
+## ![](../pix/vrmlbar.gif)
 
 ## ![](../../pix/cube.gif) C.7 Examples
 
@@ -1267,10 +1267,10 @@ DEF SCR-VEC3F Script {
 
 ```
 
-![](../../pix/vrmlbar.gif)
+![](../pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/part1/javascript.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/javascript.html
 
 ```
 

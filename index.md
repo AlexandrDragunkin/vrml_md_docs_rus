@@ -26,159 +26,152 @@ a very long document).
 
 ![](./pix/vrmlbar.gif)
 
-This document is the official and complete specificationof the **Virtual Reality Modeling Language**, (VRML), ISO/IEC DIS 14772.
-
-**Background****Clauses****Annexes**![](./pix/cube.gif)[Foreword](part1/foreword.html)![](./pix/cube.gif)
- 1 [Scope](part1/scope.md)![](./pix/cube.gif)
- A [Grammar](part1/grammar.md)![](./pix/cube.gif)[Introduction](part1/introduction.html)![](./pix/cube.gif)
- 2 [Normative \
- References](part1/references.md)![](./pix/cube.gif)
- B [Java](part1/java.md)![](./pix/cube.gif)
- 3 [Definitions](part1/glossary.md)![](./pix/cube.gif)
- C [JavaScript](part1/javascript.md)![](./pix/cube.gif)
- 4 [Concepts](part1/concepts.md)![](./pix/cube.gif)
- D [Examples](part1/examples.md)![](./pix/cube.gif)
- 5 [Fields and \
- Events](part1/fieldsRef.md)![](./pix/cube.gif)
- E [Bibliography](part1/bibliography.html)![](./pix/cube.gif)
- 6 [Nodes](part1/nodesRef.md)![](./pix/cube.gif)
- 7 [Conformance](part1/conformance.md)
-
-The **_Foreword_** provides background on the standards process
-for VRML. The **_Introduction_** describes the purpose, design
-criteria, and characteristics of VRML. The following clauses define the
-specifications for VRML ISO/IEC DIS 14772-1:
-
-1. **_Scope_** defines the problem area that VRML addresses.
-
-2. **_References_** lists the normative standards referenced
-    in the specification.
-
-3. **_Definitions_** contains the glossary of terminology used
-    in the specification.
-
-4. **_Concepts_** describes various fundamentals of VRML.
-
-5. **_Fields_** _**and Events**_ specifies the
-    datatypes used by nodes.
-
-6. **_Nodes_** defines the syntax and semantics of VRML nodes.
-
-7. **_Conformance_** describes the minimum support
-    requirements for VRML implementations.
+Этот документ является переводом официальной и полной спецификацией **Virtual Reality Modeling Language**, (VRML), ISO/IEC DIS 14772.
 
 
-There are several annexes included in the specification:
 
-1. **_Grammar_** presents the BNF for the VRML file format.
+| **Общее**                                            | **Положения**                                              | **Приложения**                                             |
+| ---------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](./pix/cube.gif)[Предисловие](part1/foreword.md)  | ![](./pix/cube.gif)1 [Scope](part1/scope.md)               | ![](./pix/cube.gif)A [Grammar](part1/grammar.md)           |
+| ![](./pix/cube.gif)[Введение](part1/introduction.md) | ![](./pix/cube.gif)2 [Ссылки](part1/references.md)         | ![](./pix/cube.gif)B [Examples](part1/examples.md)         |
+|                                                      | ![](./pix/cube.gif)3 [Определения](part1/glossary.md)      | ![](./pix/cube.gif)C [Java](part1/java.md)                 |
+|                                                      | ![](./pix/cube.gif)4 [Концепции](part1/concepts.md)        | ![](./pix/cube.gif)D [JavaScript](part1/javascript.md)     |
+|                                                      | ![](./pix/cube.gif)5 [Nodes](part1/nodesRef.md)            | ![](./pix/cube.gif)E [Bibliography](part1/bibliography.md) |
+|                                                      | ![](./pix/cube.gif)6 [Fields и Events](part1/fieldsRef.md) |                                                            |
+|                                                      | ![](./pix/cube.gif)7 [Conformance](part1/conformance.md)   |                                                            |
 
-2. **_Java_** describes how VRML scripting integrates
-    with Java.
+**_Предисловие_**содержит общую информацию о процессе стандартизации.
+для VRML. **_Введение_**описывает назначение и конструкцию.
+критерии и характеристики VRML. Следующие положения определяют
+технические характеристики VRML ISO/IEC DIS 14772-1:
 
-3. **_JavaScript_** describes how VRML scripting integrates
-    with JavaScript.
+1. **_Scope_** определяет проблемную область, к которой обращается VRML.
 
-4. **_Examples_** includes a variety of VRML example files.
+2. **_Ссылки_** перечисляет нормативные стандарты, на которые имеются ссылки.
+    в спецификации.
 
-5. **_Bibliography_** lists the informative, non-standard
-    topics referenced in the specification.
+3. **_Определения_** содержит глоссарий используемой терминологии.
+    в спецификации.
+
+4. **_Concepts_** описывает различные основы VRML.
+
+5. **_Fields_**_**и Events**__ указывают
+    типы данных, используемые узлами.
+
+6. **_Nodes_**определяет синтаксис и семантику узлов VRML.
+
+7. **_Conformance_**описывает минимальную поддержку.
+требования к реализациям VRML.
+
+
+В спецификацию включено несколько приложений:
+
+1. **_Grammar_** представляет BNF(*Backus–Naur form*) для формата файла VRML.
+
+2. **_Java_** описывает, как интегрируются сценарии VRML.
+    с Явой.
+
+3. **_JavaScript_** описывает, как интегрируются сценарии VRML.
+    с JavaScript.
+
+4. **_Examples_** включает в себя множество файлов примеров VRML.
+
+5. **_Bibliography_** перечисляет информативные, нестандартные
+    темы, указанные в спецификации.
 
 
 ![](./pix/vrmlbar.gif)
 
-## Summary of changes to the spec since August 4th
+## Сводка изменений в спецификации с 4 августа
 
-##### \[Note: Functional changes are in BOLD.\]
+##### \[Note: Функциональные изменения выделены ЖИРНЫМ шрифтом..\]
 
-#### Overall
-
-1. A large number of typos and document errors have been fixed.
-
-2. ISO document conventions were adopted throughout (due to the fact that
-    this is an online HTML document, many of these conventions were ignored
-    or interpreted).
-
-3. Field and Event Reference has been moved to Clause 5, and Node
-    Reference has been moved to Clause 6.
-
-4. Examples annex has been moved from Annex B to Annex D.
-
-5. Consistent numbering of all sections, subsections, figures, and tables.
-
-6. Annexes (previously called appendices) have been labeled
-    "normative" and "informative".
-
-7. Removed non-specification language ( _e.g.,_ user tips)
-    throughout.
-
-8. Moved all conformance discussion to Clause 7.
+#### Общие изменения
 
 
-#### Clause 1, Scope
+1. Исправлено большое количество опечаток и ошибок в документах.
 
-1. This section has been rewritten.
+2. Условные обозначения документов ISO были приняты повсеместно (в связи с тем, что
+    это онлайн-документ HTML, многие из этих соглашений были проигнорированы.
+    или интерпретировано).
+
+3. Ссылка на Fields и Events перенесена в раздел 5, а узел
+    Ссылка перенесена в пункт 6.
+
+4. Приложение «Примеры» перенесено из Приложения B в Приложение D.
+
+5. Последовательная нумерация всех разделов, подразделов, рисунков и таблиц.
+
+6. Приложения (ранее называемые appendices) помечены как
+    normative и informative.
+
+7. Удалены неспецифические формулировки (например, советы пользователю).
+    повсюду.
+
+8. Все обсуждения соответствия перенесены в раздел 7.
 
 
-#### Clause 2, Normative References
+#### Статья 1, Область применения
 
-1. Several new refererences were added.
-
-2. A few references were clarified.
+1. Этот раздел был переписан.
 
 
-#### Clause 3, Definitions
+#### Пункт 2, Нормативные ссылки
 
-1. Many new definitions were added.
+1. Добавлено несколько новых ссылок.
 
-2. Many definitions were clarified.
+2. Были уточнены некоторые ссылки.
 
 
-#### Clause 4, Concepts
+#### Пункт 3, Определения
 
-1. This clause has been significantly revised. The order has
-    been completely rearranged for better presentation. Several new
-    sections have been added and many sections have been clarified.
+1. Добавлено много новых определений.
 
-2. Two new diagrams were added.
+2. Были уточнены многие определения.
 
-3. **\+ and - chararcters are illegal first characters for DEF names.**
-4. _children_ exposedFields are order-dependent (previously this
-    was undefined).
 
-5. Clarified _ccw_, _solid_, and _creaseAngle_ fields.
+#### Раздел 4. Концепции.
 
-6. Prototypes have been significantly re-written for clarity. A variety of
-    cases have been clarified ( _e.g.,_ scope of DEF names within
-    PROTOs).
+1. Этот раздел был существенно переработан. Порядок
+    был полностью изменен для лучшего представления. Добавлено несколько новых
+    разделов и многие разделы были уточнены.
+
+2. Добавлены две новые диаграммы.
+
+3. **\+ и - являются недопустимыми первыми символами в именах DEF.**
+4. _children_ ExposedFields зависят от порядка (ранее это
+    был неопределенным).
+
+5. Уточнены поля _ccw_, _solid_, И _creaseAngle_.
+
+6. Прототипы были существенно переписаны для ясности. Разнообразие
+    случаев было разъяснено (например, область действия имен DEF внутри
+    PROTO).
 
 7. Lighting model: fixed redundant ambient term, attentuation term, and
     spotlight eqns.
 
-8. Clarified how to interpret various image file formats as texture maps.
+8. Разъяснено, как интерпретировать различные форматы файлов изображений как карты текстур.
 
-9. Field/event names in a ROUTE statement do not require the _set\__
-    and \_ _changed_ prefix/suffix. If a field/event name (in a
-    ROUTE statement) is not found (e.g. _foo_), browsers
-    shall prepend the _set\__ prefix ( _set\_foo_) and append
-    the _\_changed_ suffix ( _foo\_changed_) to the name in an
-    attempt to check if the user is using the shorthand notation.
+9. Имена field/event в инструкции ROUTE не требуют _set\__
+    и \_ _changed_ prefix/suffix. Если имя field/event (в
+    операторе ROUTE) не найден (например, _foo_), браузер
+    должен добавить префикс _set\__ ( _set\_foo_) и добавить
+    суффикс _\_changed_ ( _foo\_changed_) к имени, пытаясь проверить, использует ли пользователь сокращенную запись.
 
+#### Раздел 6, Ссылка на Nodes
 
-#### Clause 6, Nodes Reference
+01. Внесено множество мелких уточнений и исправлений.
 
-01. Numerous small clarifications and fixes were made throughout.
+02. Справочная информация: ограничьте поле _groundAngle_ от 0,0 до PI/2, а не PI (это была ошибка).
 
-02. Backgorund: restrict _groundAngle_ field from 0.0 to PI/2, not
-     PI(this was an error).
+03. Цилиндр: исправлена ​​ошибка в расчете верха и низа (height/2).
 
-03. Cylinder: fixed error in top and bottom calculations (height/2).
+04. CylinderSensor: исправлена ​​ошибка определения вращения диска.
 
-04. CylinderSensor: fixed error in defintion of disk rotation.
+05. ElevationGrid: исправлено несколько ошибок в уравнениях и уточнены все поля.
 
-05. ElevationGrid: fixed several errors in eqns and clarified all fields.
-
-06. Extrusion: fixed errors and major re-write (including a new
-     figure).
+06. Выдавливание: исправлены ошибки и существенно переписано (включая новую фигуру).
 
 07. **FontStyle: changed _family_ field from SFString to MFString**
     **to support orderered list of choices; similar to URL fields.**
@@ -271,7 +264,7 @@ There are several annexes included in the specification:
 ![](./pix/vrmlbar.gif)
 
 ```
-http://www.vrml.org/Specifications/VRML97/DIS/index.html
+https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/index.html
 
 ```
 
