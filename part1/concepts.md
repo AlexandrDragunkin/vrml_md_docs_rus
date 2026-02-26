@@ -12,10 +12,12 @@
 
 ## ![](../pix/cube.gif)4.1 Introduction and table  of contents
 
+<a id="4.1.1"></a>
 ### 4.1.1 Обзор
 
 В этом разделе описываются ключевые понятия определения и использования стандарта VRML. Сюда входит то, как узлы(Nodes) объединяются в графы сцены, как узлы получают и генерируют события, как создавать типы узлов с использованием прототипов, как добавлять типы узлов в VRML и экспортировать их для использования другими, как включать сценарии в файл VRML и различные общие темы об узлах.
 
+<a id="4.1.2"></a>
 ### 4.1.2 Оглавление
 
 См. таблицу 4.1 для содержания этого раздела.
@@ -201,6 +203,7 @@
 
 [4.14.5 Ссылки](#4.14.5)
 
+<a id="4.1.3"></a>
 ### 4.1.3 Условные обозначения, используемые в этом документе
 
 В настоящем стандарте используются следующие соглашения:
@@ -217,10 +220,12 @@ A `fixed-space` шрифт используется для URL-адресов и
 
 ## ![](../pix/cube.gif)4.2 Обзор
 
+<a id="4.2.1"></a>
 ### 4.2.1 Структура файла VRML
 
 Файл _VRML_ состоит из следующих основных функциональных компонентов: header-заголовка, scene graph-графа сцены, prototypes-прототипов и event routing-маршрутизации событий. Содержимое этого файла обрабатывается для представления и взаимодействия с помощью механизма, известного как browser-браузер.
 
+<a id="4.2.2"></a>
 ### 4.2.2 Заголовок
 
 Для облегчения идентификации файлов VRML каждый файл VRML должен начинаться с:
@@ -242,14 +247,17 @@ A `fixed-space` шрифт используется для URL-адресов и
 
 Любые символы после `<encoding type>` в первой строке могут быть проигнорированы браузером. Строка заголовка заканчивается при появлении `<line terminator>`. `<line terminator>` — это символ перевода строки (0x0A) или символ возврата каретки (0x0D).
 
+<a id="4.2.3"></a>
 ### 4.2.3 Scene graph
 
 Граф сцены содержит узлы, описывающие объекты и их свойства. Он содержит иерархически сгруппированную геометрию для обеспечения аудиовизуального представления объектов, а также узлы, которые участвуют в механизме генерации и маршрутизации событий.
 
+<a id="4.2.4"></a>
 ### 4.2.4 Prototypes
 
 Прототипы позволяют пользователю расширять набор типов узлов VRML. Определения прототипов могут быть включены в файл, в котором они используются, или определены извне. Прототипы могут быть определены в терминах других узлов VRML или могут быть определены с использованием механизма расширения, специфичного для браузера. Хотя VRML имеет стандартный формат для идентификации таких расширений, их реализация зависит от браузера.
 
+<a id="4.2.5"></a>
 ### 4.2.5 Event routing
 
 Некоторые узлы VRML генерируют события в ответ на изменения окружающей среды или взаимодействие с пользователем. Маршрутизация событий дает авторам механизм, отдельный от иерархии графа сцены, посредством которого эти события могут распространяться для воздействия на изменения в других узлах. После генерации события отправляются в назначенные пункты назначения в порядке времени и обрабатываются принимающим узлом. Эта обработка может изменить состояние узла, сгенерировать дополнительные события или изменить структуру графа сцены.
@@ -258,10 +266,12 @@ A `fixed-space` шрифт используется для URL-адресов и
 
 Идеальная модель событий мгновенно обрабатывает все события в том порядке, в котором они генерируются. Временная метка, время доставки события на узел, служит двум целям. Во-первых, это концептуальный прием, используемый для описания хронологического потока механизма событий. Это гарантирует, что детерминированные результаты могут быть достигнуты с помощью реальных реализаций, которые должны учитывать задержки обработки и асинхронное взаимодействие с внешними устройствами. Во-вторых, метки времени также доступны узлам сценариев, что позволяет обрабатывать события на основе порядка действий пользователя или прошедшего времени между событиями.
 
+<a id="4.2.6"></a>
 ### 4.2.6 Создание файлов VRML
 
 _generator_ является человеком или компьютерным создателем файлов VRML. Генератор несет ответственность за обеспечение правильности файла VRML и доступности вспомогательных ресурсов (например, изображений, аудиоклипов, других файлов VRML), упомянутых в нем.
 
+<a id="4.2.7"></a>
 ### 4.2.7 Презентация и взаимодействие
 
 The interpretation, execution, and presentation of VRML files will typically be undertaken by a mechanism known as a _browser_, which displays the shapes and sounds in the scene graph. This presentation is known as a _virtual world_ and is navigated in the browser by a human or mechanical entity, known as a _user_. The world is displayed as if experienced from a particular location; that position and orientation in the world is known as the _viewer_. The browser may define navigation paradigms (such as walking or flying) that enables the user to move the viewer through the virtual world.
@@ -279,6 +289,7 @@ The interpretation, execution, and presentation of VRML files will typically be 
 
 #### Рисунок 4.1: Концептуальная модель браузера VRML
 
+<a id="4.2.8"></a>
 ### 4.2.8 Профили
 
 VRML концептуально поддерживает концепцию профилей. Профиль — это именованный набор функций, который должен поддерживаться, чтобы реализация соответствовала этому профилю. В этом стандарте определен только один профиль. Функциональность и минимальные требования к поддержке, описанные в ISO/IEC 14772-1, образуют базовый профиль для VRML. Дополнительные профили могут быть определены в других частях ISO/IEC 14772\. Такие профили должны включать в себя весь Базовый профиль.
@@ -287,6 +298,7 @@ VRML концептуально поддерживает концепцию пр
 
 ## ![](../pix/cube.gif)4.3 Синтаксис файла UTF-8
 
+<a id="4.3.1"></a>
 ### 4.3.1 Clear text encoding
 
 В этом разделе описывается синтаксис удобочитаемых файлов VRML в кодировке UTF-8. Более формальное описание синтаксиса можно найти в [Приложении A, «Справочник по грамматике](grammar.md)». Семантика VRML представлена ​​в этой части ISO/IEC 14772 в терминах кодировки UTF-8. Другие кодировки могут быть определены в других частях ISO/IEC 14772. Такие кодировки должны описывать, как отображать описания UTF-8 в соответствующие элементы кодирования и обратно.
@@ -335,16 +347,15 @@ VRML концептуально поддерживает концепцию пр
 
 :::
 
-### 4.3.2 Statements
+<a id="4.3.2"></a>
+### 4.3.2 Заявления
 
-After the required header, a VRML file may contain any combination of
-the following:
 
-1. Any number of PROTO or EXTERNPROTO statements (see "[4.8 Prototype semantics](#48-prototype-semantics)")
+После обязательного заголовка файл VRML может содержать любую комбинацию следующих элементов:
 
-2. Any number of root children node statements (see " [4.4.1 Root nodes](#4.4.1)" for a description of
-    root nodes and " [4.6.5 Grouping and children nodes](#4.6.5)"
-    for a description of children nodes),
+1. Любое количество операторов PROTO или EXTERNPROTO (см. "[4.8 Prototype semantics](#48-prototype-semantics)")
+
+2. Любое количество операторов корневых дочерних узлов (см. " [4.4.1 Root nodes](#441-root-nodes)" для описания корневых узлов и " [4.6.5 Grouping and children nodes](#465-grouping-and-children-nodes)" для описания дочерних узлов),
 
 3. Any number of USE statements (see " [4.6.2 \
     DEF/USE semantics](#4.6.2)")
@@ -353,6 +364,7 @@ the following:
     Route semantics](#4.10.2)")
 
 
+<a id="4.3.3"></a>
 ### 4.3.3 Node statement syntax
 
 A node statement consists of an optional name for the node followed by
@@ -467,6 +479,7 @@ statements in any order.
 See "[4.8 Prototype semantics](#48-prototype-semantics)" for a
 description of prototype semantics.
 
+<a id="4.3.6"></a>
 ### 4.3.6 IS statement syntax
 
 The body of a node statement that is inside a prototype definition may
@@ -485,6 +498,7 @@ See " [A.3 Nodes](grammar.md#Nodes)" for details
 on prototype node body grammar rules. See "[4.8 Prototype semantics](#48-prototype-semantics)" for a description of IS statement
 semantics.
 
+<a id="4.3.7"></a>
 ### 4.3.7 EXTERNPROTO statement syntax
 
 An EXTERNPROTO statement consists of the EXTERNPROTO keyword followed
@@ -505,6 +519,7 @@ declaration, with the exception that field and exposedField intitial
 values are not specified and the prototype definition is specified in a
 separate file referred to by the URL(s).
 
+<a id="4.3.8"></a>
 ### 4.3.8 USE statement syntax
 
 A USE statement consists of the USE keyword followed by a node name:
@@ -517,6 +532,7 @@ A USE statement consists of the USE keyword followed by a node name:
 See " [A.2 General](grammar.md#General)" for
 details on USE statement grammar rules.
 
+<a id="4.3.9"></a>
 ### 4.3.9 ROUTE statement syntax
 
 A ROUTE statement consists of the ROUTE keyword followed in order by a
@@ -536,6 +552,10 @@ details on ROUTE statement grammar rules.
 
 ## ![](../pix/cube.gif)4.4 Scene graph structure
 
+<!-- Якорь для перехода -->
+<a id="441-root-nodes"></a>
+
+<a id="4.4.1"></a>
 ### 4.4.1 Root nodes
 
 A VRML file contains zero or more root nodes. The root nodes for a file
@@ -543,21 +563,24 @@ are those nodes defined by the node statements or USE statements that
 are not contained in other node or PROTO statements. Root nodes must be
 children nodes (see " [4.6.5 Grouping and children nodes](#4.6.5)").
 
+<a id="4.4.2"></a>
 ### 4.4.2 Scene graph hierarchy
 
 A VRML file is hierarchical; node statements can contain SFNode or
 MFNode field statements that, in turn, contain node (or USE)
 statements. This hierarchy of nodes is called the _scene graph_.
 Each arc in the graph from A to B means that node A has an SFNode or
-MFNode field whose value directly contains node B. See [E.\[FOLE\]](bibliography.html#[FOLE]) for details on
+MFNode field whose value directly contains node B. See [E.\[FOLE\]](bibliography.md#[FOLE]) for details on
 hierarchical scene graphs.
 
+<a id="4.4.3"></a>
 ### 4.4.3 Descendant and ancestor nodes
 
 The descendants of a node are all of the nodes in its SFNode or MFNode
 fields, as well as all of those nodes' descendants. The ancestors of a
 node are all of the nodes that have the node as a descendant.
 
+<a id="4.4.4"></a>
 ### 4.4.4 Transformation hierarchy
 
 The transformation hierarchy includes all of the root nodes and root
@@ -591,6 +614,7 @@ The transformation hierarchy shall be a directed acyclic graph; results
 are undefined if a node in the transformation hierarchy is its own
 ancestor.
 
+<a id="4.4.5"></a>
 ### 4.4.5 Standard units and coordinate system
 
 VRML defines the unit of measure of the world coordinate system to be
@@ -614,6 +638,7 @@ to alter this default projection.
 
 ## ![](../pix/cube.gif)4.5 VRML and the World Wide  Web
 
+<a id="4.5.1"></a>
 ### 4.5.1 File extension and MIME types
 
 The file extension for VRML files is `.wrl` (for _world_).
@@ -641,6 +666,7 @@ VRML documents is `x-vrml`.
 
 See [2.\[MIME\]](bibliography#[MIME]) for details.
 
+<a id="4.5.2"></a>
 ### 4.5.2 URLs
 
 A _URL_ (Uniform Resource Locator), described in [2.\[URL\]](references.html#[URL]), specifies a file located on
@@ -661,6 +687,7 @@ Details on the string field are located in " [5.9 SFString and MFString](fields
 
 More general information on URLs is described in [2.\[URL\]](references.html#[URL]).
 
+<a id="4.5.3"></a>
 ### 4.5.3 Relative URLs
 
 Relative URLs are handled as described in [2.\[RURL\]](references.html#[RURL]). The base document for
@@ -678,12 +705,14 @@ MovieTexture, and Script node statements is:
     RURL information provides the data itself.
 
 
+<a id="4.5.4"></a>
 ### 4.5.4 Data protocol
 
 The IETF is in the process of standardizing a "Data:" URL to
 be used for in-line inclusion of base64 encoded data, such as JPEG
-images. This capability shall be supported as specified in [E.\[DATA\]](bibliography.html#[DATA]).
+images. This capability shall be supported as specified in [E.\[DATA\]](bibliography.md#[DATA]).
 
+<a id="4.5.5"></a>
 ### 4.5.5 Scripting language protocols
 
 The Script node's _url_ field may also support custom protocols
@@ -711,6 +740,7 @@ of mixing custom protocols and standard protocols in a single url
 In the example above, the "..." represents in-line JavaScript
 source code.
 
+<a id="4.5.6"></a>
 ### 4.5.6 URNs
 
 URNs are location-independent pointers to a file or to different
@@ -719,7 +749,7 @@ like URLs except that, when fetched, a smart browser should fetch them
 from the closest source. URN resolution over the Internet has not yet
 been standardized. However, URNs may be used now as persistent unique
 identifiers for referenced entities such as files, EXTERNPROTOs, and
-textures. General information on URNs is available at [2.\[URN\]](bibliography.html#[URN]).
+textures. General information on URNs is available at [2.\[URN\]](bibliography.md#[URN]).
 
 URNs may be assigned by anyone with a domain name. For example, if the
 company Foo owns foo.com, it may allocate URNs that begin with
@@ -745,6 +775,7 @@ specifies a URL file as the first choice and a URN as the second choice.
 
 ## ![](../pix/cube.gif)4.6 Node semantics
 
+<a id="4.6.1"></a>
 ### 4.6.1 Introduction
 
 Each node may have the following characteristics:
@@ -772,7 +803,9 @@ Each node may have the following characteristics:
 5. **A name.** Nodes can be named. This is used by other statements
     to referencing a specific instantiation of a node.
 
+<a id="4.6.2"></a>
 
+<a id="4.6.2"></a>
 ### 4.6.2 DEF/USE semantics
 
 A node given a name using the DEF keyword may later be referenced by
@@ -794,8 +827,10 @@ If multiple nodes are given the same name, each USE statement refers to
 the closest node with the given name preceding it in either the file or
 prototype definition.
 
+<a id="4.6.3"></a>
 ### 4.6.3 Shapes and geometry
 
+<a id="4.6.3.1"></a>
 #### 4.6.3.1 Introduction
 
 The [Shape](nodesRef.md#Shape) node associates a geometry
@@ -819,6 +854,7 @@ field. This following node types are valid _geometry_ nodes:
 - [Text](nodesRef.md#Text)
 - [Geometry nodes created from PROTOs or EXTERNPROTOs](#4.8)
 
+<a id="4.6.3.2"></a>
 #### 4.6.3.2 Geometric property nodes
 
 Several geometry nodes contain [Coordinate](nodesRef.md#Coordinate), [Color](nodesRef.md#Color), [Normal](nodesRef.md#Normal),
@@ -827,6 +863,7 @@ geometric property nodes. The geometric property nodes are defined as
 individual nodes so that instancing and sharing is possible between
 different geometry nodes.
 
+<a id="4.6.3.3"></a>
 #### 4.6.3.3 Appearance nodes
 
 Shape nodes may specify an [Appearance](nodesRef.md#Appearance)
@@ -851,6 +888,7 @@ of the Appearance node:
 The interaction between such appearance nodes and the Color node is
 described in " [4.14 Lighting Model](#4.14)".
 
+<a id="4.6.3.4"></a>
 #### 4.6.3.4 Shape hint fields
 
 The ElevationGrid, Extrusion, and IndexedFaceSet nodes each have three
@@ -893,6 +931,7 @@ itself, and all of the interior angles at its vertices are less than
 180 degrees. Non-planar and self-intersecting polygons may produce
 undefined results even if the _convex_ field is FALSE.
 
+<a id="4.6.3.5"></a>
 #### 4.6.3.5 Crease angle field
 
 The _creaseAngle_ field, used by the ElevationGrid, Extrusion, and
@@ -907,6 +946,7 @@ of the two faces form an angle that is less than .5 radians. Otherwise,
 the faces will appear faceted. Crease angles must be greater than or
 equal to 0.0.
 
+<a id="4.6.4"></a>
 ### 4.6.4 Bounding boxes
 
 Several of the nodes include a bounding box specification comprised of
@@ -938,6 +978,10 @@ the union of the group's children's bounding boxes; it shall not
 include any transformations performed by the group itself (i.e., the
 bounding box is defined in the local coordinate system of the group).
 
+<!-- Якорь для перехода -->
+<a id="465-grouping-and-children-nodes nodes"></a>
+
+<a id="4.6.5"></a>
 ### 4.6.5 Grouping and children nodes
 
 Grouping nodes have a _children_ field that contains a list of
@@ -1049,6 +1093,7 @@ that reference other nodes through fields.
 **Node Type****Field****Valid Node Types for Field**Anchor_children_Valid children nodesAppearance_material_Material_texture_ImageTexture, MovieTexture, Pixel TextureBillboard_children_Valid children nodesCollision_children_Valid children nodesElevationGrid_color_Color_normal_Normal_texCoord_TextureCoordinateGroup_children_Valid children nodesIndexedFaceSet_color_Color_coord_Coordinate_normal_Normal_texCoord_TextureCoordinateIndexedLineSet_color_Color_coord_CoordinateLOD_level_Valid children nodesShape_appearance_Appearance_geometry_Box, Cone, Cylinder, ElevationGrid, Extrusion,
  IndexedFaceSet, IndexedLineSet, PointSet, Sphere, TextSound_source_AudioClip, MovieTextureSwitch_choice_Valid children nodesText_fontStyle_FontStyleTransform_children_Valid children nodes
 
+<a id="4.6.6"></a>
 ### 4.6.6 Light sources
 
 Shape nodes are illuminated by the sum of all of the lights in the
@@ -1083,8 +1128,10 @@ angle. DirectionalLights illuminate only the objects descended from the
 light's parent grouping node, including any descendent children of the
 parent grouping nodes.
 
+<a id="4.6.7"></a>
 ### 4.6.7 Sensor nodes
 
+<a id="4.6.7.1"></a>
 #### 4.6.7.1 Introduction to sensors
 
 There following nodes types are sensor nodes:
@@ -1117,6 +1164,7 @@ node's visibility status to change.
 The following two sections classify sensors into two categories: _environmental_
 _sensors_ and _pointing-device sensors_.
 
+<a id="4.6.7.2"></a>
 #### 4.6.7.2 Environmental sensors
 
 The [ProximitySensor](nodesRef.md#ProximitySensor) detects
@@ -1131,6 +1179,7 @@ clicking on a piece of geometry (i.e., TouchSensor). Proximity,
 time, collision, and visibility sensors are each processed
 independently of whether others exist or overlap.
 
+<a id="4.6.7.3"></a>
 #### 4.6.7.3 Pointing-device sensors
 
 The following node types are pointing-device sensors:
@@ -1207,6 +1256,7 @@ and _SensorB_:
 
 ```
 
+<a id="4.6.7.4"></a>
 #### 4.6.7.4 Drag sensors
 
 _Drag sensors_ are a subset of pointing-device sensors. There are
@@ -1234,6 +1284,7 @@ grabbing operations to accumulate the changes. If _autoOffset_ is
 FALSE, the sensor does not set the _offset_ field value at
 deactivation (or any other time).
 
+<a id="4.6.7.5"></a>
 #### 4.6.7.5 Activating and manipulating sensors
 
 The pointing device controls a pointer in the virtual world. While
@@ -1258,6 +1309,7 @@ geometry when that geometry is intersected by the bearing. If the
 bearing intersects multiple sensors' geometries, only the sensor
 nearest to the pointer will be eligible for activation.
 
+<a id="4.6.8"></a>
 ### 4.6.8 Interpolators
 
 Interpolator nodes are designed for linear keyframed animation. An
@@ -1358,6 +1410,7 @@ interpolator node is a Switch node with _whichChoice_ set to -1
 (i.e., ignore its children), the interpolator continues to operate
 as specified (receives and sends events).
 
+<a id="4.6.9"></a>
 ### 4.6.9 Time-dependent nodes
 
 [AudioClip](nodesRef.md#AudioClip), [MovieTexture](nodesRef.md#MovieTexture), and [TimeSensor](nodesRef.md#TimeSensor) are _time-dependent_
@@ -1430,6 +1483,7 @@ can be defined such that it will be active upon reading by specifying _loop_
 TRUE. This use of a non-terminating time-dependent node should be used
 with caution since it incurs continuous overhead on the simulation.
 
+<a id="4.6.10"></a>
 ### 4.6.10 Bindable children nodes
 
 The [Background](nodesRef.md#Background), [Fog](nodesRef.md#Fog), [NavigationInfo](nodesRef.md#NavigationInfo), and [Viewpoint](nodesRef.md#Viewpoint) nodes have the unique
@@ -1505,8 +1559,10 @@ NavigationInfo, or Viewpoint):
     event (see c above).
 
 
+<a id="4.6.11"></a>
 ### 4.6.11 Texture maps
 
+<a id="4.6.11.1"></a>
 #### 4.6.11.1 Texture map formats
 
 Four nodes specify texture maps: [Background](nodesRef.md#Background), [ImageTexture](nodesRef.md#ImageTexture), [MovieTexture](nodesRef.md#MovieTexture), and [PixelTexture](nodesRef.md#PixelTexture). In all cases,
@@ -1531,6 +1587,7 @@ Note that most image formats specify an alpha opacity, not transparency
 See Table 4.5 and Table 4.6 for a description of how the various
 texture types are applied.
 
+<a id="4.6.11.2"></a>
 #### 4.6.11.2 Texture map image formats
 
 Texture nodes that require support for the PNG (see [2.\[PNG\]](references.html#[PNG])) image format (" [6.5 Background](nodesRef.md#Background)" and
@@ -1584,7 +1641,7 @@ shall interpret JPEG files as follows:
 Texture nodes that support MPEG files (see [2.\[MPEG\]](references.html#[MPEG]) and " [6.28 MovieTexture](nodesRef.md#MovieTexture)")
 shall treat MPEG files as full RGB textures.
 
-Texture nodes that recommend support for GIF files (see [E.\[GIF\]](bibliography.html#[GIF]), " [6.5 Background](nodesRef.md#Background)", and
+Texture nodes that recommend support for GIF files (see [E.\[GIF\]](bibliography.md#[GIF]), " [6.5 Background](nodesRef.md#Background)", and
 " [6.22 ImageTexture](nodesRef.md#ImageTexture)")
 shall follow the applicable semantics described above for the PNG
 format.
@@ -1606,7 +1663,7 @@ of the events sent to it or generated by it according to its
 implementation.
 
 Field, eventIn, and eventOut types, and field file format syntax, are
-described in " [5. Field Reference](fieldsRef.html)."
+described in " [5. Field Reference](fieldsRef.md)."
 
 An _exposedField_ is a combination of field, eventIn, and
 eventOut. If the exposedField's name is _zzz_, it is a combination
@@ -1649,6 +1706,7 @@ Node type names must be unique in each VRML file. Defining a prototype
 with the same name as a previously defined prototype or a built-in node
 type is an error.
 
+<a id="4.8.1"></a>
 ### 4.8.1 PROTO interface declaration semantics
 
 The prototype interface defines the fields, eventIns, and eventOuts for
@@ -1684,6 +1742,7 @@ It is recommended that user-defined field or event names defined in
 PROTO interface declarations statements follow the naming conventions
 described in " [4.7 Fields, eventIns, and eventOuts semantics](#4.7)."
 
+<a id="4.8.2"></a>
 ### 4.8.2 PROTO definition semantics
 
 A prototype definition consists of one or more root nodes, nested PROTO
@@ -1762,6 +1821,7 @@ value of the eventOut that generated the event with the greatest
 timestamp. If two or more of the eventOuts generated events with
 identical timestamps, results are undefined.
 
+<a id="4.8.3"></a>
 ### 4.8.3 Prototype scoping rules
 
 Prototype definitions appearing inside a prototype definition (i.e., nested)
@@ -1792,6 +1852,7 @@ appropriate PROTO statement or using some other
 implementation-dependent mechanism. Second, default values for fields
 are not given since the implementation will define appropriate defaults.
 
+<a id="4.9.1"></a>
 ### 4.9.1 EXTERNPROTO interface semantics
 
 The semantics of the EXTERNPROTO are exactly the same as for a PROTO
@@ -1811,6 +1872,7 @@ EXTERNPROTO interface statements follow the naming conventions
 described in " [4.7 Fields, eventIns, and \
 eventOuts semantics](#4.7)."
 
+<a id="4.9.2"></a>
 ### 4.9.2 EXTERNPROTO URL semantics
 
 The string or strings specified after the interface declaration give
@@ -1851,6 +1913,7 @@ A material from this library could be used as follows:
 
 ```
 
+<a id="4.9.3"></a>
 ### 4.9.3 Browser extensions
 
 Browsers that wish to add functionality beyond the capabilities shall
@@ -1903,6 +1966,7 @@ specifies the actual definitions of the Torus node:
 
 ## ![](../pix/cube.gif)4.10 Event processing
 
+<a id="4.10.1"></a>
 ### 4.10.1 Introduction
 
 Most node types have at least one eventIn definition and thus can
@@ -1912,9 +1976,12 @@ have eventOut definitions. These are used to send data messages to
 destination nodes that some state has changed within the source node.
 
 If an eventOut is read before it has sent any events (e.g., _get\_foo\_changed_),
-the _initial_ _value_ as specified in " [5\. Field and Event Reference](fieldsRef.html)" for each
+the _initial_ _value_ as specified in " [5\. Field and Event Reference](fieldsRef.md)" for each
 field/event type is returned.
 
+<a id="4.10.2"></a>
+
+<a id="4.10.2"></a>
 ### 4.10.2 Route semantics
 
 The connection between the node generating the event and the node
@@ -1944,6 +2011,7 @@ second and subsequent identical routes are ignored. This also applies
 for routes created dynamically via a scripting language supported by
 the browser.
 
+<a id="4.10.3"></a>
 ### 4.10.3 Execution model
 
 Once a sensor or Script has generated an _initial event_, the
@@ -1966,6 +2034,7 @@ literal implementation.
 
 #### Figure 4.2: Conceptual execution model
 
+<a id="4.10.4"></a>
 ### 4.10.4 Loops
 
 Event cascades may contain _loops_, where an event _E_ is
@@ -1975,6 +2044,7 @@ generate two events from the same eventOut or to the same eventIn that
 have identical timestamps. This rule shall also be used to break loops
 created by cyclic dependencies between different sensor nodes.
 
+<a id="4.10.5"></a>
 ### 4.10.5 Fan-in and fan-out
 
 _Fan-in_ occurs when two or more routes write to the same eventIn.
@@ -1989,6 +2059,7 @@ the eventIns.
 
 ## ![](../pix/cube.gif)4.11 Time
 
+<a id="4.11.1"></a>
 ### 4.11.1 Introduction
 
 The browser controls the passage of time in a world by causing
@@ -2000,6 +2071,7 @@ creator should make no assumptions about how often a TimeSensor will
 generate events but can safely assume that each time event generated
 will be greater than any previous time event.
 
+<a id="4.11.2"></a>
 ### 4.11.2 Time origin
 
 Time (0.0) is equivalent to 00:00:00 GMT January 1, 1970. Absolute
@@ -2010,6 +2082,7 @@ happening before 1970.
 Processing an event with timestamp _t_ may only result in
 generating events with timestamps greater than or equal to _t_.
 
+<a id="4.11.3"></a>
 ### 4.11.3 Discrete and continuous changes
 
 VRML does not distinguish between discrete events (such as those
@@ -2034,6 +2107,7 @@ rendering of the world or one time-step in a simulation.
 
 ## ![](../pix/cube.gif)4.12 Scripting
 
+<a id="4.12.1"></a>
 ### 4.12.1 Introduction
 
 Authors often require that VRML worlds change dynamically in response
@@ -2061,6 +2135,7 @@ referenced by) the Script node's _url_ field. This program or
 script may be written in any programming language that the browser
 supports.
 
+<a id="4.12.2"></a>
 ### 4.12.2 Script execution
 
 A Script node is activated when it receives an event. The browser shall
@@ -2083,6 +2158,7 @@ the event that generated them. Conceptually, it takes no time for a
 Script node to receive and process an event, even though in practice it
 does take some amount of time to execute a Script.
 
+<a id="4.12.3"></a>
 ### 4.12.3  _Initialize()_ and _shutdown()_
 
 The scripting language binding may define an _initialize()_
@@ -2108,6 +2184,7 @@ delivered. The deletion of the Script node containing the _shutdown()_
 method is not complete until the execution of its _shutdown()_
 method is complete.
 
+<a id="4.12.4"></a>
 ### 4.12.4  _EventsProcessed()_
 
 The scripting language binding may define an _eventsProcessed()_
@@ -2123,6 +2200,7 @@ For a single event cascade, a given Script node's eventsProcessed
 method shall be called at most once. Events generated from an _eventsProcessed()_
 method are given the timestamp of the last event processed.
 
+<a id="4.12.5"></a>
 ### 4.12.5 Scripts with direct outputs
 
 Scripts that have access to other nodes (via SFNode/MFNode fields or
@@ -2142,6 +2220,7 @@ Script nodes that are not connected by ROUTE statements may be executed
 asynchronously. If multiple _directOutput_ Scripts read from
 and/or write to the same node, the results may be undefined.
 
+<a id="4.12.6"></a>
 ### 4.12.6 Asynchronous scripts
 
 Some languages supported by VRML browsers may allow Script nodes to
@@ -2153,6 +2232,7 @@ timestamp for that initial event. Such events are then sorted into the
 event stream and processed like any other event, following all of the
 same rules including those for looping.
 
+<a id="4.12.7"></a>
 ### 4.12.7 Script languages
 
 The Script node's _url_ field may specify a URL which refers to a
@@ -2185,6 +2265,7 @@ second choice, and the inline JavaScript code the third choice. A
 description of order of preference for multiple valued URL fields may
 be found in " [4.5.2 URLs](#4.5.2)."
 
+<a id="4.12.8"></a>
 ### 4.12.8 EventIn handling
 
 Events received by the Script node are passed to the appropriate
@@ -2194,6 +2275,7 @@ the eventIn; in others, it is a general callback method for all
 eventIns (see the scripting language annexes for details). The method
 is passed two arguments: the event value and the event timestamp.
 
+<a id="4.12.9"></a>
 ### 4.12.9 Accessing fields and events
 
 The fields, eventIns, and eventOuts of a Script node are accessible
@@ -2206,6 +2288,7 @@ can access the eventIns and eventOuts just like any other node (see
 It is recommended that user-defined field or event names defined in
 Script nodes follow the naming conventions described in " [4.7 Fields, eventIns, and eventOuts semantics](#4.7)."
 
+<a id="4.12.9.1"></a>
 #### 4.12.9.1 Accessing fields and eventOuts of the script
 
 Fields defined in the Script node are available to the script through a
@@ -2215,6 +2298,7 @@ can be read or written and are persistent across method calls.
 EventOuts defined in the Script node may also be read; the returned
 value is the last value sent to that eventOut.
 
+<a id="4.12.9.2"></a>
 #### 4.12.9.2 Accessing eventIns and eventOuts of other nodes
 
 The script can access any eventIn or eventOut of any node to which it
@@ -2247,6 +2331,7 @@ named " _set\_zzz_". Similarly, if accessing an eventOut
 named " _zzz_" and an eventOut of that name is not found,
 the browser shall try to access the eventIn named " _zzz\_changed_".
 
+<a id="4.12.9.3"></a>
 #### 4.12.9.3 Sending eventOuts
 
 Each scripting language provides a mechanism for allowing scripts to
@@ -2259,6 +2344,7 @@ single script execution will result in the "last" event being
 sent, where "last" is determined by the semantics of the
 scripting language being used.
 
+<a id="4.12.10"></a>
 ### 4.12.10 Browser script interface
 
 The browser interface provides a mechanism for scripts contained by
@@ -2271,6 +2357,7 @@ abstract syntax, types are given as VRML field types. Mapping of these
 types into those of the underlying language (as well as any type
 conversion needed) is described in the appropriate language annex.
 
+<a id="4.12.10.1"></a>
 #### 4.12.10.1 SFString getName( ) and SFString getVersion( )
 
 The **getName()** and **getVersion()** methods return a string
@@ -2281,6 +2368,7 @@ not guaranteed to be unique or to adhere to any particular format and
 are for information only. If the information is unavailable these
 methods return empty strings.
 
+<a id="4.12.10.2"></a>
 #### 4.12.10.2 SFFloat getCurrentSpeed( )
 
 The **getCurrentSpeed()** method returns the average navigation
@@ -2290,6 +2378,7 @@ bound [Viewpoint](nodesRef.md#Viewpoint) node. If speed of
 motion is not meaningful in the current navigation type, or if the
 speed cannot be determined for some other reason, 0.0 is returned.
 
+<a id="4.12.10.3"></a>
 #### 4.12.10.3 SFFloat getCurrentFrameRate( )
 
 The **getCurrentFrameRate()** method returns the current frame rate
@@ -2298,11 +2387,13 @@ whether or not it is supported at all is browser dependent. If frame
 rate measurement is not supported or cannot be determined, 0.0 is
 returned.
 
+<a id="4.12.10.4"></a>
 #### 4.12.10.4 SFString getWorldURL( )
 
 The **getWorldURL()** method returns the URL for the root of the
 currently loaded world.
 
+<a id="4.12.10.5"></a>
 #### 4.12.10.5 void replaceWorld( MFNode nodes )
 
 The **replaceWorld()** method replaces the current world with the
@@ -2311,6 +2402,7 @@ will usually not return since the world containing the running script
 is being replaced. Scripts that may call this method shall have _mustEvaluate_
 set to TRUE.
 
+<a id="4.12.10.6"></a>
 #### 4.12.10.6 void loadURL( MFString url, MFString parameter )
 
 The **loadURL()** method loads the first recognized URL from the
@@ -2324,6 +2416,7 @@ replaced with the data from the specified URL at some time in the
 future. Scripts that may call this method shall set _mustEvaluate_
 to TRUE.
 
+<a id="4.12.10.7"></a>
 #### 4.12.10.7 void setDescription( SFString description )
 
 The **setDescription()** method sets the passed string as the
@@ -2331,6 +2424,7 @@ current description. This message is displayed in a browser dependent
 manner. An empty string clears the current description. Scripts that
 may call this method must have _mustEvaluate_ set to TRUE.
 
+<a id="4.12.10.8"></a>
 #### 4.12.10.8 MFNode createVrmlFromString( SFString vrmlSyntax )
 
 The **createVrmlFromString()** method imports a string consisting of
@@ -2341,6 +2435,7 @@ refer only to nodes DEF'ed in the string, and non-built-in node types
 used by the string must be prototyped using EXTERNPROTO or PROTO
 statements inside the string).
 
+<a id="4.12.10.9"></a>
 #### 4.12.10.9 void createVrmlFromURL( MFString url, SFNode node, SFString  event )
 
 The **createVrmlFromURL()** instructs the browser to load a VRML
@@ -2353,6 +2448,7 @@ is sent to the passed _node_ returning the root nodes of the
 corresponding VRML scene. The event parameter contains a string naming
 an MFNode eventIn on the passed node.
 
+<a id="4.12.10.10"></a>
 #### 4.12.10.10 void addRoute(...) and void deleteRoute(...)
 
 #### void addRoute( SFNode fromNode, SFString fromEventOut,                           SFNode  toNode, SFString toEventIn );
@@ -2367,6 +2463,7 @@ have _directOutput_ set to TRUE.
 
 ## ![](../pix/cube.gif)4.13 Navigation
 
+<a id="4.13.1"></a>
 ### 4.13.1 Introduction
 
 Conceptually speaking, every VRML world contains a _viewpoint_ from
@@ -2381,6 +2478,7 @@ the exact user interface is browser-dependent. The Viewpoint node (see
 specifies key locations and orientations in the world that the user may
 be moved to via scripts or browser-specific user interfaces.
 
+<a id="4.13.2"></a>
 ### 4.13.2 Navigation paradigms
 
 The browser may allow the user to modify the location and orientation
@@ -2399,6 +2497,7 @@ interface provided to accomplish this navigation is browser-dependent.
 See " [6.29 NavigationInfo](nodesRef.md#NavigationInfo)"
 for details.
 
+<a id="4.13.3"></a>
 ### 4.13.3 Viewing model
 
 The browser controls the location and orientation of the viewer in the
@@ -2420,6 +2519,7 @@ Viewpoint's location and does not affect the values of a Viewpoint
 node. The location of the viewer may be determined with a
 ProximitySensor node (see " [6.38 ProximitySensor](nodesRef.md#ProximitySensor)").
 
+<a id="4.13.4"></a>
 ### 4.13.4 Collision detection and terrain following
 
 A VRML file may contain Collision nodes (see " [6.8 Collision](nodesRef.md#Collision)") and
@@ -2452,6 +2552,7 @@ automatically step up onto it instead of colliding with it.
 
 ## ![](../pix/cube.gif)4.14 Lighting model
 
+<a id="4.14.1"></a>
 ### 4.14.1 Introduction
 
 The VRML lighting model provides detailed equations which define the
@@ -2461,6 +2562,7 @@ the object are combined with the lights illuminating the object and the
 currently bound Fog node. These equations are designed to simulate the
 physical properties of light striking a surface.
 
+<a id="4.14.2"></a>
 ### 4.14.2 Lighting 'off'
 
 A Shape node is unlit if either of the following is true:
@@ -2528,6 +2630,7 @@ from 1 or 2 component texture image
 ITrgb= colour
 from 3-4 component texture image
 
+<a id="4.14.3"></a>
 ### 4.14.3 Lighting 'on'
 
 If the shape is lit (i.e., a Material and an Appearance
@@ -2592,6 +2695,7 @@ TM = material _transparency_
 
 ... and all other terms are as above.
 
+<a id="4.14.4"></a>
 ### 4.14.4 Lighting equations
 
 An ideal VRML implementation will evaluate the following lighting
@@ -2708,10 +2812,11 @@ and:
  fogVisibilityfogType "LINEAR", dV> fogVisibility0fogType "EXPONENTIAL", dV
  < fogVisibility exp(-dV / (fogVisibility-dV ) )fogType "EXPONENTIAL", dV> fogVisibility 0
 
+<a id="4.14.5"></a>
 ### 4.14.5 References
 
 The VRML lighting equations are based on the simple illumination
-equations given in [E.\[FOLE\]](bibliography.html#[FOLE]) and [E.\[OPEN\]](bibliography.html#[OPEN]).
+equations given in [E.\[FOLE\]](bibliography.md#[FOLE]) and [E.\[OPEN\]](bibliography.md#[OPEN]).
 
 ![](../pix/vrmlbar.gif)
 
