@@ -13,161 +13,114 @@
 <a id="Activate"></a>
 ### 3.1 activate
 
-To cause a [_sensor node_](#SensorNode) to generate an "isActive" [_event_](#Event). The various types of sensor nodes are "activated" by [_user_](#User) interactions, the passage of [_time_](#Time), or other events. Only active sensors affect the [_user's_](#User) experience. A Script [_node_](#Node) is activated when it receives an event. A pointing device such as a [_mouse_](#Mouse) is activated when one of its buttons is depressed by a user. See " [4.12.2 Script Execution](concepts.md#4.12.2)" for details.
+
+Чтобы заставить [_sensor node_](#SensorNode) генерировать [_событие_](#Event) «isActive». Различные типы сенсорных узлов «активируются» взаимодействиями [_user_](#User), прохождением [_time_](#Time) или другими событиями. Только активные датчики влияют на работу [_user's_](#User). Сценарий [_node_](#Node) активируется при получении события. Указательное устройство, такое как [_mouse_](#Mouse), активируется, когда пользователь нажимает одну из его кнопок. Подробности см. в разделе «[4.12.2 Выполнение сценария](concepts.md#4.12.2)».
 
 <a id="Ancestor"></a>
-### 3.2 ancestor
+### 3.2 ancestor (предок)
 
-A [_node_](#Node) which contains one or more [_children nodes_](#ChildrenNode). A [_grouping node_](#GroupingNode).
+[_Узел_](#Node) который содержит один или несколько [_дочених узлов_](#ChildrenNode). [_grouping node_](#GroupingNode).
 
 <a id="Author"></a>
 ### 3.3 author
 
-Person or agent that creates [_VRML files_](#VRMLFile).
-Authors typically utilize [_generators_](#Generator) to
-assist them.
+Лицо или агент, создающий [_VRML files_](#VRMLFile).
+Авторы обычно используют [_generators_](#Generator) для помощи им..
 
 <a id="AuthoringTool"></a>
 ### 3.4 authoring tool
 
-See [_generator_](#Generator).
+Смотри [_generator_](#Generator).
 
 <a id="Avatar"></a>
 ### 3.5 avatar
 
-The abstract representation of the [_user_](#User) in a
-VRML [_world_](#World). The physical dimensions of the
-avatar are used for collision detection and terrain following. See
-" [6.29 NavigationInfo](nodesRef.md#NavigationInfo)"
-for details.
+Абстрактное представление [_user_](#User) в VRML [_world_](#World). Физические размеры аватара используются для обнаружения столкновений и отслеживания местности. Подробности см. в разделе «[6.29 NavigationInfo](nodesRef.md#NavigationInfo)».
 
 <a id="Bearing"></a>
 ### 3.6 bearing
 
-A straight line passing through the [_pointer_](#Pointer)
-location in the direction of the pointer. If multiple sensors'
-geometry intersect this line, only the sensor nearest the viewer will
-be eligible to generate [_events_](#Event) regardless
-of material and texture properties (e.g., transparency).
+Прямая линия, проходящая через местоположение [_pointer_](#Pointer) в направлении указателя. Если геометрия нескольких датчиков пересекает эту линию, только ближайший к зрителю датчик сможет генерировать [_events_](#Event) независимо от свойств материала и текстуры (например, прозрачности).
 
 <a id="BindingNode"></a>
-### 3.7 binding node
+### 3.7 binding node (узел привязки)
 
-A [_node_](#Node) which may have many [_instances_](#Instance) in a [_scene_\
-_graph_](#SceneGraph), but only one instance may be active at any instant of [_time_](#Time). A node of type Background, Fog,
-NavigationInfo, or Viewpoint. See " [4.6.10 Bindable children nodes](concepts.md#4.6.10)"
-for details.
+[_node_](#Node), который может иметь множество [_instances_](#Instance) в [_scene_\ _graph_](#SceneGraph), но в любой момент времени [_time_](#Time) может быть активен только один экземпляр. Узел типа Background, Fog, NavigationInfo или Viewpoint. Подробности см. в разделе «[4.6.10 Привязываемые дочерние узлы](concepts.md#4.6.10)".
 
 <a id="Browser"></a>
 ### 3.8 browser
 
-A computer program which interprets [_VRML files_](#VRMLFIle)
-, presents their content to a [_user_](#User) on a [_display device_](#DisplayDevice), and allows the user
-to interact with [_worlds_](#World) defined by VRML
-files by means of a user interface.
+Компьютерная программа, которая интерпретирует [_VRML files_](#VRMLFIle) , представляет их содержимое [_user_](#User) на [_display device_](#DisplayDevice) и позволяет пользователю взаимодействовать с [_worlds_](#World), определенными файлами VRML, посредством пользовательского интерфейса.
 
 <a id="BrowserExtension"></a>
 ### 3.9 browser extension
 
-[_Nodes_](#Node) defined using the prototyping
-mechanism which are understood only by certain [_browsers_](#Browser).
-See " [4.9.3 Browser Extensions](concepts.md#4.9.3)"
-for details.
+[_Nodes_](#Node) определяется с использованием механизма прототипирования, который понятен только определенным [_browsers_](#Browser). Подробности см. в разделе «[4.9.3 Расширения браузера](concepts.md#4.9.3)".
 
 <a id="BuiltinNode"></a>
 ### 3.10 built-in node
 
-A node of a [_type_](#NodeType) explicitly defined in
-this standard.
+Узел [_type_](#NodeType), явно определенный в этом стандарте.
 
 <a id="Callback"></a>
 ### 3.11 callback
 
-A function defined in a [_scripting_\
-_language_](#ScriptingLanguage) to which [_events_](#Event) are
-passed. See " [4.12.8 EventIn handling](concepts.md#4.12.8)"
-for details.
+Функция, определенная в [_scripting_\ _language_](#ScriptingLanguage), которому передаются [_events_](#Event). Подробности см. в разделе «[4.12.8 Обработка EventIn](concepts.md#4.12.8)".
 
 <a id="Candidate"></a>
 ### 3.12 candidate
 
-One of potentially several choices. The [_user_](#User)
-or the [_browser_](#Browser) will select none or one
-of the choices when all candidates are identified. See " [4.6.10 Bindable children nodes](concepts.md#4.6.10)"
-and " [6.2 Anchor](nodesRef.md#Anchor)" for
-details.
+Один из нескольких возможных вариантов. [_user_](#User) или [_browser_](#Browser) не выберут ни один из вариантов или один из вариантов, когда будут определены все кандидаты.  Подробности см. в разделах "[4.6.10 Привязываемые дочерние узлы](concepts.md#4.6.10)" и "[6.2 Anchor](nodesRef.md#Anchor)".
 
 <a id="Child"></a>
 ### 3.13 child
 
-A direct [_descendent_](#Descendent).
+Прямой [_потомок_](#Descendent).
 
 <a id="ChildrenNode"></a>
 ### 3.14 children node
 
-[_Node_](#Node) which may be parented by a [_grouping node_](#GroupingNode) and is affected by the
-transformations of all [_ancestors_](#Ancestor). See
-" [4.6.5 Grouping and children nodes](concepts.md#4.6.5)"
-for list of allowable children nodes.
+[_Node_](#Node), родительским элементом которого может быть [_grouping node_](#GroupingNode), и на него влияют преобразования всех [_предков_](#Ancestor). Список допустимых дочерних узлов см. в разделе "[4.6.5 Группировка и дочерние узлы](concepts.md#4.6.5)".
 
 <a id="ClientSystem"></a>
 ### 3.15 client system
 
-A computer system , attached to a [_network_](#Network),
-which relies on another computer (the server) for essential processing
-functions. Many client systems also function as stand-alone computers.
+Компьютерная система, подключенная к [_сети_](#Network), которая использует другой компьютер (сервер) для выполнения основных функций обработки. Многие клиентские системы также функционируют как автономные компьютеры.
 
 <a id="CollisionProxy"></a>
 ### 3.16 collision proxy
 
-A [_node_](#Node) used as a substitute for all of a
-Collision node's children during collision detection. See " [6.8 Collision](nodesRef.md#Collision)" for
-details.
+[_node_](#Node), используемый в качестве замены всех дочерних узлов узла столкновения во время обнаружения столкновений. Подробности см. в разделе «[6.8 Столкновение](nodesRef.md#Collision)».
 
 <a id="ColourModel"></a>
 ### 3.17 colour model
 
-Characterization of a colour space in terms of explicit parameters.
-VRML allows colours to be defined only with the RGB colour model.
-However, colour interpolation is performed in the HSV colour space.
+Характеристика цветового пространства с точки зрения явных параметров. VRML позволяет определять цвета только с помощью цветовой модели RGB. Однако интерполяция цвета выполняется в цветовом пространстве HSV.
 
 <a id="Culling"></a>
-### 3.18 culling
+### 3.18 culling (отбраковка)
 
-The process of identifying [_objects_](#Object) or
-parts of objects which do not need to be processed further by the [_browser_](#Browser) in order to produce the desired
-view of a [_world_](#World).
+Процесс идентификации [_objects_](#Object) или частей объектов, которые не требуют дальнейшей обработки [_browser_](#Browser) для создания желаемого представления [_world_](#World).
 
 <a id="Descendent"></a>
-### 3.19 descendent
+### 3.19 descendent (потомок не обязательно прямой)
 
-A [_node_](#Node) in a [_scene_\
-_graph_](#SceneGraph) which has a parent. See [_children_\
-_node_](#ChildrenNode).
+[_node_](#Node) в [_scene_graph_](#SceneGraph), у которого есть родительский элемент. См. [_children_node_](#ChildrenNode).
 
 <a id="DisplayDevice"></a>
 ### 3.20 display device
 
-A graphics device on which VRML [_worlds_](#World) may
-be rendered.
+Графическое устройство, на котором может отображаться VRML [_worlds_](#World).
 
 <a id="DragSensor"></a>
 ### 3.21 drag sensor
 
-A [_pointing device sensor_](#PointingDeviceSensor)
-which causes [_events_](#Event) to be generated in
-response to sensor-dependent pointer motions. For example, the
-SphereSensor generates spherical rotation events. A [_node_](#Node)
-of type CylinderSensor, PlaneSensor, or SphereSensor. See " [4.6.7 Sensor nodes](concepts.md#4.6.7)" and
-" [4.6.7.4 Drag sensors](concepts.md#4.6.7.4)"
-for details.
+[_Датчик указывающего устройства_](#PointingDeviceSensor), который вызывает создание [_events_](#Event) в ответ на движения указателя, зависящие от датчика. Например, SphereSensor генерирует события сферического вращения. [_node_](#Node) типа CylinderSensor, PlaneSensor или SphereSensor. Подробности см. в разделах «[4.6.7 Узлы датчиков](concepts.md#4.6.7)» и «[4.6.7.4 DragSensor](concepts.md#4.6.7.4)».
 
 <a id="Element"></a>
 ### 3.22 element
 
-The smallest unit into which an [_object_](#Object) may
-be divided. For example, the header record of a [_VRML_\
-_file_](#VRMLFile) or a single value of a multi-valued [_field_](#Field).
+Наименьшая единица, на которую можно разделить [_object_](#Object). Например, запись в заголовке [_VRML_file_](#VRMLFile) или одно значение многозначного [_поля_](#Field).
 
 <a id="EnvironmentalSensor"></a>
 ### 3.23 environmental sensor
@@ -254,8 +207,8 @@ in a simulation.
 <a id="Generator"></a>
 ### 3.35 generator
 
-A computer program which creates [_VRML files_](#VRMLFile).
-A generator may be used by a person or operate automatically.
+Компьютерная программа, которая создает[_VRML files_](#VRMLFile).
+Генератор может использоваться человеком или работать автоматически.
 
 <a id="GeometricPropertyNode"></a>
 ### 3.36 geometric property node
@@ -744,19 +697,17 @@ presented by the [_browser_](#Browser) to the [_user_](#User).
 
 See [_world_](#World).
 
-<a id="VrmlBrowser"></a>
+<a id="VRMLBrowser"></a>
 ### 3.106 VRML browser
 
 See [_browser_](#Browser).
 
-<a id="VrmlDocumentServer"></a>
+<a id="VRMLDocumentServer"></a>
 ### 3.107 VRML document server
 
-A computer program that locates and transmits [_VRML_\
-_files_](#VRMLFile) and supporting files in response to requests from VRML
-client applications ( [_browsers_](#Browser)).
+Компьютерная программа, которая находит и передает [_VRML_files_](#VRMLFile) и вспомогательные файлы в ответ на запросы клиентских приложений VRML ( [_browsers_](#Browser)).
 
-<a id="VrmlFile"></a>
+<a id="VRMLFile"></a>
 ### 3.108 VRML file
 
 A file, data stream, or string of UTF-8 characters, which contains
