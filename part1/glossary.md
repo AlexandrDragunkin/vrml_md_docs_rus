@@ -356,7 +356,7 @@ Joint Technical Committee 1. See [`http://www.iso.ch/meme/JTC1.html`](http://www
 
 ### 3.58 LOD
 
-Level Of Detail.
+Уровень детализации.
 
 <a id="LineTerminator"></a>
 
@@ -380,19 +380,19 @@ Level Of Detail.
 
 ### 3.62 MIDI
 
-Musical Instrument Digital Interface. A standard for digital music representation. See [2.[MIDI]](references.md#[MIDI]).
+Цифровой интерфейс музыкальных инструментов. Стандарт цифрового представления музыки. См. [2.[MIDI]](references.md#[MIDI]).
 
 <a id="Mime"></a>
 
 ### 3.63 MIME
 
-Multipurpose Internet Mail Extension. Used to specify filetyping rules for [_Internet_](#Internet) applications, including [_browsers_](#Browser). See " [4.5.1 File extension and MIME types](concepts.md#4.5.1)" for details. See also [2.[MIME]](references.md#[MIME]).
+Multipurpose Internet Mail Extension. Используется для указания правил типизации файлов для приложений [_Internet_](#Internet), включая [_browsers_](#Browser). Подробности см. в разделе «[4.5.1 Расширение файла и MIME типы](concepts.md#4.5.1)". См. также [2.[MIME]](references.md#[MIME]).
 
 <a id="Mouse"></a>
 
 ### 3.64 mouse
 
-A 2D pointing device which enables a [_user_](#User) to move a cursor on a display device in order to point at displayed [_objects_](#Object). One or more push buttons on the mouse allow the user to indicate to the computer program that some action is to be taken.
+2D-указательное устройство, которое позволяет [_user_](#User) перемещать курсор на устройстве отображения, чтобы указать на отображаемые [_objects_](#Object). Одна или несколько кнопок мыши позволяют пользователю указать компьютерной программе, что необходимо выполнить определенное действие.
 
 <a id="Mpeg"></a>
 
@@ -404,247 +404,245 @@ Moving Picture Experts Group.
 
 ### 3.66 multimedia
 
-An integrated presentation, typically on a computer, of content of various types, such as computer graphics, audio, and video.
+Интегрированное представление, обычно на компьютере, контента различных типов, например компьютерной графики, аудио и видео.
 
 <a id="Network"></a>
 
 ### 3.67 network
 
-Chain of interconnected computers.
+Цепь взаимосвязанных компьютеров.
 
 <a id="Now"></a>
 
 ### 3.68 now
 
-The present [_time_](#Time) as perceived by the [_user_](#User).
-
+Текущее [_время_](#Time), воспринимаемое [_пользователем_](#User).
 <a id="Node"></a>
 
-### 3.69 node
+### 3.69 node (Узел)
 
-The fundamental component of a [_scene graph_](#SceneGraph) in VRML. Nodes are abstractions of various real-world objects and concepts. Examples include spheres, lights, and material descriptions. Nodes contain [_fields_](#Field) and [_events_](#Event). [_Messages_](#Message) may be sent between nodes along [_routes_](#Route).
+Фундаментальный компонент [_графа сцены_](#SceneGraph) в VRML. Узлы — это абстракции различных объектов и концепций реального мира. Примеры включают сферы, источники света и описания материалов. Узлы содержат [_поля_](#Field) и [_события_](#Event). [_Сообщения_](#Message) могут отправляться между узлами по [_маршрутам_](#Route).
 
 <a id="NodeType"></a>
 
 ### 3.70 node type
 
-A required parameter for each [_node_](#Node) that describes, in general, its particular semantics. For example, Box, Group, Sound, and SpotLight are node types. See " [4.6 Node semantics](concepts.md#4.6)" and " [6. Node Reference](nodesRef.md)" for details.
+Обязательный параметр для каждого [_узла_](#Node), который в целом описывает его конкретную семантику. Например, Box, Group, Sound и SpotLight — это типы узлов. Подробности см. в разделах «[4.6 Семантика узла](concepts.md#4.6)» и «[6. Справочник узла](nodesRef.md)».
 
 <a id="Object"></a>
 
 ### 3.71 object
 
-A collection of data and procedures, packaged according to the rules and syntax defined in this standard. "Object" is usually synonymous with [_node_](#Node) _._
+Набор данных и процедур, упакованный в соответствии с правилами и синтаксисом, определенными в этом стандарте. «Object» обычно является синонимом [_node_](#Node) _._
 
 <a id="ObjectSpace"></a>
 
 ### 3.72 object space
 
-The coordinate system in which an [_object_](#Object) is defined.
+Система координат, в которой определен [_object_](#Object).
 
 <a id="Panorama"></a>
 
 ### 3.73 panorama
 
-A background texture that is placed behind all geometry in the scene and in front of the ground and sky. See " [6.5 Background](nodesRef.md#Background)" for details.
+Фоновая текстура, которая размещается позади всей геометрии сцены и перед землей и небом. Подробности см. в разделе «[6.5 Фон](nodesRef.md#Background)».
 
 <a id="Png"></a>
 
 ### 3.74 PNG
 
-Portable Network Graphics. A [_file format_](#FileFormat) for 2D images. See [2.[PNG]](references.md#[PNG]).
+Portable Network Graphics.[_формат файла_](#FileFormat) для 2D-изображений. См. [2.[PNG]](references.md#[PNG]).
 
 <a id="Pointer"></a>
 
-### 3.75 pointer
+### 3.75 pointer (Указатель)
 
-A location and direction in the [_virtual world_](#VirtualWorld) defined by the [_pointing device_](#PointingDevice) which the [_user_](#User) is currently using to interact with the virtual world.
+Местоположение и направление в [_виртуальном мире_](#VirtualWorld), определяемые [_указательным устройством_](#PointingDevice), которое [_пользователь_](#User) в данный момент использует для взаимодействия с виртуальным миром.
 
 <a id="PointingDevice"></a>
 
 ### 3.76 pointing device
 
-A hardware device connected to the [_user's_](#User) computer by which the user directly controls the location and direction of the [_pointer_](#Pointer). Pointing devices may be either 2D or 3D and may have one or more control buttons. See " [4.6.7.5 Activating and manipulating sensors](concepts.md#4.6.7.5)" for details.
+Аппаратное устройство, подключенное к компьютеру [_пользователем_](#User), с помощью которого пользователь напрямую управляет местоположением и направлением [_указателя_](#Pointer). Указательные устройства могут быть двухмерными или трехмерными и иметь одну или несколько кнопок управления. Подробности см. в разделе «[4.6.7.5 Активация датчиков и управление ими](concepts.md#4.6.7.5)".
 
 <a id="PointingDeviceSensor"></a>
 
 ### 3.77 pointing device sensor
 
-Pointing device sensor [_nodes_](#Node) generate [_events_](#Event) based on [_user_](#User) actions, such as [_pointing device_](#PointingDevice) motions or button activations. A node of type Anchor, CylinderSensor, PlaneSensor, SphereSensor, or TouchSensor. See " [4.6.7.3 Pointing device sensors](concepts.md#4.6.7.3)" for details.
+Датчик манипулятора [_nodes_](#Node) генерирует [_events_](#Event) на основе действий [_user_](#User), таких как движения [_pointing device_](#PointingDevice) или нажатия кнопок. Узел типа Anchor, CylinderSensor, PlaneSensor, SphereSensor или TouchSensor. Подробности см. в разделе «[4.6.7.3 Датчики манипулятора](concepts.md#4.6.7.3)".
 
 <a id="Polyline"></a>
 
 ### 3.78 polyline
 
-A sequence of straight line segments where the end point of the first segment is coincident with the start point of the second segment, the endpoint of the second segment is coincident with the start point of the third segment, and so on. A piecewise linear curve.
+Последовательность отрезков прямой, в которой конечная точка первого сегмента совпадает с начальной точкой второго сегмента, конечная точка второго сегмента совпадает с начальной точкой третьего сегмента и так далее. Кусочно-линейная кривая.
 
 <a id="Profile"></a>
 
 ### 3.79 profile
 
-A named collection of functionality and conformance criteria which define an implementable subset of a standard.
+Именованный набор функциональных возможностей и критериев соответствия, которые определяют реализуемое подмножество стандарта.
 
 <a id="Prototype"></a>
 
 ### 3.80 prototype
 
-The definition of a new [_node type_](#NodeType) in terms of the [_nodes_](#Node) defined in this standard. See " [4.8 Prototype semantics](concepts.md#4.8)" for details.
+Определение нового [_типа узла_](#NodeType) с точки зрения [_узла_](#Node), определенного в этом стандарте. Подробности см. в разделе «[4.8 Семантика прототипа](concepts.md#4.8)».
 
 <a id="Prototyping"></a>
 
 ### 3.81 prototyping
 
-The mechanism for extending the set of [_node types_](#NodeType) from within a [_VRML file_](#VRMLFile).
+Механизм расширения набора [типов узлов](#NodeType) из [файла VRML](#VRMLFile).
 
 <a id="PublicInterface"></a>
 
 ### 3.82 public interface
 
-The formal definition of a [_node type_](#NodeType) in this standard.
+Формальное определение [_типа узла_](#NodeType) в этом стандарте.
 
 <a id="Rgb"></a>
 
 ### 3.83 RGB
 
-Red, Green, Blue colour model. This is the colour model used within VRML for the specification of colours. Each colour is represented as a combination of the three primary colours red, green, and blue. See [E.[FOLE]](bibliography.md#[FOLE]).
+Цветовая модель: красный, зеленый, синий. Это цветовая модель, используемая в VRML для спецификации цветов. Каждый цвет представлен как комбинация трех основных цветов: красного, зеленого и синего. См. [E.[FOLE]](bibliography.md#[FOLE]).
 
 <a id="Route"></a>
 
 ### 3.84 route
 
-The connection between a [_node_](#Node) generating an [_event_](#Event) and a node receiving the event. See " [4.3.9 Route statement syntax](concepts.md#4.3.9)" and " [4.10.2 Route semantics](concepts.md#4.10.2)" for details.
+Соединение между [_node_](#Node), генерирующим [_event_](#Event), и узлом, получающим событие. Подробности см. в разделах «[4.3.9 Синтаксис оператора маршрута](concepts.md#4.3.9)» и «[4.10.2 Семантика маршрута](concepts.md#4.10.2)».
 
 <a id="Rurl"></a>
 
 ### 3.85 RURL
 
-Relative Uniform Resource Locator. See [2.[RURL]](references.md#[RURL]).
-
+Относительный универсальный указатель ресурсов. См. [2.[RURAL]](references.md#[RURAL]).
 <a id="SceneGraph"></a>
 
 ### 3.86 scene graph
 
-An ordered collection of grouping [_nodes_](#Node) and other nodes. [_Grouping nodes_](#GroupingNode), (such as LOD, Switch, and Transform nodes) may have [_children_ _nodes_](#ChildrenNode). See " [4.2.3 Scene graph](concepts.md#4.2.3)" and " [4.4.2 Scene graph structure](concepts.md#4.4.2)" for details.
+Упорядоченная коллекция группировки [_nodes_](#Node) и других узлов. [_Grouping nodes_](#GroupingNode) (например, узлы LOD, Switch и Transform) могут иметь [_children_ _nodes_](#ChildrenNode). Подробности см. в разделах "[4.2.3 График сцены](concepts.md#4.2.3)" и "[4.4.2 Структура графа сцены](concepts.md#4.4.2)".
 
 <a id="Scripting"></a>
 
 ### 3.87 scripting
 
-The process of creating or referring to a script.
+Процесс создания сценария или обращения к нему.
 
 <a id="ScriptingLanguage"></a>
 
 ### 3.88 scripting language
 
-A system of syntactical and semantic constructs used to define and automate procedures and processes on a computer. Typically, scripting languages are interpreted and executed sequentially on a statement-by-statement basis wheras programming languages are generally compiled prior to execution.
+Система синтаксических и семантических конструкций, используемых для определения и автоматизации процедур и процессов на компьютере. Обычно языки сценариев интерпретируются и выполняются последовательно, каждый оператор, тогда как языки программирования обычно компилируются перед выполнением.
 
 <a id="SensorNode"></a>
 
 ### 3.89 sensor node
 
-A [_node_](#Node) which enables the [_user_](#User) to interact with the [_world_](#World) in the scene graph hierarchy. Sensor nodes respond to user interaction with geometric [_objects_](#Object) in the world, the movement of the user through the world, or the passage of [_time_](#Time). See " [4.6.7 Sensor nodes](concepts.md#4.6.7)" for details.
+[_Узлы_](#Node), который позволяет [_пользователю_](#User) взаимодействовать с [_миром_](#World) в иерархии графа сцены. Сенсорные узлы реагируют на взаимодействие пользователя с геометрическими [_объектами_](#Object) в мире, перемещение пользователя по миру или прохождение [_времени_](#Time). Подробности см. в разделе «[4.6.7 Узлы датчиков](concepts.md#4.6.7)».
 
 <a id="SeparatorCharacter"></a>
 
 ### 3.90 separator character
 
-A [_UTF-8_](UTF-8) character used to separate syntactical entities in a [_VRML file_](#VRMLFile). Specifically, commas, spaces, tabs, linefeeds, and carriage-returns are separator characters wherever they appear outside of string [_fields_](#Field). See " [4.3.1 Clear text encoding](concepts.md#4.3.1)" for details.
+Символ [_UTF-8_](Utf8), используемый для разделения синтаксических объектов в [_VRML file_](#VRMLFile). В частности, запятые, пробелы, табуляции, переводы строк и возврат каретки являются символами-разделителями везде, где они появляются за пределами строки [_поля_](#Field). Подробности см. в разделе «[4.3.1 Кодирование открытого текста](concepts.md#4.3.1)".
 
 <a id="SimulationTick"></a>
 
 ### 3.91 simulation tick
 
-The smallest time unit capable of being identified in a digital simulation of analog time. [_Time_](#Time) in the context of VRML is conceptually analog but is realized by an implementation as a digital simulation of abstract analog time. See " [4.11 Time](concepts.md#4.11)" for details.
+Наименьшая единица времени, которую можно идентифицировать в цифровой модели аналогового времени. [_Time_](#Time) в контексте VRML концептуально является аналоговым, но реализуется посредством реализации как цифровая симуляция абстрактного аналогового времени. Подробности см. в разделе «[4.11 Время](concepts.md#4.11)».
 
 <a id="SpecialGroupNode"></a>
 
 ### 3.92 special group node
 
-A [_grouping node_](#GroupingNode) which exhibits special behaviour. Examples of such special behaviour include selecting one of many [_children nodes_](#ChildrenNode) to be rendered based on a dynamically changing parameter value and dynamically loading children nodes from an external file. A node of type Inline, LOD (level of detail), or Switch. See " [4.6.5 Grouping and children nodes](concepts.md#4.6.5)" for details.
+[_Группа узлов_](#GroupingNode), демонстрирующая особое поведение. Примеры такого особого поведения включают выбор одного из многих [_дочерних узлов_](#ChildrenNode) для визуализации на основе динамически изменяющегося значения параметра и динамическую загрузку дочерних узлов из внешнего файла. Узел типа Inline, LOD (уровень детализации) или Switch. Подробности см. в разделе "[4.6.5 Группировка и дочерние узлы](concepts.md#4.6.5)".
 
 <a id="Texture"></a>
 
 ### 3.93 texture
 
-An [_image_](#Image) used in a [_texture_ _map_](#TextureMap) to create visual appearance effects when applied to [_geometry nodes_](#GeometryNode).
+[_Рисунок_](#Image), используемый в [_texture_ _map_](#TextureMap) для создания визуальных эффектов внешнего вида при применении к [_geometry nodes_](#GeometryNode).
 
 <a id="TextureCoordinates"></a>
 
 ### 3.94 texture coordinates
 
-The set of 2D coordinates used by some vertex-based [_geometry nodes_](#GeometryNode) ( _e.g._, IndexedFaceSet and ElevationGrid) and specified in the TextureCoordinate node to map textures to the vertices of those nodes. Texture coordinates range from 0 to 1 across each axis of the texture image. See " [4.6.11 Texture maps](concepts.md#4.6.11)" and " [6.48 TextureCoordinate](nodesRef.md#TextureCoordinate)" for details.
+Набор 2D-координат, используемый некоторыми основанными на вершинах [_geometry nodes_](#GeometryNode) ( _e.g._, IndexedFaceSet и ElevationGrid) и указанный в узле TextureCoordinate для сопоставления текстур с вершинами этих узлов. Координаты текстуры варьируются от 0 до 1 по каждой оси изображения текстуры. Подробности см. в разделах "[4.6.11 Карты текстур](concepts.md#4.6.11)" и "[6.48 TextureCoordinate](nodesRef.md#TextureCoordinate)".
 
 <a id="TextureMap"></a>
 
 ### 3.95 texture map
 
-A [_texture_](#Texture) plus the general parameters necessary for mapping the texture to geometry.
+[_Текстура_](#Texture) плюс общие параметры, необходимые для сопоставления текстуры с геометрией.
 
 <a id="Time"></a>
 
 ### 3.96 time
 
-A monotonically increasing value generated by a time sensor nodes. Time (0.0) starts at 00:00:00 GMT January 1, 1970. See " [4.11 Time](concepts.md#4.11)" for details.
+Монотонно возрастающее значение, генерируемое узлами датчика времени. Время (0,0) начинается в 00:00:00 по Гринвичу 1 января 1970 года. Подробности см. в разделе «[4.11 Время](concepts.md#4.11)».
 
 <a id="Timestamp"></a>
 
 ### 3.97 timestamp
 
-The part of a [_message_](#Message) which describes the [_time_](#Time) the [_event_](#Event) occurred which caused the message to be sent. See " [4.11 Time](concepts.md#4.11)" for details.
+Часть [_сообщения_](#Message), описывающая [_время_](#Time), когда произошло [_событие_](#Event), вызвавшее отправку сообщения. Подробности см. в разделе «[4.11 Время](concepts.md#4.11)».
 
 <a id="Traverse"></a>
 
 ### 3.98 traverse
 
-To process the [_nodes_](#Node) in a [_scene graph_](#SceneGraph) in the correct order.
+Обработать [_узлы_](#Node) в [_графе сцены_](#SceneGraph) в правильном порядке.
 
 <a id="Ucs"></a>
 
 ### 3.99 UCS
 
-Universal multiple-octet coded Character Set. See [2.[UTF8]](references.md#[UTF8]).
+Универсальный набор символов с многооктетной кодировкой. См. [2.[UTF8]](references.md#[UTF8]).
 
 <a id="Url"></a>
 
 ### 3.100 URL
 
-Uniform Resource Locator. See [2.[URL]](references.md#[URL]).
+Единый указатель ресурсов. См. [2.[URL]](references.md#[URL]).
 
 <a id="Urn"></a>
 
 ### 3.101 URN
 
-Universal Resource Name. See [2.[URN]](references.md#[URN]).
+Универсальное имя ресурса. См. [2.[URN]](references.md#[URN]).
 
 <a id="Utf8"></a>
 
 ### 3.102 UTF-8
 
-The character set used to encode [_VRML files_](#VRMLFile). The 8-bit UCS Transformation Format. See [2.[UTF8]](references.md#[UTF8]).
+Набор символов, используемый для кодирования [_VRML files_](#VRMLFile). 8-битный формат преобразования UCS. См. [2.[UTF8]](references.md#[UTF8]).
 
 <a id="User"></a>
 
 ### 3.103 user
 
-Person or agent who uses and interacts with [_VRML_ _files_](#VRMLFile) by means of a [_browser_](#Browser).
+Лицо или агент, который использует и взаимодействует с [_VRML_ _files_](#VRMLFile) посредством [_browser_](#Browser).
 
 <a id="Viewer"></a>
 
 ### 3.104 viewer
 
-A location, direction, and viewing angle in a [_virtual_ _world_](#VirtualWorld) which determines the portion of the virtual world presented by the [_browser_](#Browser) to the [_user_](#User).
+Местоположение, направление и угол обзора в [_virtual_ _world_](#VirtualWorld), определяющие часть виртуального мира, представленную [_browser_](#Browser) пользователю [_user_](#User).
 
 <a id="VirtualWorld"></a>
 
 ### 3.105 virtual world
 
-See [_world_](#World).
+См. [_world_](#World).
 
 <a id="VRMLBrowser"></a>
 
 ### 3.106 VRML browser
 
-See [_browser_](#Browser).
+См. [_browser_](#Browser).
 
 <a id="VRMLDocumentServer"></a>
 
@@ -656,55 +654,55 @@ See [_browser_](#Browser).
 
 ### 3.108 VRML file
 
-A file, data stream, or string of UTF-8 characters, which contains information encoded according to ISO/IEC 14772 (this standard).
+Файл, поток данных или строка символов UTF-8, содержащая информацию, закодированную в соответствии с ISO/IEC 14772 (данным стандартом).
 
 <a id="Wand"></a>
 
 ### 3.109 wand
 
-A 3D [_pointing devices_](#PointingDevice).
+3D [_указывающие устройства_](#PointingDevice).
 
 <a id="WhiteSpace"></a>
 
 ### 3.110 white space
 
-One or more consecutive occurrences of a separator character. See " [4.3.1 Clear text encoding](concepts.md#4.3.1)" for details.
+Одно или несколько последовательных вхождений символа-разделителя. Подробности см. в разделе «[4.3.1 Кодирование открытого текста](concepts.md#4.3.1)".
 
 <a id="World"></a>
 
 ### 3.111 world
 
-A collection of one or more [_VRML files_](#VRMLFile) and other multimedia content which, when interpreted by a [_VRML browser_](#VRMLBrowser), presents an interactive experience to the [_user_](#User) consistent with the [_author's_](#Author) intent.
+Коллекция из одного или нескольких [_VRML files_](#VRMLFile) и другого мультимедийного контента, который при интерпретации [_VRML Browser_](#VRMLBrowser) представляет интерактивный опыт для [_пользователя_](#User), соответствующий замыслу [_авторов_](#Author).
 
 <a id="WorldCoordinateSpace"></a>
 
 ### 3.112 world coordinate space
 
-The coordinate system in which each VRML [_world_](#World) is defined. The world coordinate space is an orthogonal right-handed Cartesian coordinate system. The units of length are metres.
+Система координат, в которой определен каждый VRML [_world_](#World). Мировое координатное пространство представляет собой ортогональную правую декартову систему координат. Единицы длины – метры.
 
 <a id="WorldWideWeb"></a>
 
 ### 3.113 World Wide Web
 
-The collection of documents, information, and content accessible via the [_Internet_](#Internet).
+Коллекция документов, информации и контента, доступных через [_Интернет_](#Internet).
 
 <a id="XyPlane"></a>
 
 ### 3.114 XY plane
 
-The plane perpendicular to the Z-axis which passes through the point Z = 0.0.
+Плоскость, перпендикулярная оси Z, проходящая через точку Z = 0,0.
 
 <a id="YzPlane"></a>
 
 ### 3.115 YZ plane
 
-The plane perpendicular to the X-axis which passes through the point X = 0.0.
+Плоскость, перпендикулярная оси X, проходящая через точку X = 0,0.
 
 <a id="ZxPlane"></a>
 
 ### 3.116 ZX plane
 
-The plane perpendicular to the Y-axis which passes through the point Y = 0.0.
+Плоскость, перпендикулярная оси Y, проходящая через точку Y = 0,0.
 
 ![vrmlbar](../pix/vrmlbar.gif)
 
