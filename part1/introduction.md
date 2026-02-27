@@ -10,53 +10,37 @@
 
 ![](../pix/vrmlbar.gif)
 
-### ![](../../pix/cube.gif) Purpose
+### ![](../pix/cube.gif)Цель
 
-The Virtual Reality Modeling Language (VRML) is a file format for
-describing interactive 3D objects and worlds. VRML is designed to be
-used on the Internet, intranets, and local client systems. VRML is also
-intended to be a universal interchange format for integrated 3D
-graphics and multimedia. VRML may be used in a variety of application
-areas such as engineering and scientific visualization, multimedia
-presentations, entertainment and educational titles, web pages, and
-shared virtual worlds.
+Язык моделирования виртуальной реальности (VRML) — это формат файла для описания интерактивных трехмерных объектов и миров. VRML предназначен для использования в Интернете, интрасетях и локальных клиентских системах. VRML также задуман как универсальный формат обмена интегрированной трехмерной графикой и мультимедиа. VRML может использоваться в различных областях применения, таких как инженерная и научная визуализация, мультимедийные презентации, развлекательные и образовательные издания, веб-страницы и общие виртуальные миры.
 
-### ![](../../pix/cube.gif)Design Criteria
+### ![](../pix/cube.gif)Критерии проектирования
 
-VRML has been designed to fulfill the following requirements:
+VRML был разработан для удовлетворения следующих требований:
 
 _Authorability_
- Enable the development of computer programs capable of creating,
- editing, and maintaining VRML files, as well as automatic translation
- programs for converting other commonly used 3D file formats into VRML
- files.
+Обеспечить возможность разработки компьютерных программ, способных создавать, редактировать и поддерживать файлы VRML, а также программ автоматического перевода для преобразования других широко используемых форматов файлов 3D в файлы VRML.
+
  _Composability_
- Provide the ability to use and combine dynamic 3D objects within a VRML
- world and thus allow re-usability.
+Обеспечить возможность использовать и комбинировать динамические 3D-объекты в мире VRML и, таким образом, обеспечить возможность повторного использования.
+
  _Extensibility_
- Provide the ability to add new object types not explicitly defined in
- VRML.
+Обеспечить возможность добавлять новые типы объектов, не определенные явно в VRML.
+
  _Implementability_
- Capable of implementation on a wide range of systems.
+Возможность реализации на широком спектре систем.
+
  _Performance_
- Emphasize scalable, interactive performance on a wide variety of
- computing platforms.
+Сделать акцент на масштабируемой интерактивной производительности на широком спектре вычислительных платформ.
+
  _Scalability_
- Enable arbitrarily large dynamic 3D worlds.
+Включите динамические трехмерные миры произвольного размера.
 
-### ![](../../pix/cube.gif)Characteristics of VRML
+### ![](../pix/cube.gif)Характеристики VRML
 
-VRML is capable of representing static and animated dynamic 3D and
-multimedia objects with hyperlinks to other media such as text, sounds,
-movies, and images. VRML browsers, as well as authoring tools for the
-creation of VRML files, are widely available for many different
-platforms.
+VRML способен представлять статические и анимированные динамические трехмерные и мультимедийные объекты с гиперссылками на другие носители, такие как текст, звуки, фильмы и изображения. Браузеры VRML, а также инструменты для создания файлов VRML широко доступны для множества различных платформ.
 
-VRML supports an extensibility model that allows new dynamic 3D objects
-to be defined and a registration process that allows application
-communities to develop interoperable extensions to the base standard.
-There are mappings between VRML objects and commonly used 3D
-application programmer interface (API) features.
+VRML поддерживает модель расширяемости, которая позволяет определять новые динамические трехмерные объекты, а также процесс регистрации, который позволяет сообществам приложений разрабатывать совместимые расширения базового стандарта. Существуют сопоставления между объектами VRML и часто используемыми функциями интерфейса 3D-приложений (API).
 
 ![](../pix/vrmlbar.gif)
 
