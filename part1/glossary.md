@@ -1,4 +1,4 @@
-# ![](../pix/vrmllogo2.0.gif)
+![vrmllogo2](../pix/vrmllogo2.0.gif)
 
 # The Virtual Reality Modeling Language
 
@@ -8,7 +8,7 @@
 
 #### 4 April 1997
 
-![](../pix/vrmlbar.gif)
+![vrmlbar](../pix/vrmlbar.gif)
 
 <a id="Activate"></a>
 
@@ -308,25 +308,25 @@ Internet Engineering Task Force. The organization which develops [_Internet_](#I
 
 ### 3.50 Internet
 
-The world-wide named [_network_](#Network) which communicate with each other using a common set of communication protocols known as TCP/IP. See [_IETF_](#Ietf). The [_World Wide Web_](#WorldWideWeb) is implemented on the Internet.
+Всемирная сеть под названием [_network_](#Network), которая взаимодействует друг с другом с использованием общего набора протоколов связи, известных как TCP/IP. См. [_IETF_](#Ietf). [_Всемирная паутина_](#WorldWideWeb) реализована в Интернете.
 
 <a id="Instance"></a>
 
 ### 3.51 instance
 
-A reference to a previously defined and named [_node_](#Node) via the USE syntax. Nodes are named by means of the DEF syntax. Instances of nodes may be used in any context in which the defining node may be used.
+Ссылка на ранее определенный и названный [_узел_](#Node) через синтаксис USE. Узлы именуются с помощью синтаксиса DEF. Экземпляры узлов могут использоваться в любом контексте, в котором может использоваться определяющий узел.
 
 <a id="InterpolatorNode"></a>
 
 ### 3.52 interpolator node
 
-A [_node_](#Node) which defines a piece-wise linear interpolation of a particular type of value at specified [_times_](#Time). A node of type ColorInterpolator, CoordinateInterpolator, NormalInterpolator, OrientationInterpolator, PositionInterpolator, or ScalarInterpolator. See " [4.6.8 Interpolators](concepts.md#4.6.8)" for details.
+[_Узел_](#Node), который определяет кусочную линейную интерполяцию определенного типа значения в указанное время [_times_](#Time). Узел типа ColorInterpolator,CoordinateInterpolator, NormalInterpolator, OrientationInterpolator, PositionInterpolator или ScalarInterpolator. Подробности см. в разделе «[4.6.8 Интерполяторы](concepts.md#4.6.8)».
 
 <a id="Intranet"></a>
 
 ### 3.53 intranet
 
-A private [_network_](#Network) which uses the same protocols and standards as the [_Internet_](#Internet).
+Частная [_сеть_](#Network), использующая те же протоколы и стандарты, что и [_Интернет_](#Internet).
 
 <a id="Iso"></a>
 
@@ -350,7 +350,7 @@ Joint Technical Committee 1. See [`http://www.iso.ch/meme/JTC1.html`](http://www
 
 ### 3.57 level of detail (LOD)
 
-The amount of detail or complexity which is displayed at any particular [_time_](#Time) for any particular [_object_](#Object). The level of detail for an object is controllable as a function of the distance of the object from the viewer. See " [6.26 LOD](nodesRef.md#LOD)" for details.
+Степень детализации или сложности, отображаемая в любой конкретный [_момент времени_](#Time) для любого конкретного [_объекта_](#Object). Уровень детализации объекта можно контролировать в зависимости от расстояния объекта до зрителя. Подробности см. в разделе «[6.26 LOD](nodesRef.md#LOD)».
 
 <a id="Lod"></a>
 
@@ -362,19 +362,19 @@ Level Of Detail.
 
 ### 3.59 line terminator
 
-A character (or sequence of two characters) used to terminate a line in a [_VRML file_](#VRMLFile). Specifically, one or both of the [_UTF-8_](#UTF-8) characters "carriage-return" and "linefeed". If both characters are present either may be first in the sequence.
+Символ (или последовательность двух символов), используемый для завершения строки в [_VRML file_](#VRMLFile). В частности, один или оба символа [_UTF-8_](#Utf8) «возврат каретки CR» и «перевод строки LF». Если присутствуют оба символа, любой из них может быть первым в последовательности.
 
 <a id="Loop"></a>
 
 ### 3.60 loop
 
-A sequence of [_events_](#Event) that results in an event being logically reponsible for generating itself. See " [4.10.4 Loops](concepts.md#4.10.4)" for details.
+Последовательность [_событий_](#Event), в результате которой событие логически ответственно за создание самого себя. Подробности см. в разделе «[4.10.4 Циклы](concepts.md#4.10.4)».
 
 <a id="Message"></a>
 
 ### 3.61 message
 
-A string sent between [_nodes_](#Node) upon the occurrence of an [_event_](#Event). See " [4.10 Event processing](concepts.md#4.10)" for details.
+Строка, передаваемая между [_узлами_](#Node) при возникновении [_событияллллллллл_](#Event). Подробности см. в разделе «[4.10 Обработка событий](concepts.md#4.10)».
 
 <a id="Midi"></a>
 
@@ -706,7 +706,7 @@ The plane perpendicular to the X-axis which passes through the point X = 0.0.
 
 The plane perpendicular to the Y-axis which passes through the point Y = 0.0.
 
-![](../pix/vrmlbar.gif)
+![vrmlbar](../pix/vrmlbar.gif)
 
 ``` https://graphics.stanford.edu/courses/cs248-98-fall/Assignments/Assignment3/VRML2_Specification/spec/part1/glossary.html
 
