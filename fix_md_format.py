@@ -184,7 +184,7 @@ A single rendering of a [_world_](#World) on a [_display device_](#DisplayDevice
     print(result)
 
 if __name__ == "__main__":
-    file_path = r"C:\REPO\VrmlMDRUS\part1\glossary.md"
+    file_path = r"C:\REPO\VrmlMDRUS\part1\concepts.md"
     
     # Самый надежный метод
     # line_by_line_fix(file_path)
