@@ -59,7 +59,19 @@ def add_anchors_to_headings_improved(file_path):
     else:
         print(f"Якоря уже присутствуют или не требуются в: {file_path}")
 
+def process_multiple_files(directory="."):
+    """Обрабатывает все .md файлы в директории"""
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.md'):
+                file_path = os.path.join(root, file)
+                add_anchors_to_headings_improved(file_path)
+
+# Для обработки всех MD файлов в текущей директории и поддиректориях
+# process_multiple_files()
+
+
 # Использование
 if __name__ == "__main__":
-    file_path = r"C:\REPO\VrmlMDRUS\part1\concepts.md"
+    file_path = r"C:\REPO\VrmlMDRUS\part1\glossary.md"
     add_anchors_to_headings_improved(file_path)
